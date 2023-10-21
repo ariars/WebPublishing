@@ -1,0 +1,59 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+}
+
+header {
+    text-align: center;
+    background-color: white;
+}
+
+header > div > ul li {
+    margin: 0px 20px;
+}
+
+footer {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    margin-top: 80px;
+    display: flex;
+    flex: 1;
+}
+
+.flex-nav {
+    flex: 1 1 5rem;
+}
+
+.flex-article {
+    flex: 3 3;
+}
+
+.flex-aside {
+    flex: 1 1 5rem;
+}
+
+@media (min-width: 1400px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1230px;
+    }
+}
+
+@media all and (max-width: 540px) {
+    .main {
+        flex-direction: column;
+    }
+}

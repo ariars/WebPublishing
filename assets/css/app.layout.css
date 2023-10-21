@@ -1,0 +1,45 @@
+html,
+body {
+    font-size: 12px;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    text-align: center;
+    background-color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex: 1;
+}
+
+.flex-nav {
+    flex: 1 1 5rem;
+}
+
+.flex-article {
+    flex: 3 3;
+}
+
+.flex-aside {
+    flex: 1 1 5rem;
+}
+
+@media all and (max-width: 540px) {
+    main {
+        flex-direction: column;
+    }
+}

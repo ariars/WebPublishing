@@ -1,0 +1,1734 @@
+@charset "utf-8";
+
+.file-attach, .file-attach button, .file-attach input {
+    letter-spacing: -.5px;
+    color: #111
+}
+
+.file-attach {
+    background-color: #fff;
+    font-size: 13px;
+    font-family: 'Malgun Gothic','맑은 고딕','Segoe UI WPC',Gulim,'굴림',sans-serif
+}
+
+    .file-attach a, .file-attach abbr, .file-attach acronym, .file-attach address, .file-attach applet, .file-attach article, .file-attach aside, .file-attach b, .file-attach big, .file-attach blockquote, .file-attach button, .file-attach caption, .file-attach center, .file-attach cite, .file-attach code, .file-attach dd, .file-attach del, .file-attach details, .file-attach dfn, .file-attach dialog, .file-attach div, .file-attach dl, .file-attach dt, .file-attach em, .file-attach fieldset, .file-attach figcaption, .file-attach figure, .file-attach font, .file-attach footer, .file-attach form, .file-attach h1, .file-attach h2, .file-attach h3, .file-attach h4, .file-attach h5, .file-attach h6, .file-attach header, .file-attach hgroup, .file-attach i, .file-attach iframe, .file-attach img, .file-attach input, .file-attach ins, .file-attach kbd, .file-attach label, .file-attach legend, .file-attach li, .file-attach menu, .file-attach nav, .file-attach object, .file-attach ol, .file-attach p, .file-attach pre, .file-attach q, .file-attach s, .file-attach samp, .file-attach section, .file-attach small, .file-attach span, .file-attach strike, .file-attach strong, .file-attach sub, .file-attach sup, .file-attach table, .file-attach tbody, .file-attach td, .file-attach tfoot, .file-attach th, .file-attach thead, .file-attach tr, .file-attach tt, .file-attach u, .file-attach ul, .file-attach var {
+        margin: 0;
+        padding: 0;
+        border: 0
+    }
+
+    .file-attach input, .file-attach select, .file-attach textarea {
+        font-size: 13px;
+        vertical-align: middle;
+        color: #111;
+        letter-spacing: -.5px;
+        font-family: 'Malgun Gothic','맑은 고딕','Segoe UI WPC',Gulim,'굴림',sans-serif,'MS mincho',simSun
+    }
+
+    .file-attach caption, .file-attach legend {
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        visibility: hidden;
+        font-size: 0;
+        line-height: 0
+    }
+
+    .file-attach a.button, .file-attach button, .file-attach button.button, .file-attach div.button, .file-attach input, .file-attach span.button {
+        font-family: 'Malgun Gothic','맑은 고딕','Segoe UI WPC',Gulim,'굴림',sans-serif
+    }
+
+    .file-attach textarea {
+        resize: none
+    }
+
+    .file-attach ol, .file-attach ul {
+        list-style: none
+    }
+
+    .file-attach hr {
+        clear: both;
+        display: none
+    }
+
+    .file-attach legend {
+        position: absolute
+    }
+
+    .file-attach table {
+        border-collapse: collapse
+    }
+
+        .file-attach table td {
+            line-height: 17px
+        }
+
+    .file-attach em, .file-attach i {
+        font-style: normal
+    }
+
+    .file-attach a {
+        cursor: pointer
+    }
+
+        .file-attach a:active, .file-attach a:focus, .file-attach a:link, .file-attach a:visited {
+            color: #111;
+            text-decoration: none
+        }
+
+        .file-attach .button05.type02.gmt span, .file-attach .check:not(#cssbrowser) > input[type=checkbox] + label .checktxt.unline, .file-attach a:hover {
+            text-decoration: underline
+        }
+
+        .file-attach a:hover {
+            color: #111
+        }
+
+    .file-attach input[type=checkbox] {
+        border: 0
+    }
+
+    .file-attach input::-webkit-input-placeholder {
+        color: #ccc
+    }
+
+    .file-attach input:-moz-placeholder {
+        color: #ccc
+    }
+
+    .file-attach input::-moz-placeholder {
+        color: #ccc
+    }
+
+    .file-attach input:-ms-input-placeholder {
+        color: #ccc
+    }
+
+    .file-attach .blind {
+        position: absolute;
+        padding: 0 !important;
+        width: 0 !important;
+        height: 0 !important;
+        overflow: hidden !important;
+        visibility: hidden !important;
+        font-size: 0 !important;
+        line-height: 0 !important
+    }
+
+    .file-attach .check {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 0
+    }
+
+        .file-attach .check > input[type=checkbox] {
+            position: relative;
+            top: 0;
+            vertical-align: middle
+        }
+
+        /*.file-attach .check:not(#cssbrowser) > input[type=checkbox] {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 0;
+            height: 0;
+            margin: 0;
+            opacity: 0;
+            cursor: pointer
+        }
+
+            .file-attach .check:not(#cssbrowser) > input[type=checkbox] + label {
+                display: inline-block;
+                padding-left: 13px;
+                cursor: pointer;
+                line-height: 12px
+            }
+
+                .file-attach .check:not(#cssbrowser) > input[type=checkbox] + label i {
+                    display: inline-block;
+                    margin: -1px 0 0 -13px;
+                    padding: 0;
+                    background-image: url(../images/bg_checkbox.gif);
+                    background-repeat: no-repeat;
+                    width: 13px;
+                    height: 13px;
+                    -webkit-box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                    box-sizing: border-box;
+                    font-size: 0;
+                    vertical-align: middle;
+                    background-position: 0 0
+                }
+
+                .file-attach .check:not(#cssbrowser) > input[type=checkbox] + label .checktxt {
+                    padding-left: 4px
+                }
+
+        .file-attach .check:not(#cssbrowser):hover > input[type=checkbox] + label i {
+            background-position: 0 -60px
+        }
+
+        .file-attach .check:not(#cssbrowser) > input[type=checkbox]:checked + label i {
+            background-position: 0 -15px
+        }
+
+        .file-attach .check:not(#cssbrowser) > input[type=checkbox]:disabled + label i {
+            background-position: 0 -45px;
+            cursor: default
+        }
+
+        .file-attach .check:not(#cssbrowser) > input[type=checkbox]:disabled + label .checktxt {
+            color: #ccc;
+            cursor: default
+        }
+
+        .file-attach .check:not(#cssbrowser) > input[type=checkbox]:checked:disabled + label i {
+            background-position: 0 -30px
+        }*/
+
+        .file-attach .check.all:not(#cssbrowser) > input[type=checkbox] + label i {
+            background-position: 0 -75px
+        }
+
+        .file-attach .check.all:not(#cssbrowser):hover > input[type=checkbox] + label i {
+            background-position: 0 -60px
+        }
+
+        .file-attach .check.all:not(#cssbrowser) > input[type=checkbox]:checked + label i {
+            background-position: 0 -90px
+        }
+
+        .file-attach .check.all:not(#cssbrowser) > input[type=checkbox]:disabled + label i {
+            background-position: 0 -105px;
+            cursor: default
+        }
+
+    .file-attach .total {
+        display: inline-block;
+        font-weight: 400 !important
+    }
+
+        .file-attach .total em {
+            display: inline-block;
+            color: #111;
+            font-weight: 700
+        }
+
+        .file-attach .total .search-result {
+            margin: 0 10px 0 0;
+            font-size: 12px
+        }
+
+    .file-attach .byte-area {
+        padding: 0 0 5px;
+        font-size: 12px;
+        color: #737373;
+        text-align: right
+    }
+
+    .file-attach .file-add, .file-attach .ico-file {
+        font-size: 0;
+        display: inline-block;
+        line-height: 0
+    }
+
+    .file-attach .byte-area em {
+        color: #111
+    }
+
+    .file-attach .file-upload {
+        position: relative;
+        height: 26px
+    }
+
+        .file-attach .file-upload input.file {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: right;
+            opacity: 0;
+            z-index: 2;
+            -moz-opacity: 0;
+            filter: alpha(opacity:0);
+            cursor: pointer
+        }
+
+        .file-attach .file-upload.st02 {
+            display: inline-block;
+            width: 60%
+        }
+
+    .file-attach .file-ipt {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1
+    }
+
+        .file-attach .file-ipt .ipt {
+            margin-right: 77px
+        }
+
+        .file-attach .file-ipt .input01 {
+            margin: 0 !important;
+            width: 100% !important
+        }
+
+        .file-attach .file-ipt .button {
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 3
+        }
+
+    .file-attach .file-add {
+        padding: 0 3px;
+        background: url(../images/bg_btn.png) -575px -100px no-repeat;
+        width: 7px;
+        height: 13px;
+        cursor: pointer;
+        vertical-align: middle;
+        text-overflow: clip
+    }
+
+.file-area {
+    margin: 0 15px 0 22px
+}
+
+.file-attach .ico-file {
+    position: relative;
+    overflow: hidden;
+    width: 16px;
+    height: 16px
+}
+
+    .file-attach .ico-file img {
+        position: absolute;
+        top: -46px;
+        left: -109px
+    }
+
+    .file-attach .ico-file.ico-pdf img {
+        top: 0;
+        left: 0
+    }
+
+    .file-attach .ico-file.ico-xls img, .file-attach .ico-file.ico-xlsb img, .file-attach .ico-file.ico-xlsm img, .file-attach .ico-file.ico-xlsx img {
+        top: 0;
+        left: -57px
+    }
+
+    .file-attach .ico-file.ico-hwp img {
+        top: 0;
+        left: -109px
+    }
+
+    .file-attach .ico-file.ico-ppt img, .file-attach .ico-file.ico-pptx img {
+        top: 0;
+        left: -168px
+    }
+
+    .file-attach .ico-file.ico-doc img, .file-attach .ico-file.ico-doc2 img, .file-attach .ico-file.ico-docx img {
+        top: 0;
+        left: -223px
+    }
+
+    .file-attach .ico-file.ico-psd img {
+        top: 0;
+        left: -278px
+    }
+
+    .file-attach .ico-file.ico-ai img {
+        top: 0;
+        left: -332px
+    }
+
+    .file-attach .ico-file.ico-xd img {
+        top: 0;
+        left: -388px
+    }
+
+    .file-attach .ico-file.ico-fla img {
+        top: 0;
+        left: -446px
+    }
+
+    .file-attach .ico-file.ico-swf img {
+        top: 0;
+        left: -500px
+    }
+
+    .file-attach .ico-file.ico-htm img, .file-attach .ico-file.ico-html img {
+        top: -46px;
+        left: 0
+    }
+
+    .file-attach .ico-file.ico-gif img, .file-attach .ico-file.ico-jpg img, .file-attach .ico-file.ico-picture img, .file-attach .ico-file.ico-png img {
+        top: -46px;
+        left: -57px
+    }
+
+    .file-attach .ico-file.ico-bbs img, .file-attach .ico-file.ico-bmp img, .file-attach .ico-file.ico-css img, .file-attach .ico-file.ico-dat img, .file-attach .ico-file.ico-eml img, .file-attach .ico-file.ico-etc img, .file-attach .ico-file.ico-etcs img, .file-attach .ico-file.ico-exe img, .file-attach .ico-file.ico-gul img, .file-attach .ico-file.ico-ini img, .file-attach .ico-file.ico-install img, .file-attach .ico-file.ico-iso img, .file-attach .ico-file.ico-js img, .file-attach .ico-file.ico-jsp img, .file-attach .ico-file.ico-misc img, .file-attach .ico-file.ico-text img, .file-attach .ico-file.ico-ttf img, .file-attach .ico-file.ico-txt img, .file-attach .ico-file.ico-url img, .file-attach .ico-file.ico-xml img {
+        top: -46px;
+        left: -109px
+    }
+
+    .file-attach .ico-file.ico-zip img {
+        top: -46px;
+        left: -168px
+    }
+
+    .file-attach .ico-file.ico-avi img, .file-attach .ico-file.ico-mov img, .file-attach .ico-file.ico-video img, .file-attach .ico-file.ico-wmv img {
+        top: -46px;
+        left: -223px
+    }
+
+    .file-attach .ico-file.ico-mp3 img, .file-attach .ico-file.ico-music img, .file-attach .ico-file.ico-wav img, .file-attach .ico-file.ico-wma img {
+        top: -46px;
+        left: -278px
+    }
+
+.file-attach .caution {
+    padding: 4px 10px 6px;
+    background: #fffbe0;
+    color: #111;
+    font-size: 13px
+}
+
+    .file-attach .caution i {
+        display: inline-block;
+        margin: -2px 5px 0 0;
+        background-image: url(../images/bg_icon.png);
+        background-position: -50px -30px;
+        background-repeat: no-repeat;
+        width: 14px;
+        height: 14px;
+        vertical-align: middle
+    }
+
+    .file-attach .caution.type02 i {
+        background-position: -100px -30px
+    }
+
+    .file-attach .caution.notice {
+        position: absolute;
+        padding: 6px 10px 9px;
+        border: 1px solid #ead881;
+        background: #fff8cb;
+        box-sizing: border-box
+    }
+
+        .file-attach .caution.notice .button-img {
+            position: absolute;
+            right: 5px;
+            top: 5px
+        }
+
+.file-attach .progress-box {
+    position: relative;
+    margin: 15px 0;
+    padding: 10px 120px 30px 10px;
+    background: #f5f8fb
+}
+
+.file-attach .progress-st {
+    display: block;
+    vertical-align: middle;
+    font-size: 13px
+}
+
+    .file-attach .progress-st .progress-num {
+        display: block;
+        text-align: center;
+        color: #111
+    }
+
+        .file-attach .progress-st .progress-num em {
+            color: #188fe0
+        }
+
+            .file-attach .progress-st .progress-num em:first-child {
+                float: left;
+                color: #111
+            }
+
+            .file-attach .progress-st .progress-num em.last {
+                float: right;
+                color: #111
+            }
+
+        .file-attach .progress-st .progress-num.st02 {
+            margin: -3px 0 9px;
+            text-align: left
+        }
+
+            .file-attach .progress-st .progress-num.st02 .file-total * {
+                color: #111
+            }
+
+            .file-attach .progress-st .progress-num.st02 .file-total .total-num {
+                margin-left: 13px
+            }
+
+                .file-attach .progress-st .progress-num.st02 .file-total .total-num i {
+                    color: #737373;
+                    font-weight: 400
+                }
+
+.file-attach .progress-bar {
+    display: block;
+    background: #ddd;
+    box-shadow: inset 1px 1px 0 silver,inset -1px -1px 0 silver;
+    height: 11px;
+    border-radius: 10px;
+    box-sizing: border-box
+}
+
+    .file-attach .progress-bar.large_progress_bar {
+        right: 85px;
+        position: relative
+    }
+
+    .file-attach .progress-bar .progress-in {
+        display: block;
+        position: relative;
+        left: 0;
+        top: 0;
+        background: #188fe0;
+        height: 100%;
+        border-radius: 10px
+    }
+
+    .file-attach .progress-bar .progress-txt {
+        position: absolute;
+        right: -25px;
+        top: 12px;
+        font-size: 12px;
+        width: 50px;
+        text-align: center
+    }
+
+        .file-attach .progress-bar .progress-txt.first {
+            left: 0;
+            text-align: left
+        }
+
+        .file-attach .progress-bar .progress-txt.last {
+            right: 0;
+            text-align: right
+        }
+
+.file-attach .progress-box .button {
+    position: absolute;
+    right: 10px;
+    top: 18px
+}
+
+.file-attach .current {
+    background: #dfedfa
+}
+
+    .file-attach .current.multi {
+        background: #f3f4f4
+    }
+
+.file-attach .b {
+    font-weight: 700
+}
+
+.file-attach button, .file-attach input {
+    margin: 0;
+    padding: 0
+}
+
+.file-attach .button {
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    background: #fff;
+    white-space: nowrap;
+    color: #111;
+    vertical-align: middle;
+    box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box
+}
+
+.file-attach input::-moz-focus-inner, button::-moz-focus-inner {
+    padding: 0;
+    border: 0
+}
+
+.file-attach button, .file-attach html input[type=button], .file-attach input[type=reset], input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer
+}
+
+    .file-attach button[disabled], .file-attach html input[disabled] {
+        color: #999;
+        cursor: default
+    }
+
+    .file-attach a.button, .file-attach button.button, .file-attach div.button, .file-attach span.button {
+        margin: 0;
+        padding: 0;
+        font-size: 13px;
+        cursor: pointer;
+        line-height: 0
+    }
+
+    .file-attach button:active span, .file-attach button:focus span {
+        position: relative;
+        top: 0;
+        left: 0
+    }
+
+.file-attach .button.default {
+    padding: 0 10px 3px;
+    min-width: 32px;
+    height: 21px;
+    line-height: 21px
+}
+
+.file-attach .button.pluginTip {
+    display: inline-block;
+    padding: 0 5px;
+    background: #c0c3c7;
+    font-family: Arial;
+    height: 17px;
+    letter-spacing: 0;
+    line-height: 12px;
+    border-radius: 2px;
+    white-space: nowrap;
+    color: #fff;
+    vertical-align: middle;
+    box-sizing: content-box;
+    font-size: 10px
+}
+
+.file-attach .button-ctrl, .file-attach .button-img {
+    background-image: url(../img/button/bg_btn.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    vertical-align: middle;
+    display: inline-block
+}
+
+.file-attach .button-img {
+    font-size: 0;
+    line-height: 0
+}
+
+    .file-attach .button-img span {
+        overflow: hidden;
+        visibility: hidden;
+        text-indent: -99999px;
+        width: 0;
+        height: 0;
+        font-size: 0;
+        line-height: 0
+    }
+
+    .file-attach .button-img.disabled, .file-attach .button-img:disabled {
+        opacity: .3
+    }
+
+        .file-attach .button-img.disabled:hover, .file-attach .button-img:disabled:hover {
+            opacity: .2;
+            border-color: transparent !important
+        }
+
+    .file-attach .button-img.securage {
+        background-position: -345px -150px;
+        width: 20px;
+        height: 20px
+    }
+
+        .file-attach .button-img.securage:hover {
+            background-position: -345px -180px
+        }
+
+    .file-attach .button-img.download {
+        background-position: -375px -150px;
+        width: 20px;
+        height: 20px
+    }
+
+        .file-attach .button-img.download:hover {
+            background-position: -375px -180px
+        }
+
+    .file-attach .button-img.form {
+        background-position: -315px -150px
+    }
+
+        .file-attach .button-img.form:hover {
+            background-position: -315px -180px
+        }
+
+.file-attach .button-ctrl {
+    font-size: 0;
+    line-height: 0;
+    width: 19px;
+    height: 20px
+}
+
+    .file-attach .button-ctrl span {
+        overflow: hidden;
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        font-size: 0;
+        line-height: 0;
+        text-indent: -99999px
+    }
+
+    .file-attach .button-ctrl.top {
+        background-position: 5px -872px
+    }
+
+    .file-attach .button-ctrl.last {
+        background-position: -77px -870px
+    }
+
+    /*.file-attach .button-ctrl.prev {
+        background-position: -375px 0
+    }
+
+        .file-attach .button-ctrl.prev:hover {
+            background-position: -375px -25px
+        }
+
+    .file-attach .button-ctrl.next {
+        background-position: -400px 0
+    }
+
+        .file-attach .button-ctrl.next:hover {
+            background-position: -400px -25px
+        }*/
+
+    .file-attach .button-ctrl.delete {
+        background-position: -45px 5px;
+        width: 20px
+    }
+
+        .file-attach .button-ctrl.delete:hover {
+            background-position: -45px -20px
+        }
+
+.file-attach .button-img.del {
+    background-position: 3px 3px;
+    width: 16px;
+    height: 15px
+}
+
+    .file-attach .button-img.del:hover {
+        background-position: 3px -22px
+    }
+
+.file-attach .button-img.del02 {
+    background-position: -20px 5px;
+    width: 20px;
+    height: 19px
+}
+
+    .file-attach .button-img.del02:hover {
+        background-position: -20px -20px
+    }
+
+.file-attach .button-img.del03 {
+    background-position: -71px -21px;
+    width: 15px;
+    height: 14px;
+    opacity: .2
+}
+
+    .file-attach .button-img.del03:hover {
+        background-position: -71px -21px;
+        opacity: 1
+    }
+
+.file-attach .button-img.close {
+    background-position: -97px 3px;
+    width: 20px;
+    height: 19px
+}
+
+    .file-attach .button-img.close:hover {
+        background-position: -97px -22px
+    }
+
+.file-attach .button-img.close02 {
+    background-position: -20px 5px;
+    width: 20px;
+    height: 19px
+}
+
+    .file-attach .button-img.close02:hover {
+        background-position: -20px -20px
+    }
+
+.file-attach .button05 {
+    display: inline-block;
+    padding: 0 0 5px 10px;
+    background: 0 0;
+    height: 23px
+}
+
+    .file-attach .button05 span {
+        font-size: 12px;
+        line-height: 12px;
+        color: #111
+    }
+
+    .file-attach .button05 i {
+        display: inline-block;
+        background-image: url(../images/bg_btn.png);
+        background-position: -150px 0;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        font-size: 0;
+        line-height: 0;
+        width: 21px;
+        height: 13px;
+        text-indent: -9999px;
+        vertical-align: middle
+    }
+
+    .file-attach .button05:hover span {
+        color: #111
+    }
+
+    .file-attach .button05.on i {
+        background-position: -150px -25px
+    }
+
+    .file-attach .button05.type02 {
+        padding: 0 0 4px;
+        vertical-align: middle
+    }
+
+        .file-attach .button05.type02 span {
+            font-size: 13px;
+            line-height: 20px;
+            text-decoration: underline
+        }
+
+        .file-attach .button05.type02 i {
+            background-position: -175px 0;
+            width: 12px
+        }
+
+        .file-attach .button05.type02.gmt {
+            margin: 0 0 0 5px;
+            overflow: hidden;
+            word-break: break-all;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            max-width: 110px
+        }
+
+        .file-attach .button05.type02 .txt-epll {
+            display: inline-block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 90%;
+            text-decoration: none
+        }
+
+            .file-attach .button05.type02 .txt-epll + i {
+                background-position: -175px -3px
+            }
+
+        .file-attach .button05.type02.noline {
+            padding: 0 10px 5px
+        }
+
+            .file-attach .button05.type02.noline span {
+                text-decoration: none
+            }
+
+            .file-attach .button05.type02.noline:hover span {
+                text-decoration: underline
+            }
+
+        .file-attach .button05.type02.noline02 span {
+            text-decoration: none
+        }
+
+.file-attach.popup {
+    position: absolute;
+    padding: 17px 20px 20px;
+    border: 1px solid #596476;
+    background: #fff;
+    width: 380px;
+    box-sizing: border-box;
+    z-index: 100
+}
+
+    .file-attach.popup.wtype01 {
+        width: 480px
+    }
+
+    .file-attach.popup.wtype02 {
+        width: 580px
+    }
+
+    .file-attach.popup.wtype03 {
+        width: 680px
+    }
+
+    .file-attach.popup.wtype04 {
+        width: 900px
+    }
+
+    .file-attach.popup.wtype06 {
+        width: 550px
+    }
+
+    .file-attach.popup.wtype07 {
+        width: 480px
+    }
+
+.file-attach .pop-header {
+    position: relative;
+    padding: 0 0 25px
+}
+
+    .file-attach .pop-header:after {
+        content: " ";
+        display: block;
+        clear: both
+    }
+
+    .file-attach .pop-header h1 {
+        display: inline-block;
+        color: #111;
+        line-height: 17px;
+        font-size: 16px;
+        font-weight: 700
+    }
+
+    .file-attach .pop-header .button-img.close {
+        position: absolute;
+        right: -3px !important;
+        top: 0 !important
+    }
+
+    .file-attach .pop-header.dis button, .file-attach .pop-header.none {
+        display: none
+    }
+
+.file-attach .pop-body {
+    padding: 0;
+    color: #111
+}
+
+    .file-attach .pop-body .pop-left-area {
+        position: relative;
+        float: left;
+        width: 190px;
+        border-bottom: 1px solid #e1e1e1
+    }
+
+        .file-attach .pop-body .pop-left-area .content {
+            overflow-y: auto;
+            height: 375px
+        }
+
+    .file-attach .pop-body .pop-right-area {
+        float: left;
+        width: 448px;
+        border-bottom: 1px solid #e1e1e1
+    }
+
+        .file-attach .pop-body .pop-right-area.full {
+            float: none;
+            width: auto;
+            border-bottom: 1px solid #e1e1e1
+        }
+
+        .file-attach .pop-body .pop-right-area .list-stbox {
+            height: 375px
+        }
+
+.file-attach .pop-btn {
+    position: relative;
+    overflow: hidden;
+    clear: both;
+    padding: 20px 0 0;
+    height: 26px;
+    text-align: right
+}
+
+    .file-attach .pop-btn .btn-l {
+        position: absolute;
+        left: 0
+    }
+
+    .file-attach .pop-btn .btn-r {
+        position: absolute;
+        right: 0;
+        bottom: 2px
+    }
+
+    .file-attach .pop-btn .button.b {
+        min-width: 32px
+    }
+
+.file-attach .pop-body table.tbl-list03 {
+    table-layout: fixed;
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+    width: 100%
+}
+
+.file-attach .pop-body .select01 {
+    padding-left: 5px
+}
+
+.file-attach .pop-body table.tbl-list03 td,;
+.file-attach .pop-body table.tbl-list03 th {
+    border-top: 1px solid #f2f2f2;
+    padding: 6px 10px 9px
+}
+
+.pop-att.txt-area {
+    margin-top: 5px;
+    word-break: break-all
+}
+
+.file-list .list-control .button05.type02 {
+    position: absolute;
+    right: 10px
+}
+
+.file-area {
+    min-width: 670px
+}
+
+    .file-area .file-cont {
+        position: relative
+    }
+
+.file-attach .file-action-area {
+    position: relative;
+    padding: 4px 10px 7px;
+    border: 1px solid #dfdfdf;
+    height: 35px;
+    box-sizing: border-box
+}
+
+    .file-attach .file-action-area .check.all .checktxt {
+        font-weight: 700;
+        line-height: 13px
+    }
+
+    .file-attach .file-action-area .file-info {
+        display: inline-block;
+        margin: 1px 0 0;
+        vertical-align: text-top
+    }
+
+        .file-attach .file-action-area .file-info .total {
+            margin-left: 15px
+        }
+
+            .file-attach .file-action-area .file-info .total em {
+                font-weight: 700 !important
+            }
+
+        .file-attach .file-action-area .file-info .byte-area .byte:first-child {
+            color: #111
+        }
+
+        .file-attach .file-action-area .file-info.not_large .byte {
+            margin-left: 6px;
+            color: #737373
+        }
+
+    .file-attach .file-action-area .file-btn-txt {
+        margin: 0 0 0 15px
+    }
+
+        .file-attach .file-action-area .file-btn-txt .button05:first-child {
+            margin-right: 6px
+        }
+
+        .file-attach .file-action-area .file-btn-txt .button05 + .button05:before {
+            content: '|';
+            margin-right: 10px;
+            color: #e6e6e6;
+            font-size: 12px
+        }
+
+        .file-attach .file-action-area .file-btn-txt form {
+            display: inline-block;
+            vertical-align: middle
+        }
+
+        .file-attach .file-action-area .file-btn-txt .file-upload {
+            float: left;
+            margin-right: 5px
+        }
+
+            .file-attach .file-action-area .file-btn-txt .file-upload input.file {
+                width: 100%;
+                height: 100%
+            }
+
+    .file-attach .file-action-area .file-name {
+        float: left;
+        margin: 2px 0 0
+    }
+
+    .file-attach .file-action-area + .file-list {
+        border: solid #dfdfdf;
+        border-width: 0 1px 1px
+    }
+
+        .file-attach .file-action-area + .file-list + .file-drag.plug-in {
+            position: absolute;
+            top: 0;
+            background: rgba(255,255,255,.9) !important;
+            border-color: #dfdfdf;
+            box-sizing: border-box
+        }
+
+        .file-attach .file-action-area + .file-list + .file-drag.file-drag span {
+            display: block;
+            position: absolute;
+            left: auto;
+            top: 50%;
+            margin: -36px 0 0;
+            width: 100%
+        }
+
+            .file-attach .file-action-area + .file-list + .file-drag.file-drag span a {
+                display: inline-block;
+                text-align: left;
+                text-indent: -22px;
+                padding-left: 22px
+            }
+
+                .file-attach .file-action-area + .file-list + .file-drag.file-drag span a:hover {
+                    text-decoration: underline
+                }
+
+.file-attach .file-fold {
+    position: absolute;
+    right: 8px;
+    top: 6px
+}
+
+    .file-attach .file-fold .button-img.file-toggle {
+        width: 16px;
+        height: 16px;
+        background-position: 2px -802px
+    }
+
+.file-attach .file-action-area.open {
+    border-bottom: 0
+}
+
+    .file-attach .file-action-area.open .button-img.file-toggle {
+        background-position: -38px -802px
+    }
+
+        .file-attach .file-action-area.open .button-img.file-toggle .collapse {
+            display: none
+        }
+
+        .file-attach .file-action-area.open .button-img.file-toggle .expand, .file-attach .file-action-area.open + .file-list {
+            display: block
+        }
+
+.file-attach .file-list.open {
+    border-bottom: 0;
+    display: block
+}
+
+    .file-attach .file-list.open .file-drag {
+        display: none
+    }
+
+.file-attach .file-list {
+    display: none;
+    position: relative
+}
+
+    .file-attach .file-list ul {
+        overflow-y: auto;
+        padding: 5px 0;
+        max-height: 115px
+    }
+
+    .file-attach .file-list li {
+        position: relative;
+        overflow: hidden;
+        padding: 1px 10px 4px
+    }
+
+        .file-attach .file-list li:hover {
+            background: #e7ebed
+        }
+
+        .file-attach .file-list li.current {
+            background: #dfedfa
+        }
+
+        .file-attach .file-list li .fileNameShort, .file-attach .file-list li a {
+            float: left;
+            display: inline-block;
+            overflow: hidden;
+            text-decoration: none;
+            word-break: break-all;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            line-height: 19px;
+            max-width: 65%
+        }
+
+        .file-attach .file-list li .byte {
+            float: left;
+            margin: 0 0 0 5px;
+            color: #737373
+        }
+
+    .file-attach .file-list .check {
+        float: left;
+        margin: 3px 0 0
+    }
+
+    .file-attach .file-list .ico-file {
+        float: left;
+        margin: 3px 5px 0;
+        vertical-align: middle
+    }
+
+.file-list .down-list {
+    overflow-y: auto;
+    padding: 5px 0;
+    max-height: 115px
+}
+
+    .file-list .down-list ul {
+        overflow: hidden;
+        padding: 0;
+        max-height: 100%
+    }
+
+.file-attach .file-list .file-btn-area {
+    position: absolute;
+    right: 6px;
+    top: 0
+}
+
+    .file-attach .file-list .file-btn-area .button-img {
+        visibility: hidden;
+        margin: 2px 0 0 6px
+    }
+
+    .file-attach .file-list .file-btn-area .securage-info {
+        line-height: 19px
+    }
+
+    .file-attach .file-list .file-btn-area .caution {
+        display: inline-block;
+        margin: -3px 0 0;
+        padding-left: 0;
+        padding-right: 0;
+        background: 0 0 !important
+    }
+
+        .file-attach .file-list .file-btn-area .caution.comp i, .file-attach .file-list .file-btn-area .caution.running {
+            display: none
+        }
+
+    .file-attach .file-list .file-btn-area .progress-st {
+        display: inline-block;
+        width: 150px
+    }
+
+        .file-attach .file-list .file-btn-area .progress-st.ready {
+            display: none;
+            width: 150px
+        }
+
+.file-attach .file-list li:hover .file-btn-area .button-img {
+    visibility: visible
+}
+
+.file-attach .file-list .list-control {
+    padding: 6px 10px;
+    background: #f8f8f8
+}
+
+    .file-attach .file-list .list-control .list-control-btn {
+        margin-left: 5px
+    }
+
+    .file-attach .file-list .list-control .total {
+        margin-top: -2px;
+        vertical-align: middle
+    }
+
+        .file-attach .file-list .list-control .total:before {
+            content: '|';
+            margin-left: 5px;
+            padding-right: 10px;
+            color: #e6e6e6;
+            font-size: 12px
+        }
+
+.file-attach .add-upload.no-file .file-list .list-control {
+    display: none
+}
+
+.file-attach .file-drag {
+    width: 100%;
+    height: 100%;
+    min-height: 50px;
+    background: rgba(232,232,232,1);
+    color: #111;
+    font-size: 14px;
+    z-index: 55
+}
+
+    .file-attach .file-drag span {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: -11px 0 0 -105px;
+        padding: 0 0 2px
+    }
+
+        .file-attach .file-drag span i {
+            display: inline-block;
+            margin: -2px 5px 0 0;
+            background: url(../images/bg_icon.png) -100px -160px no-repeat;
+            width: 14px;
+            height: 17px;
+            vertical-align: middle
+        }
+
+    .file-attach .file-drag.disable {
+        display: none
+    }
+
+    .file-attach .file-drag.plug-in {
+        color: #737373;
+        border: 1px solid #e6e6e6;
+        background: #fff !important;
+        box-sizing: border-box
+    }
+
+        .file-attach .file-drag.plug-in span {
+            position: relative;
+            display: block;
+            left: 0;
+            top: 0;
+            margin: 0;
+            padding: 15px 0 20px;
+            text-align: center
+        }
+
+            .file-attach .file-drag.plug-in span i {
+                background-position: -150px -157px;
+                width: 18px;
+                height: 20px;
+                margin-bottom: -3px
+            }
+
+.file-attach .add-upload .file-action-area {
+    margin-left: 8px;
+    padding: 7px 0;
+    border: 0;
+    height: auto
+}
+
+    .file-attach .add-upload .file-action-area .file-btn-txt {
+        padding: 0 0 0 64px
+    }
+
+. .file-attach .add-upload .file-action-area .file-fold {
+    top: 9px
+}
+
+.file-attach .add-upload .file-action-area .file-info {
+    position: absolute;
+    right: 32px;
+    top: 9px
+}
+
+    .file-attach .add-upload .file-action-area .file-info.not_large .total:after {
+        content: '|';
+        margin-right: 5px;
+        padding-left: 10px;
+        color: #e6e6e6;
+        font-size: 12px
+    }
+
+.file-attach .add-upload .file-list {
+    border-width: 1px
+}
+
+    .file-attach .add-upload .file-list .file-btn-area {
+        right: 30px;
+        top: 1px
+    }
+
+    .file-attach .add-upload .file-list li .button-img {
+        visibility: hidden;
+        position: absolute;
+        right: -23px;
+        top: 1px
+    }
+
+    .file-attach .add-upload .file-list li:hover .button-img {
+        visibility: visible;
+        width: 18px;
+        height: 18px
+    }
+
+.file-attach .add-upload .file-drag {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(232,232,232,.6)
+}
+
+    .file-attach .add-upload .file-drag span {
+        opacity: .7
+    }
+
+.file-attach .add-upload.no-file .file-fold, .file-attach .add-upload.no-file .file-info .total {
+    display: none
+}
+
+.file-attach .add-upload.no-file .file-info {
+    right: 0
+}
+
+.file-attach .add-upload.no-file .file-list {
+    display: block;
+    border-width: 0
+}
+
+.file-attach .add-upload.no-file .file-drag {
+    position: relative;
+    background: rgba(232,232,232,1)
+}
+
+    .file-attach .add-upload.no-file .file-drag span {
+        opacity: 1
+    }
+
+.file-attach .add-upload.no-file.file-drog .file-drag {
+    min-height: 83px
+}
+
+.file-attach .add-upload.no-file .file-drag.file-drag span a {
+    display: inline-block;
+    text-align: left;
+    text-indent: -22px;
+    padding-left: 22px
+}
+
+    .file-attach .add-upload.no-file .file-drag.file-drag span a:hover {
+        text-decoration: underline
+    }
+
+.file-attach .add-upload .file-list.ltie9 .file-drag, .file-attach .add-upload.no-file .file-list.ltie9 {
+    display: none
+}
+
+.file-attach .file-upload.attach {
+    position: relative;
+    overflow: hidden;
+    width: 51px;
+    height: 24px;
+    border: 1px solid #ccc;
+    border-radius: 2px
+}
+
+/* 20220916 추가 */
+.file-attach .file-upload.attach {    
+    left: 0;
+    top: 0px;
+}
+
+    .file-attach .file-upload.attach:hover {
+        border-color: #111
+    }
+
+    .file-attach .file-upload.attach .file-ipt {
+        width: 100%;
+        height: 100%
+    }
+
+        .file-attach .file-upload.attach .file-ipt .button {
+            left: 0;
+            top: -1px;
+            padding: 0 8px 3px;
+            z-index: 3;
+            border-color: transparent;
+            width: 100%;
+            box-sizing: border-box
+        }
+
+    .file-attach .file-upload.attach input.file {
+        position: relative;
+        width: 53px;
+        height: 100%;
+        text-align: right;
+        opacity: 0;
+        z-index: 2;
+        -moz-opacity: 0;
+        filter: alpha(opacity:0)
+    }
+
+.file-attach .pop-body .progress-st.ac .progress-num.st02 {
+    text-align: center
+}
+
+.attach-editor-mask {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    z-index: -1;
+    width: 100.6%;
+    height: 101.4%
+}
+
+.attachment-download {
+    width: 270px;
+    z-index: 2000
+}
+
+    .attachment-download .img-area {
+        background: url(/static/attach/image/bg_download.png) no-repeat;
+        width: 37px;
+        height: 34px;
+        margin: -18px auto 19px
+    }
+
+    .attachment-download .pop-body {
+        text-align: center;
+        color: #111
+    }
+
+        .attachment-download .pop-body .eng {
+            margin-top: 10px
+        }
+
+.file-attach .file-list .file-large-area {
+    position: absolute;
+    right: 30px;
+    top: 3px;
+    top: 0
+}
+
+.file-attach .add-upload .file-action-area .file-info .total_count_large:before {
+    content: '|';
+    margin-right: 5px;
+    padding-right: 10px;
+    color: #e6e6e6;
+    font-size: 12px
+}
+
+.tbl-list03 td, .tbl-list03 th {
+    padding: 6px 10px 9px;
+    border-top: 1px solid #f2f2f2
+}
+
+.file-large-area span.file_isLarge {
+    vertical-align: middle
+}
+
+.file-large-area button.changeLarge_button {
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    vertical-align: middle;
+    padding: 0 5px 2.5px;
+    margin-top: 2.5px
+}
+
+    .file-large-area button.changeLarge_button:not([disabled]) {
+        border: .5px solid #ccc;
+        background: #fff
+    }
+
+        .file-large-area button.changeLarge_button:not([disabled]) span {
+            color: #000
+        }
+
+        .file-large-area button.changeLarge_button:not([disabled]):hover {
+            border: .5px solid #444;
+            background: #fff
+        }
+
+            .file-large-area button.changeLarge_button:not([disabled]):hover span {
+                color: #444
+            }
+
+    .file-large-area button.changeLarge_button:disabled {
+        border: .5px solid #ececec;
+        background: #fff
+    }
+
+        .file-large-area button.changeLarge_button:disabled span {
+            color: #ececec
+        }
+
+.file-attach.popup .checktxt.opa {
+    padding-bottom: 2px;
+    display: inline-block
+}
+
+.file-action-area .component-title.new.closed, .file-list.dropzone.folding.closed {
+    display: none
+}
+
+.file-security {
+    color: #ccc;
+    cursor: default
+}
+
+.popup.large-att-apply {
+    margin: 0;
+    border: 0
+}
+
+.large-att-apply .applicant {
+    color: #737373
+}
+
+.large-att-apply .approval-tbl {
+    padding: 0
+}
+
+    .large-att-apply .approval-tbl .approval-path {
+        margin: 0
+    }
+
+        .large-att-apply .approval-tbl .approval-path .tbl-list-body {
+            border-bottom: 0
+        }
+
+            .large-att-apply .approval-tbl .approval-path .tbl-list-body tbody td:first-child {
+                padding-left: 0 !important
+            }
+
+.large-att-apply .pop-body textarea {
+    margin: 4px 0 1px;
+    padding: 8px
+}
+
+    .large-att-apply .pop-body textarea::-webkit-input-placeholder {
+        color: #ccc
+    }
+
+    .large-att-apply .pop-body textarea::-moz-placeholder {
+        color: #ccc
+    }
+
+    .large-att-apply .pop-body textarea:-ms-input-placeholder {
+        color: #ccc
+    }
+
+.large-att-apply .pop-btn .button.new-blue {
+    background-color: #525fbd;
+    color: #fff
+}
+
+.popup.layer-attach-download {
+    width: 446px;
+    height: 222px;
+    padding: 16px 20px 20px
+}
+
+    .popup.layer-attach-download .file-area {
+        min-width: 0;
+        margin: 0
+    }
+
+    .popup.layer-attach-download .file-action-area {
+        height: 26px;
+        border: 0;
+        padding: 0;
+        margin-bottom: 10px
+    }
+
+    .popup.layer-attach-download .file-attach .file-action-area .file-info .total {
+        margin-left: 0;
+        font-weight: 700 !important
+    }
+
+    .popup.layer-attach-download .file-attach .file-action-area + .file-list + .file-drag.file-drag span a {
+        font-size: 12px
+    }
+
+    .popup.layer-attach-download .file-cont .file-btn-txt {
+        float: right
+    }
+
+    .popup.layer-attach-download .file-cont .file-list {
+        border: 0;
+        border-top: 1px solid #dfdfdf;
+        border-bottom: 1px solid #dfdfdf
+    }
+
+        .popup.layer-attach-download .file-cont .file-list ul.files {
+            padding: 0;
+            max-height: 120px
+        }
+
+        .popup.layer-attach-download .file-cont .file-list li {
+            height: 24px;
+            padding: 0 10px 0 0
+        }
+
+        .popup.layer-attach-download .file-cont .file-list .check {
+            margin: 4px 0 0
+        }
+
+        .popup.layer-attach-download .file-cont .file-list .ico-file {
+            margin: 4px 5px 0
+        }
+
+        .popup.layer-attach-download .file-cont .file-list li .byte, .popup.layer-attach-download .file-cont .file-list li a {
+            line-height: 24px
+        }
+
+        .popup.layer-attach-download .file-cont .file-list .file-btn-area .button-img {
+            margin: 4px 0 0 6px
+        }
+
+.popup.plugin-install-guide {
+    width: 318px;
+    height: 155px
+}
+
+    .popup.plugin-install-guide a.install-here {
+        font-weight: 700;
+        text-decoration: underline
+    }
+
+#large-attachment-knox-content .ico-file img {
+    top: 0;
+    left: 0
+}
+
+.w303 {
+    width: 261px
+}
+
+.w360 {
+    width: 318px
+}

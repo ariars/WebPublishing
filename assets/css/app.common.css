@@ -1,0 +1,75 @@
+*, *::before, *::after { box-sizing:border-box; } 
+*:focus { outline: 0 !important; } 
+
+html { width:100%; height: 100%; margin: 0; padding: 0; } 
+body { width:100%; height: 100%; margin: 0; padding: 0; font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; -webkit-font-smoothing: antialiased; color: #58666e; background-color: transparent; } 
+
+a { color: inherit; text-decoration: none; cursor: pointer; } 
+a:hover, a:focus { color: inherit; text-decoration: none; } 
+a.link, a.link:hover, a.link:focus, a.link.hover { text-decoration: underline; } 
+label { font-weight: normal; } 
+small, .small { font-size: 13px; } 
+
+ul, ol { margin: 0; list-style:none; margin:0px; padding:0px; } 
+h1, h2, h3, h4, h5, h6 { margin: 0; } 
+h2, .h2 { font-size: 18px; } 
+h4, .h4 { font-size: 14px } 
+
+button, caption, img, input, table, tbody, td, tfoot, th, thead, tr { margin: 0; padding: 0 } 
+a, abbr, acronym, address, applet, article, aside, b, big, body, button, center, cite, code, dd, del, details, dfn, dialog, div, dl, dt, em, fieldset, figcaption, figure, font, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, input, ins, kbd, label, legend, li, menu, nav, object, ol, p, q, s, samp, section, small, span, strike, strong, sub, sup, tt, u, ul, var { margin: 0; padding: 0; border: 0 } 
+article, aside, details, dialog, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block } 
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 400 } 
+a { cursor: pointer } 
+a:active, a:focus, a:link, a:visited { color: #000; text-decoration: none } 
+a:hover { color: #000; text-decoration: underline } 
+input, select, textarea { font-size: 13px; vertical-align: middle; font-family: 'Malgun Gothic','맑은 고딕','Segoe UI WPC',Gulim,'굴림',sans-serif,'MS mincho',simSun } 
+caption, legend { font-size: 0; line-height: 0; width: 0; height: 0; overflow: hidden; visibility: hidden } 
+button, input { font-family: 'Malgun Gothic','맑은 고딕','Segoe UI WPC',Gulim,'굴림',sans-serif } 
+hr { clear: both; width: 100%; border-width: 0; margin: 0 !important; height: 0.5px; background: rgba(0, 0, 0, 0.4); } 
+legend { position: absolute } 
+table td { line-height: 17px } 
+em, i { font-style: normal } 
+input[type=checkbox] { border: 0 } 
+input::-webkit-input-placeholder { color: #ccc } 
+input:-moz-placeholder { color: #ccc } 
+input::-moz-placeholder { color: #ccc } 
+input:-ms-input-placeholder { color: #ccc } 
+
+a.more-link { display: inline-flex; opacity: 0.4; transition-property: opacity; transition-duration: .2s; padding: 0.5rem 1rem; } 
+a.more-link:hover { opacity: 1; } 
+a.more-link.show { opacity: 1; } 
+
+a.content-more-link { display: inline-flex; opacity: 1; padding: 0.5rem 0.5rem; } 
+a.content-more-link:hover { opacity: 1; } 
+
+
+.avatar { display: inline-flex; align-items: center; justify-content: center; vertical-align: middle; flex-shrink: 0; width: 2.5rem; height: 2.5rem; font-size: inherit; font-weight: 400; line-height: 1; max-width: 100%; max-height: auto; text-align: center; overflow: visible; position: relative; transition: color .15s ease-in-out, background-color .15s ease-in-out, box-shadow .15s ease-in-out } 
+.avatar img { width: 2.5rem; height: 2.5rem; } 
+.avatar .avatar-badge { position: absolute; border-radius: 10em; font-size: 100%; font-weight: 700; z-index: 1; bottom: -4px; right: -4px; border: solid 2px #fff; } 
+.avatar .badge-info { color: #fff; background-color: #17a2b8 } 
+.vertical-align-content { display: flex; align-items: center; flex-shrink: 0; } 
+
+.form-group { margin: 15px 10px; }
+
+.form-control { border-color: #cfdadd; border-radius: 2px; transition-duration: .2s; transition-property: border-color; } 
+.form-control, .form-control:focus { -webkit-box-shadow: none; box-shadow: none; } 
+.form-control:focus { border-color: #23b7e5; } 
+.form-control-spin { position: absolute; top: 50%; right: 10px; z-index: 2; margin-top: -7px; } 
+.form-horizontal .control-label.text-left { text-align: left; } 
+.form-control::-moz-placeholder { color: #999999; opacity: 1; }
+.form-control:-ms-input-placeholder { color: #999999; }
+.form-control::-webkit-input-placeholder { color: #999999; }
+
+.input-sm { padding: 10px 10px; font-size: 12px; line-height: 1.5; border-radius: 3px; color: #ccc; }
+select.input-sm { height: 30px; line-height: 30px; } 
+textarea.input-sm, select[multiple].input-sm { height: auto; }
+
+.input-search-icon { position: absolute; top: 10px; left: 13px; opacity: 0.6; z-index: 5; }
+.input-search { padding-left: 32px; }
+
+/* common */
+.grid-row-1span2 { grid-row: 1/span 2; }
+.grid-column-1 { grid-column: 1; }
+.grid-column-2 { grid-column: 2; }
+.grid-row-1 { grid-row: 1; }
+.grid-template-columns-1fr { grid-template-columns: 1fr max-content;}
