@@ -1,0 +1,321 @@
+﻿/* dropdown */
+.dropdown {
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    height: 45px;
+    background: #4da79d;
+}
+
+    .dropdown li {
+        float: left;
+        margin-right: 1px;
+    }
+
+        .dropdown li a {
+            display: block;
+            height: 15px;
+            margin-left: 3px;
+            padding: 12px 15px 18px 15px;
+            color: #fff;
+            font-weight: bold;
+            font-size: 14px;
+            letter-spacing: -0.03em;
+        }
+
+        .dropdown li.on {
+            background: #429a8f;
+        }
+
+        .dropdown li.first {
+            margin-left: 10px;
+        }
+
+        .dropdown li:hover {
+            background: #429a8f;
+        }
+
+            .dropdown li:hover a {
+                color: #fff;
+            }
+
+        .dropdown li.menu_cf, .dropdown li.menu_cf:hover {
+            position: absolute;
+            top: 5px;
+            right: 15px;
+            width: 33px !important;
+        }
+
+            .dropdown li.menu_cf:hover, .dropdown li.menu_cf a, .dropdown li.menu_cf a:hover {
+                padding: 0;
+                background: none;
+            }
+
+    .dropdown ul li, .dropdown ul li a, .dropdown ul li:hover {
+        background: none !important;
+    }
+
+        .dropdown ul li a {
+            font-weight: normal;
+            color: #000 !important;
+        }
+
+/* vertical */
+.vertical ul li:hover {
+    position: relative;
+    z-index: 599;
+    cursor: default;
+}
+
+.vertical ul ul {
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 598;
+    width: 150px;
+}
+
+    .vertical ul ul li {
+        float: none;
+    }
+
+    .vertical ul ul ul {
+        top: -1px;
+        left: 100%;
+    }
+
+.vertical ul li:hover > ul {
+    visibility: visible;
+}
+
+/* vertical design */
+.vertical ul ul {
+    border: 1px solid #3a58a9;
+    border-top: none;
+    background: #fff;
+}
+
+    .vertical ul ul li {
+        border-bottom: 1px solid #eee;
+    }
+
+        .vertical ul ul li a {
+            padding: 6px 5px 4px;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+            .vertical ul ul li a.dir {
+                background: url(../images/common/menu_vtc_dir.gif) right top no-repeat !important;
+            }
+
+        .vertical ul ul li:hover {
+            background: #f7fafc !important;
+        }
+
+            .vertical ul ul li:hover a.dir {
+                background: #f7fafc url(../images/common/menu_vtc_dir.gif) right -54px no-repeat !important;
+                cursor: default;
+            }
+
+    .vertical ul ul ul {
+        border: 1px solid #3a58a9;
+    }
+
+/* vertical2 */
+.vertical2 li {
+    position: relative;
+}
+
+.vertical2 .group {
+    float: left;
+    width: 140px;
+}
+
+    .vertical2 .group li {
+        margin-bottom: 15px;
+    }
+
+        .vertical2 .group li a {
+            padding: 3px 0 0 10px;
+            font-weight: bold;
+            font-size: 12px;
+            cursor: default;
+        }
+
+    .vertical2 .group ul li {
+        margin: 0;
+        padding: 0;
+    }
+
+        .vertical2 .group ul li a {
+            width: 120px;
+            height: auto;
+            padding: 3px 0 3px 17px;
+            background: #1d4f70;
+            font-weight: normal;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .vertical2 .group ul li:hover a {
+            color: #2e7dab !important;
+        }
+
+.dropdown_depth {
+    visibility: hidden;
+    position: absolute;
+    top: 45px;
+    left: -1px;
+    padding-top: 10px;
+    border: 1px solid #2f5887;
+    border-top: none;
+    background: #fff;
+}
+
+.vertical2 li:hover > div {
+    visibility: visible;
+}
+
+.vertical2 li.mymenu ul {
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 598;
+    width: 150px;
+    margin-left: 2px;
+    border: 1px solid #3a58a9;
+    border-top: none;
+}
+
+    .vertical2 li.mymenu ul li {
+        width: 100%;
+        border-bottom: 1px solid #eee;
+    }
+
+        .vertical2 li.mymenu ul li a {
+            padding: 6px 5px 4px 13px;
+        }
+
+            .vertical2 li.mymenu ul li a:hover {
+                color: #3957a7 !important;
+            }
+
+.vertical2 li.mymenu:hover > ul {
+    visibility: visible;
+}
+
+/* horizontal */
+.horizontal ul ul {
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 598;
+    width: 100%;
+}
+
+    .horizontal ul ul li {
+        float: left;
+    }
+
+    .horizontal ul ul ul {
+        display: none !important;
+    }
+
+.horizontal ul li:hover > ul {
+    visibility: visible;
+}
+
+/* horizontal design */
+.horizontal ul ul {
+    z-index: 599;
+    border-bottom: 1px solid #3a58a9;
+    background: #fff;
+}
+
+    .horizontal ul ul li a {
+        margin: 0;
+        padding: 9px 10px 7px 9px;
+    }
+
+    .horizontal ul ul li:hover a {
+        color: #3957a7 !important;
+    }
+
+/* mega_menu */
+.mega_menu {
+    position: relative;
+}
+
+    .mega_menu .dropdown li {
+        width: 150px;
+        text-align: center;
+    }
+
+        .mega_menu .dropdown li.on {
+            background: #1d4f70;
+        }
+
+            .mega_menu .dropdown li.on a {
+                color: #224a6f;
+            }
+
+    .mega_menu .dropdown_mega {
+        position: absolute;
+        top: 45px;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+        background: #fff;
+        border-bottom: 1px solid #2f5887;
+    }
+
+        .mega_menu .dropdown_mega li {
+            float: left;
+            width: 150px;
+            text-align: left;
+        }
+
+            .mega_menu .dropdown_mega li.first {
+                margin-left: 10px;
+            }
+
+            .mega_menu .dropdown_mega li a {
+                display: block;
+                padding: 3px 0 5px 10px;
+                font-weight: bold;
+                font-size: 12px;
+                cursor: default;
+            }
+
+                .mega_menu .dropdown_mega li a:hover {
+                    color: #000;
+                }
+
+            .mega_menu .dropdown_mega li ul li {
+                clear: both;
+            }
+
+                .mega_menu .dropdown_mega li ul li a {
+                    width: 130px;
+                    height: auto;
+                    padding: 3px 0 3px 16px;
+                    font-weight: normal;
+                    font-size: 12px;
+                    cursor: pointer;
+                }
+
+                    .mega_menu .dropdown_mega li ul li a:hover {
+                        color: #2c6279;
+                    }
+
+            .mega_menu .dropdown_mega li.mymenu {
+                margin-left: 7px;
+            }
+
+        .mega_menu .dropdown_mega hr {
+            visibility: hidden;
+        }

@@ -1,0 +1,381 @@
+<html lang="en" class="">
+<head>
+    <meta charset="utf-8">
+    <title>DX.DevOps | </title>
+    <meta name="description" content="Sec.DevOps docs">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="resources/libs/assets/animate.css/animate.css">
+    <link rel="stylesheet" type="text/css" href="resources/libs/assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="resources/libs/assets/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" type="text/css" href="resources/fonts/AzDevMDL2.css">
+    <link rel="stylesheet" type="text/css" href="resources/libs/jquery/bootstrap/dist/v3.3.4/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="resources/libs/jquery/jquery.ui.layout/layout-default-latest.css">
+    <link rel="stylesheet" type="text/css" href="resources/libs/jquery/jquery.ui/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/font.css">
+    <link rel="stylesheet" type="text/css" href="resources/libs/grid/jsgrid-1.5.3/jsgrid.min.css">
+    <link rel="stylesheet" type="text/css" href="resources/libs/grid/jsgrid-1.5.3/jsgrid-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="resources/libs/bootstrap-multiselect/css/bootstrap-multiselect.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/app.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/button.css?v=6df20cbf-079c-4296-a595-0be4e5991545">
+    <link rel="stylesheet" type="text/css" href="resources/css/site.common.css?v=b97a5943-f326-4574-8a24-6f67b12a99cb">
+
+    <style>
+        .snb_collapsed {
+            width: 20px;
+        }
+
+        .snb_collapsed .h2,
+        .snb_collapsed #snb ul {
+            display: none;
+        }
+
+        .snb_collapsed .left-Collapse i {
+            transform: rotate(180deg);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="full-size">
+        <div class="full-size region-page">
+            <div class="full-size flex-column">
+
+                <!-- Header -->
+                <div class="header flex-row flex-noshrink">
+                    <div class="flex-row flex-grow region-header">
+                        <!-- header -->
+                        <header class="sec-bg-black">
+                            <div class="app-logo">
+                                <a href="/devops/">
+                                    <i class="glyphicon glyphicon-cloud"></i>
+                                    <span>DX.DevOps</span>
+                                </a>
+                            </div>
+
+                            <div>
+                                <ul class="app-header">
+                                    <li><a href="/devops/Dev/Home/Index"><i class="fa fa-codepen"></i><span class="ng-scope">Dev</span></a></li>
+                                    <li class="active"><a href="/devops/Ops/Solution/Index"><i class="fa fa-windows"></i><span class="ng-scope">Ops</span></a></li>
+                                    <li><a href="/devops/Ops/Voc/VocItem"><i class="fa fa-share-alt"></i><span class="ng-scope">VOC</span></a></li>
+                                    <li><a href="/devops/App/Files/Explorer"><i class="fa fa-stack-overflow"></i><span class="ng-scope">Apps</span></a></li>
+                                    <li><a href="/devops/BBS/Board/BoardManage"><i class="fa fa-archive"></i><span class="ng-scope">Board</span></a></li>
+                                    <li><a href="/devops/System/Setting/Member"><i class="fa fa-cog"></i><span class="ng-scope">System</span></a></li>
+                                </ul>
+
+                                <ul class="app-header float-right" style="padding: 0px;">
+                                    <li class="dropdown"></li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="thumb-sm avatar float-right" style="margin-top: -10px;">
+                                                <img src="resources/img/no_image.png" alt="...">
+                                                <i class="on md b-white bottom"></i>
+                                            </span>
+                                            <span style="margin-right: 10px;">admin</span> <b class=""></b>
+                                        </a>
+                                        <!-- dropdown -->
+                                        <ul class="dropdown-menu w-md" style="left: -57px"></ul>
+                                        <!-- / dropdown -->
+                                    </li>
+                                    <li><a href="/devops/Account/Signout" class="fa icon-logout logout"><em class="tooltip">Logout</em></a></li>
+                                    <li><a href="" style="background-color: #000;"><i class="fa fa-plus fa-fw"></i></a></li>
+                                </ul>
+                            </div>
+                        </header>
+                        <!-- / header -->
+                    </div>
+                </div>
+                <!-- // Header -->
+                <!-- Body -->
+                <div class="flex-row flex-grow scroll-hidden">
+
+                    <!-- navigation -->
+                    <div class="flex-column">
+                        <div
+                            class="project-navigation region-navigation flex-column flex-grow border-line-right expanded">
+                            <div class="collapsible-section flex-noshrink section-header">
+                                <div class="flex-row flex-grow scroll-hidden">
+                                    <div class="flex-column flex-grow scroll-hidden" style="width:100%">
+                                        <div class="font-weight-thin h2" style="padding: 13px 13px;">Ops</div>
+                                    </div>
+                                    <div class="flex-column flex-grow scroll-hidden left-Collapse"
+                                        style="width:20px;min-width:20px">
+                                        <i class="fa fa-chevron-left" style="padding: 18px 5px;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="navigation-section flex-column flex-grow scroll-hidden v-scroll-auto custom-scrollbar">
+                                <div>
+                                    <nav id="snb">
+                                        <!-- nav -->
+                                        <ul class="nav-sidebar">
+                                            <li class="nav-item on">
+                                                <a href="/devops#" class="nav-link dir">솔루션 관리</a>
+                                                <ul class="nav-group-sub" data-nav-type="accordion">
+                                                    <li class="nav-item "><a href="/devops/Ops/Solution/Index" class="nav-link">솔루션</a></li>
+                                                    <li class="nav-item on"><a href="/devops/Ops/Solution/Sitemap" class="nav-link">사이트맵</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item ">
+                                                <a href="/devops#" class="nav-link dir">서버 관리</a>
+                                                <ul class="nav-group-sub" data-nav-type="accordion" style="display:none;">
+                                                    <li class="nav-item "><a href="/devops/Ops/Server/Index" class="nav-link">서버</a></li>
+                                                    <li class="nav-item "><a href="/devops/Ops/Server/Provider" class="nav-link">서비스</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- // navigation -->
+
+                    <!-- content -->
+                    <div class="flex-column flex-grow scroll-hidden">
+                        <div class="flex flex-noshrink region-content-header">
+                            <div class="panel-header backgroud-gray" style="width: 100%;">
+                                <ul class="nav nav-tabs" style="padding-left: 10px; padding-top:8px;">
+                                    <li class="active"><a href="#" data-toggle="tab" data-target="#tab_1">사이트맵</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- main -->
+                        <div class="flex flex-grow flex-column relative scroll-hidden">
+                            <div class="flex-grow flex-column scroll-hidden">
+                                <div class="absolute-fill scroll-auto flex-column">
+                                    <div>
+                                        <div id="containerList" style="display: none;"></div>
+                                        <div id="containerWrite" style="display: block;">
+                                            <div id="containerWrite">
+                                                <div class="wrapper b-b">
+                                                    <div class="pull-right"></div>
+                                                    <h2 class="font-thin m-n ng-binding" style="font-weight:bold">관리자 포탈 수정</h2>
+                                                </div>
+                                                <div class="form-horizontal">
+                                                    <div class="panel panel-default" style="border:0px;">
+                                                        <div class="panel-body" style="padding:0px;">
+                                                            <div class="form-group">
+                                                                <label class="col-sm-2 control-label">솔루션 정보</label>
+                                                                <div class="col-sm-10">
+                                                                    <select id="sbSolution" class="form-control" style="width:200px">
+                                                                        <option value="">선택</option>
+                                                                        <option value="3">3 (3)</option>
+                                                                        <option value="44">44 (44)</option>
+                                                                        <option value="33">33 (33)</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="line line-dashed b-b line-lg pull-in"></div>
+                                                            <div class="form-group">
+                                                                <label class="col-sm-2 control-label">사이트 명</label>
+                                                                <div class="col-sm-10">
+                                                                    <input id="tbName" type="text" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                            <div class="line line-dashed b-b line-lg pull-in"></div>
+                                                            <div class="form-group">
+                                                                <label class="col-sm-2 control-label">사이트 주소</label>
+                                                                <div class="col-sm-10">
+                                                                    <input id="tbLink" type="text" class="form-control" placeholder="https://">
+                                                                </div>
+                                                            </div>
+                                                            <div class="line line-dashed b-b line-lg pull-in"></div>
+                                                            <div class="form-group">
+                                                                <label class="col-sm-2 control-label">타입</label>
+                                                                <div class="col-sm-10">
+                                                                    <div style="margin-top: 6px;">
+                                                                        <label class="i-checks"><input type="radio" name="rbSolutionType" class="rdSolutionTypeO" value="O" checked=""><i></i>운영</label>
+                                                                        <label class="i-checks" style="margin-left:5px;"><input type="radio" name="rbSolutionType" class="rdSolutionTypeD" value="D"><i></i>개발</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="line line-dashed b-b line-lg pull-in"></div>
+                                                            <div class="form-group">
+                                                                <label class="col-sm-2 control-label">설명</label>
+                                                                <div class="col-sm-10">
+                                                                    <input id="tbDescription" type="text" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                            <div class="line line-dashed b-b line-lg pull-in"></div>
+                                                            <div class="form-group">
+                                                                <label class="col-sm-2 control-label">비고</label>
+                                                                <div class="col-sm-10">
+                                                                    <input id="tbNote" type="text" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                            <div class="line line-dashed b-b line-lg pull-in"></div>
+                                                            <div class="form-group">
+                                                                <label class="col-sm-2 control-label">사용 여부</label>
+                                                                <div class="col-sm-10">
+                                                                    <div style="margin-top: 6px;">
+                                                                        <label class="i-checks"><input type="radio" name="rdIsUse" class="rdIsUse" value="true" checked=""><i></i>사용</label>
+                                                                        <label class="i-checks" style="margin-left:5px;"><input type="radio" name="rdIsUse" class="rdNoUse" value="false"><i></i>미사용</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <footer class="panel-footer text-right bg-light lter b-b">
+                                                            <input type="hidden" id="hfId" value="4">
+                                                            <button type="button" class="button03 pr btnList" style="margin-left: 5px;"><span>목록</span></button>
+                                                            <button type="button" class="button03 pr btnSave" style="margin-left: 5px;"><span>저장</span></button>
+                                                        </footer>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div id="containerDetail" style="display: none;">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- // main -->
+
+                    </div>
+                    <!-- // content -->
+                </div>
+                <!-- // Body -->
+                <!-- Footer -->
+
+                <!-- // Footer -->
+            </div>
+        </div>
+    </div>
+
+    <input id="applicationPath" type="hidden" value="/devops/">
+    <div class="loadingcss displayNone">
+        <div class="lds">
+            <div class="lds-text" style="margin-left: -3px;">처리중입니다</div>
+            <div class="lds-ellipsis">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div class="loading"></div>
+    </div>
+
+    <script src="resources/js/1042/resource.js"></script>
+    <script src="resources/libs/jquery/jquery/dist/jquery.js"></script>
+    <script src="resources/libs/jquery/moment/moment.js"></script>
+    <script src="resources/libs/jquery/jquery.mask/jquery.mask.js"></script>
+    <script src="resources/libs/jquery/jquery.tmpl/jquery.tmpl.min.js"></script>
+    <script src="resources/libs/jquery/jquery.ui/jquery-ui.min.js"></script>
+    <script src="resources/libs/grid/jsgrid-1.5.3/jsgrid.js?v=76757d00-8a67-4afd-9b28-b73ad02c69f6"></script>
+    <script src="resources/libs/splitjs/1.6.5/split.min.js"></script>
+    <script src="resources/js/app.common.js?v=8fb1c16d-e919-4b30-bd98-92bf5371bf9e"></script>
+    <script src="resources/js/app.grid.js?v=96433c20-e2af-4586-a2c7-08543ee03323"></script>
+    <script src="resources/js/app.libraries.js?v=4cfdb735-903f-40df-917c-1ed7161257a3"></script>
+    <script src="resources/js/app.messagebox.js?v=031090f2-c757-4e0f-a9b8-9826682cfaac"></script>
+
+    <script>
+        $(document).ready(function () {
+            // nav
+            $(document).on('click', '[ui-nav] a', function (e) {
+                var $this = $(e.target), $active;
+                $this.is('a') || ($this = $this.closest('a'));
+
+                $active = $this.parent().siblings(".active");
+                $active && $active.toggleClass('active').find('> ul:visible').slideUp(200);
+
+                ($this.parent().hasClass('active') && $this.next().slideUp(200)) || $this.next().slideDown(200);
+                $this.parent().toggleClass('active');
+
+                $this.next().is('ul') && e.preventDefault();
+            });
+
+            $("#dialog").dialog({
+                autoOpen: false,
+                height: "auto",
+                resizable: false,
+                modal: true,
+                close: function () {
+                    window.parent.$(".pop_wrap").empty();
+                }
+            });
+
+            $(".left-Collapse").click(function () {
+                $(".project-navigation").toggleClass("snb_collapsed");
+            });
+        });
+    </script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // 저장
+            $(document).on('click', '.btnSave', function (e) {
+                Save();
+            });
+
+        });
+
+        // 저장
+        function Save() {
+
+            if (!$("#sbSolution").val()) {
+                alert("솔루션을 선택하세요.");
+                $("#sbSolution").focus();
+                return;
+            }
+
+            if (!$("#tbName").val()) {
+                alert("사이트명을 입력하세요.");
+                $("#tbName").focus();
+                return;
+            }
+
+            if (!$("#tbLink").val()) {
+                alert("사이트명을 입력하세요.");
+                $("#tbLink").focus();
+                return;
+            }
+
+            if (!$('input[name="rbSolutionType"]:checked').val()) {
+                alert("타입을 선택하세요.");
+                return;
+            }
+
+            if (!$("#tbDescription").val()) {
+                alert("설명을 입력하세요.");
+                $("#tbDescription").focus();
+                return;
+            }
+
+            if (!$("#tbNote").val()) {
+                alert("비고를 입력하세요.");
+                $("#tbNote").focus();
+                return;
+            }
+
+            if (!$('input[name="rdIsUse"]:checked').val()) {
+                alert("사용여부를 선택하세요.");
+                return;
+            }
+
+            var data = {
+                Seq: $("#hfId").val(),
+                SolutionCode: $("#sbSolution").val(),
+                Name: $.trim($("#tbName").val()),
+                Link: $.trim($("#tbLink").val()),
+                SolutionType: $('input[name="rbSolutionType"]:checked').val(),
+                Description: $.trim($("#tbDescription").val()),
+                Note: $.trim($("#tbNote").val()),
+                IsUse: $("input[name=rdIsUse]:checked").val()
+            };
+
+            $appcommon.Ajax("POST", data, "/devops/Ops/Solution/SitemapUpsert", function (result) {
+                alert("저장 되었습니다.");
+                $applibraries.EnableList();
+                $appgrid.OnLoadData("#jsGrid");
+            });
+        }
+    </script>
+</body>
+</html>

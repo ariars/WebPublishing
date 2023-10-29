@@ -1,0 +1,251 @@
+﻿@charset "utf-8";
+@import 'dropdown.css';
+/* Samsung UI Standardization Team */
+html, body {
+    height: 100%;
+}
+
+body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'malgun gothic','돋움','dotum','굴림';
+    font-size: 12px;
+    color: #444;
+}
+
+input, textarea, select, button, table {
+    font-size: 12px;
+}
+
+input, textarea, select, button {
+    font-family: 'malgun gothic','돋움','dotum','굴림';
+}
+
+dt, dd, th, td {
+    line-height: 1.7em;
+    font-weight: normal;
+    text-align: left;
+}
+
+    td div {
+        line-height: normal;
+    }
+
+img, fieldset {
+    border: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+em, address {
+    font-style: normal;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+td a {
+    color: #2e7dab;
+}
+
+    td a:hover {
+        color: #2c6279;
+    }
+
+a:hover, a:active, a:focus {
+    color: #2e7dab;
+}
+
+img {
+    vertical-align: top;
+}
+
+label input {
+    margin-right: 3px;
+    vertical-align: middle;
+}
+
+td input, td select, td img {
+    vertical-align: middle;
+}
+
+#wrap {
+    min-width: 1200px;
+}
+
+/* gnb */
+#gnb {
+    position: relative;
+    height: 100px;
+    z-index: 100;
+}
+
+    #gnb h1 {
+        position: absolute;
+        top: 15px;
+        left: 20px;
+    }
+
+    #gnb .dropdown {
+        position: absolute;
+        top: 55px;
+        left: 0;
+    }
+
+header.gnb_collapsed {
+    height: 35px !important;
+}
+
+    header.gnb_collapsed h1, header.gnb_collapsed .function {
+        display: none;
+    }
+
+    header.gnb_collapsed .dropdown {
+        top: 0 !important;
+    }
+
+/* function */
+.function {
+    z-index: 110;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 12px;
+    color: #ccc
+}
+
+    .function a {
+        position: relative;
+        color: #95a0a2;
+        padding: 0 3px
+    }
+
+        .function a .tooltip {
+            position: absolute;
+            top: 23px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: none
+        }
+
+        .function a:hover .tooltip {
+            background: #224d65;
+            border-radius: 2px;
+            display: block;
+            height: 15px;
+            padding: 2px 5px 4px;
+            white-space: nowrap;
+            text-indent: 0 !important;
+            color: #ccc
+        }
+
+            .function a:hover .tooltip:after {
+                content: '';
+                position: absolute;
+                bottom: 100%;
+                left: 50%;
+                margin-left: -6px;
+                width: 0;
+                height: 0;
+                border-bottom: 6px solid #224d65;
+                border-right: 6px solid transparent;
+                border-left: 6px solid transparent
+            }
+
+        .function a:hover {
+            color: #2f5887
+        }
+
+        .function a.user span {
+            padding: 0 5px;
+            cursor: default;
+            color: #ccc
+        }
+
+        .function a.logout {
+            background: url(../images/common/ico_logout.png) no-repeat 3px 3px;
+            display: inline-block;
+            text-indent: -1000em;
+            width: 11px;
+            height: 17px
+        }
+
+    .function .lan {
+        display: inline-block;
+        width: 70px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        background: #dee1e1 url(../images/common/lan_collaspe.png) no-repeat right;
+        margin-left: 5px;
+        vertical-align: middle;
+        color: #000
+    }
+
+        .function .lan select {
+            background: transparent;
+            width: 95px;
+            height: 18px;
+            padding: 0 5px;
+            font: normal 11px tahoma;
+            border: 0;
+            -webkit-appearance: none
+        }
+
+    .function .confidential {
+        height: 12px;
+        padding: 2px 5px;
+        background: #ff8c58;
+        color: #fff;
+        vertical-align: middle
+    }
+
+/* footer */
+footer {
+    background: url(../images/common/logo_samsung.png) no-repeat 100% 10px;
+    clear: both;
+    padding: 10px 0 10px 20px;
+    margin-right: 20px;
+    font-family: tahoma;
+    font-size: .95em;
+    color: #999;
+    border-top: 1px solid #f1f1f1;
+    box-sizing: border-box;
+}
+
+    footer p {
+        padding: 2px 0 5px 0;
+    }
+
+    footer span.link {
+        color: #ccc;
+        margin-left: 5px;
+    }
+
+        footer span.link a {
+            margin: 0 3px;
+            color: #666;
+            font-weight: bold
+        }
+
+            footer span.link a:hover {
+                color: #2c6279;
+                text-decoration: underline;
+            }
+
+    footer span.contact {
+        color: #333;
+    }
+
+        footer span.contact strong {
+            margin-left: 3px;
+            padding-left: 7px;
+            font-weight: normal
+        }

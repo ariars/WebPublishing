@@ -1,0 +1,2459 @@
+@charset "utf-8";
+
+.button04.list-more:hover, .button05.type02 span, .button05.type02.gmt span {
+    text-decoration: underline
+}
+
+.button05.type02 .txt-epll, .button05.type02.gmt {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden
+}
+
+.button, .button02, .button03, .button05.type02.gmt, .ico-btn, .paging {
+    white-space: nowrap
+}
+
+button, input {
+    margin: 0;
+    padding: 0
+}
+
+    button::-moz-focus-inner, input::-moz-focus-inner {
+        padding: 0;
+        border: 0
+    }
+
+    button, html input[type=button], input[type=reset], input[type=submit] {
+        -webkit-appearance: button;
+        cursor: pointer
+    }
+
+        button[disabled], html input[disabled] {
+            color: #999;
+            cursor: default
+        }
+
+        a.button, button.button, div.button, span.button {
+            margin: 0;
+            padding: 0;
+            font-family: 'Malgun Gothic','���� ���','Segoe UI WPC',Gulim,'����',sans-serif;
+            font-size: 13px;
+            cursor: pointer;
+            line-height: 0
+        }
+
+        button:active span, button:focus span {
+            position: relative;
+            top: 0;
+            left: 0
+        }
+
+        button.disabled, button:disabled {
+            cursor: default
+        }
+
+            button.disabled i, button:disabled i {
+                opacity: .3;
+                cursor: default
+            }
+
+            button.disabled:hover i, button:disabled:hover i {
+                opacity: .2
+            }
+
+            button.disabled span, button.disabled:hover span, button:disabled span, button:disabled:hover span {
+                color: #ccc;
+                cursor: default
+            }
+
+.button {
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    background: #fff;
+    color: #000;
+    vertical-align: middle;
+    box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box
+}
+
+    .button:hover {
+        border-color: #444;
+        color: #000
+    }
+
+    .button.disabled, .button:disabled {
+        border-color: #eaeaea;
+        color: #ccc
+    }
+
+    .button.default {
+        padding: 0 10px 3px;
+        height: 21px;
+        line-height: 21px
+    }
+
+    .button.middle {
+        padding: 1px 7px 4px;
+        height: 16px;
+        line-height: 16px;
+        font-size: 12px
+    }
+
+    .button.small {
+        padding: 1px 5px 4px;
+        height: 13px;
+        line-height: 13px;
+        font-size: 11px
+    }
+
+.button02 i, .button03.in-arr02 i {
+    font-size: 0;
+    vertical-align: middle;
+    display: inline-block
+}
+
+.button.small.current, .button.small:hover {
+    background: #88929b;
+    border-color: #88929b;
+    color: #fff
+}
+
+.button.blue {
+    background: #0076c8;
+    border-color: #0063a7;
+    color: #fff
+}
+
+    .button.blue:hover {
+        background: #0062a6;
+        border-color: #00528b;
+        color: #fff
+    }
+
+    .button.blue.disabled, .button.blue:disabled {
+        background: #b2d0e4;
+        border-color: #b2d6ee;
+        color: #fff
+    }
+
+.button.blue02 {
+    border-color: #8cafc7;
+    color: #4c82a7
+}
+
+.button.blue03 {
+    background: #0076c8;
+    border-color: #0063a7;
+    color: #fff
+}
+
+    .button.blue03:hover {
+        background: #0062a6;
+        border-color: #00528b;
+        color: #fff
+    }
+
+.button.toggle {
+    border: 0;
+    background: #bec1c2;
+    color: #fff;
+    border-radius: 0
+}
+
+    .button.toggle.on {
+        background: #338edf
+    }
+
+.button.big {
+    padding: 0 10px 3px;
+    min-width: 38px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    border-color: #333;
+    background: #333
+}
+
+.button.default.type02 {
+    background: #fff;
+    padding: 0 8px 3px;
+    color: #737373;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px
+}
+
+    .button.default.type02:hover {
+        background: #fff;
+        color: #000;
+        border-color: #818181
+    }
+
+    .button.default.type02.current {
+        background: #f2f4f5;
+        color: #000;
+        border-color: #aaa
+    }
+
+.button.middle.type02 {
+    background: #f2f4f5;
+    color: #737373
+}
+
+    .button.middle.type02.current, .button.middle.type02:hover {
+        background: #fff;
+        color: #000;
+        border-color: #aaa;
+        z-index: 11
+    }
+
+.button02 {
+    display: inline-block;
+    padding: 0 10px 3px;
+    border: 1px solid #8cafc7;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    background: #fff;
+    color: #4c82a7;
+    vertical-align: middle;
+    box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    height: 21px;
+    line-height: 21px;
+    text-align: right
+}
+
+    .button02:hover {
+        border-color: #4c82a7;
+        color: #004d82
+    }
+
+    .button02.disabled, .button02:disabled {
+        border-color: #e2ebf1;
+        color: #bfd2df
+    }
+
+    .button02 i {
+        border-left: 1px solid #bfd2df;
+        background-image: url(../img/button/bg_btn.png);
+        background-repeat: no-repeat;
+        line-height: 0;
+        width: 6px;
+        height: 3px
+    }
+
+    .button02.noline {
+        border-right: 1px solid transparent
+    }
+
+        .button02.noline:hover {
+            border-right: 1px solid #4c82a7
+        }
+
+        .button02.noline.disabled, .button02.noline:disabled {
+            border-right-color: #e2ebf1
+        }
+
+    .button02.in-arr i {
+        margin-left: 5px;
+        background-position: -101px -75px;
+        border-left: 0;
+        background-color: #8cafc7
+    }
+
+    .button02.in-arr:hover i {
+        border-color: #4c82a7;
+        background-color: #4d7896
+    }
+
+    .button02.in-arr.disabled i, .button02.in-arr:disabled i {
+        border-color: #e2ebf1;
+        background-position: -101px -75px
+    }
+
+    .button02.in-arr02 {
+        padding-left: 0;
+        padding-right: 6px;
+        border-left: 0 solid #d9e4ec
+    }
+
+        .button02.in-arr02 i {
+            padding-right: 0;
+            background-position: -95px -63px;
+            border-left: 1px solid #d9e4ec;
+            width: 12px;
+            height: 26px;
+            background-color: #8cafc7
+        }
+
+        .button02.in-arr02:hover i {
+            border-color: #4c82a7;
+            background-position: -95px -63px;
+            background-color: #2d6f9d
+        }
+
+        .button02.in-arr02.disabled i, .button02.in-arr02:disabled i {
+            border-color: #e2ebf1;
+            background-position: -95px -63px
+        }
+
+.button03 { display: inline-block; padding: 0 10px 3px; border: 1px solid #ccc; border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; background: 0 0; color: #737373; vertical-align: middle; box-sizing: content-box; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; height: 21px; line-height: 21px; text-align: right; background-color:#FFF }
+.button03 i { display: inline-block; margin-left: 5px; background-image: url(../img/button/bg_btn.png); background-repeat: no-repeat; vertical-align: middle } 
+.button03.on, .button03:hover { border-color: #444; color: #000; cursor: normal }
+.button03.disabled, .button03:disabled { color: #ccc }
+.button03.disabled:hover, .button03:disabled:hover { border-color: #e6e6e6 }
+.button03.pr { /*margin-right: 5px*/ }
+.button03.in-arr i { background-position: -125px -75px; width: 6px; height: 3px } 
+.button03.in-arr:hover i { background-position: -125px -100px }
+.button03.in-arr.disabled i, .button03.in-arr:disabled i { background-position: -125px -125px }
+.button03.noline { border-right: 1px solid transparent }
+.button03.noline:focus { border-right: 1px solid #ccc }
+.button03.noline:hover, .button03.noline:hover:focus { border-right: 1px solid #444 }
+.button03.noline.disabled, .button03.noline:disabled { border-right-color: #e6e6e6 }
+.button03.in-arr02 { padding-left: 0; padding-right: 6px; border-left: 0 }
+.button03.in-arr02 i { margin-left: 0; padding-right: 0; border-left: 1px solid #ccc; background-position: -119px -65px; line-height: 0; width: 12px; height: 26px }
+.button03.in-arr02:hover i { border-color: #444; background-position: -119px -90px }
+.button03.in-arr02.disabled i, .button03.in-arr02:disabled i { border-color: #e6e6e6; background-position: -119px -115px }
+.button03.in-add i { margin-top: -1px; background-position: -200px -75px; width: 7px; height: 12px }
+.button03.in-del { padding-right: 11px }
+.button03.in-del i { margin: -1px 5px 0 0; background-position: -175px -75px; width: 7px; height: 12px }
+.button03.small { padding: 5px 8px; height: 12px; line-height: 13px; font-size: 11px }
+
+.button04.list-more, .button04.plus {
+    padding: 1px 0 5px
+}
+
+.button03.small.on, .button03.small:hover {
+    background: #88929b;
+    border-color: #88929b;
+    color: #fff
+}
+
+.button03.op-cl i {
+    width: 8px;
+    height: 13px
+}
+
+.button03.op-cl.close i {
+    background-position: -225px 0
+}
+
+.button03.op-cl.close:hover i {
+    background-position: -225px -25px
+}
+
+.button03.op-cl.open i {
+    background-position: -250px 0
+}
+
+.button03.op-cl.open:hover i {
+    background-position: -250px -25px
+}
+
+.button04 {
+    display: inline-block;
+    background: 0 0;
+    text-align: right
+}
+
+.button-area, .paging, .paging a.num {
+    text-align: center
+}
+
+.button04 i {
+    display: inline-block;
+    background-image: url(../img/button/bg_btn.png);
+    background-repeat: no-repeat
+}
+
+.button04.plus i {
+    margin: 0 5px;
+    background-position: -120px -360px;
+    width: 10px;
+    height: 10px
+}
+
+.button04.plus:hover i {
+    background-position: -120px -390px
+}
+
+.button04.list-more i {
+    margin: 0 5px;
+    background-position: -125px -75px;
+    width: 6px;
+    height: 3px;
+    vertical-align: middle
+}
+
+.button04.list-more:hover i {
+    background-position: -125px -100px
+}
+
+.button04.line {
+    padding-left: 5px;
+    padding-right: 9px;
+    border: 1px solid #ccc;
+    border-radius: 2px
+}
+
+    .button04.line:hover {
+        border-color: #444;
+        color: #000
+    }
+
+    .button04.line.pin {
+        padding-top: 1px;
+        padding-bottom: 5px
+    }
+
+        .button04.line.pin i {
+            background-position: -33px -457px;
+            width: 14px;
+            height: 14px;
+            margin: 0 2px -4px 5px
+        }
+
+.button04.pims {
+    color: #aaa
+}
+
+    .button04.pims.comm, .button04.pims.current, .button04.pims:hover {
+        color: #000
+    }
+
+    .button04.pims.disabled, .button04.pims:disabled {
+        color: #aaa
+    }
+
+    .button04.pims i {
+        margin: 0 5px 0 0;
+        width: 25px;
+        height: 25px;
+        vertical-align: middle
+    }
+
+    .button04.pims.acc i {
+        background-position: -525px 0
+    }
+
+    .button04.pims.acc.comm i, .button04.pims.acc.current i, .button04.pims.acc:hover i {
+        background-position: -525px -25px
+    }
+
+    .button04.pims.acc.disabled i, .button04.pims.acc:disabled i {
+        background-position: -525px -50px
+    }
+
+    .button04.pims.undef i {
+        background-position: -550px 0
+    }
+
+    .button04.pims.undef.comm i, .button04.pims.undef.current i, .button04.pims.undef:hover i {
+        background-position: -550px -25px
+    }
+
+    .button04.pims.undef.disabled i, .button04.pims.undef:disabled i {
+        background-position: -550px -50px
+    }
+
+    .button04.pims.refusal i {
+        background-position: -575px 0
+    }
+
+    .button04.pims.refusal.comm i, .button04.pims.refusal.current i, .button04.pims.refusal:hover i {
+        background-position: -575px -25px
+    }
+
+    .button04.pims.refusal.disabled i, .button04.pims.refusal:disabled i {
+        background-position: -575px -50px
+    }
+
+/* */
+.button05 { display: inline-block; padding: 0 0 5px 10px; background: 0 0; height: 23px }
+.button-img, .button05 i { background-image: url(../img/button/bg_btn.png); background-color: transparent; background-repeat: no-repeat; display: inline-block; vertical-align: middle }
+.button05 span { font-size: 12px; line-height: 12px; color: #000 }
+.button05 i { background-position: -150px 0; font-size: 0; line-height: 0; width: 21px; height: 13px; text-indent: -9999px }
+.button05:hover span { color: #000 }
+.button05.on i { background-position: -150px -25px }
+.button05.type02 { padding: 0 0 4px; vertical-align: middle }
+.button05.type02 span { font-size: 13px; line-height: 20px }
+.button05.type02 i { background-position: -175px 0; width: 12px }
+.button05.type02.gmt { margin: 0 0 0 5px; word-break: break-all; max-width: 110px }
+.button05.type02 .txt-epll { display: inline-block; width: 90%; text-decoration: none } 
+.button05.type02 .txt-epll + i { background-position: -175px -3px }
+.button05.type02.noline { padding: 0 10px 5px }
+.button05.type02.noline span { text-decoration: none }
+.button05.type02.noline:hover span { text-decoration: underline }
+.button05.type02.noline02 span { text-decoration: none }
+.button05.type03 { padding: 0 0 5px }
+.button05.type03 span { color: #188fe0; text-decoration: underline }
+.button05.type03 i { margin-left: 5px; background-position: -200px 0; width: 4px }
+.button05.type03:hover span { color: #0059ab }
+.button05.type03:hover i { background-position: -200px -25px }
+.button05.type03.fsize { padding-left: 0 }
+.button05.type04, .button05.type05 { padding: 0 0 5px }
+.button05.type03.fsize span { font-size: 14px; line-height: 14px }
+.button05.type04 i { margin-left: 10px; width: 8px }
+.button05.type04.close i { background-position: -225px 0 }
+.button05.type04.close:hover i { background-position: -225px -25px }
+.button05.type04.open i { background-position: -250px 0 } 
+.button05.type04.open:hover i { background-position: -250px -25px }
+.button05.type04.row i, .button05.type04.row:hover i { background-position: -480px -358px }
+.button05.type04.row-free i, .button05.type04.row-free:hover i { background-position: -510px -358px }
+.button05.type04.more i { background-position: -108px -323px }
+.button05.type04.more:hover i { background-position: -108px -298px } 
+.button05.type04.more-closed i { margin-left: 2px; margin-right: 8px; background-position: -275px 0 }
+.button05.type04.more-closed:hover i { background-position: -275px -25px }
+.button05.type05 span { color: #aaa }
+.button05.type05:hover span { color: #000 }
+.button05.type05 i { margin-right: 5px }
+.button05.type05.cal i { background-position: -275px 0; width: 8px }
+.button05.type05.cal:hover i { background-position: -275px -25px }
+.button05.type05.reply i { background-position: -300px 0; width: 13px }
+.button05.type05.reply:hover i { background-position: -300px -25px }
+.button05.type05.modify i { background-position: -325px 0; width: 11px }
+.button05.type05.modify:hover i { background-position: -325px -25px }
+.button05.type05.delete i { background-position: -25px 2px; width: 10px }
+.button05.type05.delete:hover i { background-position: -25px -23px }
+.button05.type05.reply-cancel i { background-position: -350px 0; width: 12px }
+.button05.type05.reply-cancel:hover i { background-position: -350px -25px }
+.button05.type06 { padding: 0 0 4px; vertical-align: middle }
+.button05.type06 span { font-size: 13px; line-height: 20px; text-decoration: underline }
+.button05.type06.noline { padding: 0 10px 5px } 
+.button05.type06.noline span { text-decoration: none }
+.button05.type06.noline:hover span { text-decoration: underline }
+
+.button-img {
+    font-size: 0;
+    line-height: 0
+}
+
+    .button-img span {
+        overflow: hidden;
+        visibility: hidden;
+        text-indent: -99999px;
+        width: 0;
+        height: 0;
+        font-size: 0;
+        line-height: 0
+    }
+
+    .button-img.disabled, .button-img:disabled {
+        opacity: .3
+    }
+
+        .button-img.disabled:hover, .button-img:disabled:hover {
+            opacity: .2;
+            border-color: transparent !important
+        }
+
+    .button-img.line, .button-img.line02, .button-img.line03, .button-img.line04, .button-img.line05 {
+        border: 1px solid;
+        border-radius: 2px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px
+    }
+
+    .button-img.line {
+        border-color: #ccc;
+        width: 28px;
+        height: 26px
+    }
+
+        .button-img.line:hover {
+            border-color: #444
+        }
+
+    .button-img.line02 {
+        border-color: transparent;
+        width: 28px;
+        height: 26px
+    }
+
+        .button-img.line02:hover {
+            border-color: #444
+        }
+
+    .button-img.line03 {
+        border-color: #ccc;
+        width: 28px;
+        height: 26px
+    }
+
+        .button-img.line03:hover {
+            border-color: #444
+        }
+
+    .button-img.line04 {
+        border-color: #ccc;
+        width: 22px;
+        height: 22px
+    }
+
+        .button-img.line04:hover {
+            border-color: #444
+        }
+
+    .button-img.line05 {
+        border-color: transparent;
+        width: 40px;
+        height: 40px
+    }
+
+        .button-img.line05:hover {
+            border-color: #737373
+        }
+
+    .button-img.line02.detail-translation {
+        background-position: -605px -150px
+    }
+
+        .button-img.line02.detail-translation:hover {
+            background-position: -605px -180px
+        }
+
+    .button-img.fs-plus {
+        background-position: -165px -150px
+    }
+
+        .button-img.fs-plus:hover {
+            background-position: -165px -180px
+        }
+
+    .button-img.more {
+        background-position: -195px -150px
+    }
+
+        .button-img.more:hover {
+            background-position: -195px -180px
+        }
+
+    .button-img.more02 {
+        background-position: -555px -150px;
+        width: 27px;
+        height: 26px
+    }
+
+        .button-img.more02:hover {
+            background-position: -555px -180px;
+            border-color: #fff;
+            background-color: #fff
+        }
+
+    .button-img.line02.send-more.dis:hover, .button-img.line02.send-schedule02.dis:hover {
+        border-color: transparent
+    }
+
+    .button-img.print {
+        background-position: -225px -150px
+    }
+
+        .button-img.print:hover {
+            background-position: -225px -180px
+        }
+
+    .button-img.h-up {
+        background-position: -405px -150px
+    }
+
+        .button-img.h-up:hover {
+            background-position: -405px -180px
+        }
+
+    .button-img.h-down {
+        background-position: -435px -150px
+    }
+
+        .button-img.h-down:hover {
+            background-position: -435px -180px
+        }
+
+    .button-img.v-up {
+        background-position: -465px -150px
+    }
+
+        .button-img.v-up:hover {
+            background-position: -465px -180px
+        }
+
+    .button-img.v-down {
+        background-position: -495px -150px
+    }
+
+        .button-img.v-down:hover {
+            background-position: -495px -180px
+        }
+
+    .button-img.new-tab {
+        background-position: -525px -150px
+    }
+
+        .button-img.new-tab:hover {
+            background-position: -525px -180px
+        }
+
+    .button-img.new-win {
+        background-position: -255px -150px
+    }
+
+        .button-img.new-win:hover {
+            background-position: -255px -180px
+        }
+
+    .button-img.view-mode {
+        background-position: -255px -150px
+    }
+
+        .button-img.view-mode:hover {
+            background-position: -255px -180px
+        }
+
+    .button-img.refresh {
+        background-position: -285px -150px
+    }
+
+        .button-img.refresh:hover {
+            background-position: -285px -180px
+        }
+
+    .button-img.month-view.on, .button-img.month-view:hover, .button-img.week-view.on, .button-img.week-view:hover {
+        background-color: #e5e5e5
+    }
+
+    .button-img.month-view {
+        background-position: -534px -355px
+    }
+
+    .button-img.week-view {
+        background-position: -564px -355px
+    }
+
+    .button-img.app {
+        background-position: -315px -150px
+    }
+
+        .button-img.app:hover {
+            background-position: -315px -180px
+        }
+
+    .button-img.securage {
+        background-position: -345px -150px;
+        width: 20px;
+        height: 20px
+    }
+
+        .button-img.securage:hover {
+            background-position: -345px -180px
+        }
+
+    .button-img.download {
+        background-position: -375px -150px;
+        width: 20px;
+        height: 20px
+    }
+
+        .button-img.download:hover {
+            background-position: -375px -180px
+        }
+
+    .button-img.download02 {
+        background-position: 4px -264px;
+        width: 21px;
+        height: 20px
+    }
+
+        .button-img.download02:hover {
+            background-position: -29px -264px
+        }
+
+    .button-img.execute {
+        background-position: -375px -150px;
+        width: 20px;
+        height: 20px
+    }
+
+        .button-img.execute:hover {
+            background-position: -375px -180px
+        }
+
+    .button-img.form {
+        background-position: -8px -654px
+    }
+
+        .button-img.form:hover {
+            background-position: -8px -684px
+        }
+
+    .button-img.img-editor {
+        background-position: -50px -654px
+    }
+
+        .button-img.img-editor:hover {
+            background-position: -50px -684px
+        }
+
+    .button-img.design {
+        background-position: -275px -75px;
+        width: 19px;
+        height: 20px
+    }
+
+        .button-img.design.current, .button-img.design:hover {
+            background-position: -275px -100px
+        }
+
+        .button-img.design:disabled {
+            background-position: -275px -125px
+        }
+
+    .button-img.new-addrs {
+        background-position: 0 -300px;
+        width: 19px;
+        height: 16px
+    }
+
+        .button-img.new-addrs:hover {
+            background-position: 0 -330px
+        }
+
+    .button-img.gp-set {
+        background-position: -30px -300px;
+        width: 21px;
+        height: 17px
+    }
+
+        .button-img.gp-set:hover {
+            background-position: -30px -330px
+        }
+
+    .button-img.add-calen {
+        background-position: -60px -300px;
+        width: 20px;
+        height: 16px
+    }
+
+        .button-img.add-calen:hover {
+            background-position: -60px -330px
+        }
+
+    .button-img.line02.add-calen {
+        background-position: -55px -296px;
+        width: 28px;
+        height: 26px
+    }
+
+        .button-img.line02.add-calen:hover {
+            background-position: -55px -326px
+        }
+
+    .button-img.line02.send-more {
+        background-position: -325px -293px;
+        width: 28px;
+        height: 26px
+    }
+
+        .button-img.line02.send-more:hover {
+            background-position: -325px -323px
+        }
+
+        .button-img.line02.send-more.dis {
+            background-position: -325px -353px;
+            cursor: default
+        }
+
+    .button-img.line02.send-schedule02 {
+        background-position: -580px -563px;
+        width: 28px;
+        height: 26px
+    }
+
+        .button-img.line02.send-schedule02:hover {
+            background-position: -580px -597px
+        }
+
+        .button-img.line02.send-schedule02.dis {
+            background-position: -580px -631px;
+            cursor: default
+        }
+
+    .button-img.modify {
+        background-position: -320px 3px;
+        width: 20px;
+        height: 19px
+    }
+
+        .button-img.modify:hover {
+            background-position: -320px -22px
+        }
+
+    .button-img.th-set {
+        background-position: -250px -75px;
+        width: 15px;
+        height: 16px;
+        cursor: pointer;
+        z-index: 555
+    }
+
+        .button-img.th-set.on, .button-img.th-set:hover {
+            background-position: -250px -100px
+        }
+
+    .button-img.search {
+        background-position: -300px -75px;
+        width: 26px;
+        height: 24px
+    }
+
+        .button-img.search:hover {
+            background-position: -300px -100px
+        }
+
+        .button-img.search.disabled, .button-img.search:disabled {
+            background-position: -300px -125px
+        }
+
+            .button-img.search.disabled:hover, .button-img.search:disabled:hover {
+                background-position: -300px -125px !important
+            }
+
+    .button-img.calendar {
+        margin-left: 1px;
+        background-position: -350px -75px;
+        width: 20px;
+        height: 19px
+    }
+
+    .button-img.import, .button-img.import.middle {
+        background-position: -35px -150px;
+        width: 16px;
+        height: 17px
+    }
+
+        .button-img.import.current, .button-img.import.high, .button-img.import:hover {
+            background-position: -35px -175px
+        }
+
+        .button-img.import.low {
+            background-position: -35px -200px
+        }
+
+    .button-img.todo {
+        background-position: 0 -150px;
+        width: 20px;
+        height: 20px
+    }
+
+        .button-img.todo.current, .button-img.todo:hover {
+            background-position: 0 -180px
+        }
+
+        .button-img.todo.cancel, .button-img.todo.comp {
+            background-position: 0 -207px
+        }
+
+        .button-img.todo.disabled, .button-img.todo:disabled {
+            background-position: 0 -150px
+        }
+
+    .button-img.business-phone, .button-img.call-together, .button-img.conference, .button-img.mail, .button-img.messenger, .button-img.mobile, .button-img.sms, .button-img.video-call, .button-img.voice-message {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        opacity: .5
+    }
+
+    .button-img.business-phone {
+        background-position: -375px -75px
+    }
+
+    .button-img.mobile {
+        background-position: -400px -75px
+    }
+
+    .button-img.call-together {
+        background-position: -425px -75px
+    }
+
+    .button-img.video-call {
+        background-position: -450px -75px
+    }
+
+    .button-img.voice-message {
+        background-position: -550px -75px
+    }
+
+    .button-img.messenger {
+        background-position: -475px -75px
+    }
+
+    .button-img.mail {
+        background-position: -500px -75px
+    }
+
+    .button-img.sms {
+        background-position: -525px -75px
+    }
+
+    .button-img.conference {
+        background-position: -376px -290px
+    }
+
+        .button-img.business-phone:hover, .button-img.call-together:hover, .button-img.conference:hover, .button-img.mail:hover, .button-img.messenger:hover, .button-img.mobile:hover, .button-img.sms:hover, .button-img.video-call:hover, .button-img.voice-message:hover {
+            opacity: 1
+        }
+
+    .button-img.arr02 {
+        background-position: 5px 8px;
+        width: 17px;
+        height: 18px
+    }
+
+    .button-img.arr03 {
+        background-position: -491px -216px;
+        width: 14px;
+        height: 14px
+    }
+
+        .button-img.arr03.on {
+            background-position: -491px -269px
+        }
+
+    .button-img.arr04 {
+        background-position: -50px 0;
+        width: 4px;
+        height: 8px
+    }
+
+    .button-img.arr05 {
+        background-position: -492px -400px;
+        width: 8px;
+        height: 3px
+    }
+
+    .button-img.list02 {
+        background: url(/static/common/image/collabo/icon_sprites.png) -332px -93px no-repeat
+    }
+
+        .button-img.list02:hover {
+            background-position: -332px -93px
+        }
+
+    .button-img.folding {
+        background-position: 6px -798px;
+        width: 24px;
+        height: 24px
+    }
+
+        .button-img.folding.on {
+            background-position: -34px -798px
+        }
+
+    .button-img.del {
+        background-position: 3px 3px;
+        width: 16px;
+        height: 15px
+    }
+
+        .button-img.del:hover {
+            background-position: 3px -22px
+        }
+
+    .button-img.del02 {
+        background-position: -20px 5px;
+        width: 20px;
+        height: 19px
+    }
+
+        .button-img.del02:hover {
+            background-position: -20px -20px
+        }
+
+    .button-img.del03 {
+        background-position: -71px -21px;
+        width: 15px;
+        height: 14px;
+        opacity: .2
+    }
+
+        .button-img.del03:hover {
+            background-position: -71px -21px;
+            opacity: 1
+        }
+
+    .button-img.edit {
+        background: url(../img/button/bg_portal.png) 5px -454px no-repeat;
+        opacity: .7;
+        width: 20px;
+        height: 19px
+    }
+
+        .button-img.edit:hover {
+            background-position: 5px -454px;
+            opacity: 1;
+        }
+
+    .button-img.close {
+        background-position: -97px 3px;
+        width: 20px;
+        height: 19px
+    }
+
+        .button-img.close:hover {
+            background-position: -97px -22px
+        }
+
+    .button-img.close02 {
+        background-position: -20px 5px;
+        width: 20px;
+        height: 19px
+    }
+
+        .button-img.close02:hover {
+            background-position: -20px -20px
+        }
+
+    .button-img.plus {
+        background-position: -60px -360px;
+        width: 8px;
+        height: 8px;
+        background-color: #fff
+    }
+
+        .button-img.plus.current, .button-img.plus:hover {
+            background-position: -60px -390px
+        }
+
+        .button-img.plus.line {
+            background-position: -56px -356px;
+            width: 18px;
+            height: 18px;
+            border-radius: 0
+        }
+
+            .button-img.plus.line.current, .button-img.plus.line:hover {
+                background-position: -56px -386px
+            }
+
+    .button-img.plus02 {
+        background-position: 0 -360px;
+        width: 14px;
+        height: 14px
+    }
+
+        .button-img.plus02:hover {
+            background-position: 0 -390px
+        }
+
+        .button-img.plus02.current {
+            background-position: 0 -360px
+        }
+
+    .button-img.plus03 {
+        background-position: -30px -360px;
+        width: 18px;
+        height: 18px
+    }
+
+        .button-img.plus03:hover {
+            background-position: -30px -390px
+        }
+
+    .button-img.list {
+        background-position: -75px -150px
+    }
+
+        .button-img.list:hover {
+            background-position: -75px -180px
+        }
+
+    .button-img.list-prev {
+        background-position: -105px -150px
+    }
+
+        .button-img.list-prev:hover {
+            background-position: -105px -180px
+        }
+
+    .button-img.list-next {
+        background-position: -135px -150px
+    }
+
+        .button-img.list-next:hover {
+            background-position: -135px -180px
+        }
+
+    .button-img.next, .button-img.next02, .button-img.prev, .button-img.prev02 {
+        width: 9px;
+        height: 13px
+    }
+
+    .button-img.prev {
+        background-position: -270px -330px
+    }
+
+    .button-img.next {
+        background-position: -300px -330px
+    }
+
+    .button-img.prev02 {
+        background-position: -270px -360px
+    }
+
+    .button-img.next02 {
+        background-position: -300px -360px
+    }
+
+    .button-img.next03, .button-img.prev03 {
+        width: 20px;
+        height: 20px
+    }
+
+    .button-img.prev03 {
+        background-position: -507px -298px
+    }
+
+        .button-img.prev03:hover {
+            background-position: -537px -298px
+        }
+
+    .button-img.next03 {
+        background-position: -507px -328px
+    }
+
+        .button-img.next03:hover {
+            background-position: -537px -328px
+        }
+
+    .button-img.week {
+        position: absolute;
+        top: 0;
+        left: 14px;
+        width: 20px;
+        height: 15px
+    }
+
+        .button-img.week.open {
+            background-position: -449px -324px
+        }
+
+        .button-img.week.close {
+            background-position: -449px -294px
+        }
+
+    .button-img.week02 {
+        width: 13px;
+        height: 15px
+    }
+
+        .button-img.week02.up {
+            background-position: -587px -390px
+        }
+
+        .button-img.week02.down {
+            background-position: -587px -405px;
+            height: 14px
+        }
+
+    .button-img.fold, .button-img.unfold {
+        width: 16px;
+        height: 14px
+    }
+
+    .button-img.fold {
+        background-position: -418px -296px
+    }
+
+    .button-img.unfold {
+        background-position: -418px -326px
+    }
+
+    .button-img.line05.reply-all {
+        background-position: 0 -568px
+    }
+
+        .button-img.line05.reply-all.current, .button-img.line05.reply-all:hover {
+            background-position: 0 -609px
+        }
+
+    .button-img.line05.trans {
+        background-position: -44px -568px
+    }
+
+        .button-img.line05.trans.current, .button-img.line05.trans:hover {
+            background-position: -44px -609px
+        }
+
+    .button-img.line05.newwin {
+        background-position: -88px -568px
+    }
+
+        .button-img.line05.newwin.current, .button-img.line05.newwin:hover {
+            background-position: -88px -609px
+        }
+
+    .button-img.line05.print {
+        background-position: -132px -568px
+    }
+
+        .button-img.line05.print.current, .button-img.line05.print:hover {
+            background-position: -132px -609px
+        }
+
+    .button-img.line05.vip {
+        background-position: -176px -568px
+    }
+
+        .button-img.line05.vip.current, .button-img.line05.vip:hover {
+            background-position: -176px -609px
+        }
+
+    .button-img.line05.spam {
+        background-position: -220px -568px
+    }
+
+        .button-img.line05.spam.current, .button-img.line05.spam:hover {
+            background-position: -220px -609px
+        }
+
+    .button-img.line05.newtab {
+        background-position: -264px -568px
+    }
+
+        .button-img.line05.newtab.current, .button-img.line05.newtab:hover {
+            background-position: -264px -609px
+        }
+
+    .button-img.line05.move {
+        background-position: -308px -568px
+    }
+
+        .button-img.line05.move.current, .button-img.line05.move:hover {
+            background-position: -308px -609px
+        }
+
+    .button-img.line05.send.current, .button-img.line05.send:hover {
+        background-position: -352px -609px
+    }
+
+    .button-img.line05.noti {
+        background-position: -396px -568px
+    }
+
+        .button-img.line05.noti.current, .button-img.line05.noti:hover {
+            background-position: -396px -609px
+        }
+
+    .button-img.line05.read, .button-img.line05.unread {
+        background-position: -440px -568px
+    }
+
+        .button-img.line05.read.current, .button-img.line05.read:hover {
+            background-position: -440px -609px
+        }
+
+    .button-img.line05.reply {
+        background-position: -484px -568px
+    }
+
+        .button-img.line05.reply.current, .button-img.line05.reply:hover {
+            background-position: -484px -609px
+        }
+
+    .button-img.line05.waste {
+        background-position: -528px -568px
+    }
+
+        .button-img.line05.waste.current, .button-img.line05.waste:hover {
+            background-position: -528px -609px
+        }
+
+    .button-img.line05.todo {
+        background-position: 10px -140px;
+        width: 40px;
+        height: 40px
+    }
+
+        .button-img.line05.todo.current, .button-img.line05.todo:hover {
+            background-position: 10px -170px
+        }
+
+        .button-img.line05.todo.cancel, .button-img.line05.todo.comp {
+            background-position: 10px -197px
+        }
+
+    .button-img.line05.send {
+        background-position: -518px -142px;
+        opacity: .6
+    }
+
+        .button-img.line05.send:hover {
+            background-position: -518px -172px;
+            opacity: 1
+        }
+
+    .button-img.line05.approve {
+        background-position: 6px -849px
+    }
+
+        .button-img.line05.approve:hover {
+            background-position: 6px -892px
+        }
+
+    .button-img.line05.submission {
+        background-position: -51px -850px
+    }
+
+        .button-img.line05.submission:hover {
+            background-position: -51px -893px
+        }
+
+    .button-img.line05.approval-line {
+        background-position: -107px -850px
+    }
+
+        .button-img.line05.approval-line:hover {
+            background-position: -107px -893px
+        }
+
+    .button-img.line05.square {
+        background-position: -446px -479px
+    }
+
+        .button-img.line05.square:hover {
+            background-position: -446px -525px
+        }
+
+    .button-img.line05.wyz {
+        background-position: -487px -479px
+    }
+
+        .button-img.line05.wyz:hover {
+            background-position: -487px -525px
+        }
+
+    .button-img.line05.large-mail {
+        background-position: -526px -479px
+    }
+
+        .button-img.line05.large-mail:hover {
+            background-position: -526px -525px
+        }
+
+    .button-img.line05.send02 {
+        background-position: -352px -568px
+    }
+
+        .button-img.line05.send02:hover {
+            background-position: -352px -609px
+        }
+
+    .button-img.write {
+        border: 1px solid #ccc;
+        background-color: #fff;
+        width: 38px;
+        height: 25px;
+        opacity: 1
+    }
+
+        .button-img.write.on, .button-img.write:hover {
+            border-color: #656d78
+        }
+
+        .button-img.write.on {
+            background-color: #767d8b
+        }
+
+        .button-img.write.mail {
+            background-position: -500px -426px
+        }
+
+        .button-img.write.schedule {
+            background-position: -530px -426px
+        }
+
+        .button-img.write.todo {
+            background-position: -560px -426px
+        }
+
+        .button-img.write.mail.on {
+            background-position: -500px -451px
+        }
+
+        .button-img.write.schedule.on {
+            background-position: -530px -451px
+        }
+
+        .button-img.write.todo.on {
+            background-position: -560px -451px
+        }
+
+        .button-img.write.mail:hover {
+            z-index: 4
+        }
+
+        .button-img.write.schedule, .button-img.write.schedule + .button-img.write.todo:hover {
+            z-index: 3
+        }
+
+    .button-img.c-default {
+        cursor: default;
+        outline: 0
+    }
+
+    .button-img.public-set, .button-img.reminder, .button-img.repeat-set, .button-img.work-hours {
+        width: 24px;
+        height: 24px
+    }
+
+    .button-img.public-set {
+        background-position: -173px -450px
+    }
+
+        .button-img.public-set.on {
+            background-position: -173px -429px
+        }
+
+    .button-img.reminder {
+        background-position: -200px -450px
+    }
+
+        .button-img.reminder.on {
+            background-position: -200px -429px
+        }
+
+    .button-img.repeat-set {
+        background-position: -225px -448px
+    }
+
+        .button-img.repeat-set.on {
+            background-position: -225px -427px
+        }
+
+    .button-img.work-hours {
+        background-position: -250px -450px
+    }
+
+        .button-img.work-hours.on {
+            background-position: -250px -429px
+        }
+
+    .button-img.message {
+        background-position: -297px -451px;
+        width: 21px;
+        height: 20px
+    }
+
+    .button-img.pin {
+        border: 0;
+        background-position: -3px -457px;
+        width: 14px;
+        height: 14px
+    }
+
+        .button-img.pin.fixed {
+            border: 0;
+            background-position: -31px -457px
+        }
+
+    .button-img.my-sch {
+        border: 0;
+        background-position: -63px -455px !important;
+        width: 16px;
+        height: 15px
+    }
+
+    .button-img.preview {
+        background-position: -372px -453px;
+        width: 17px;
+        height: 17px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: transparent;
+        border-radius: 2px
+    }
+
+        .button-img.preview:hover {
+            background-position: -342px -453px;
+            border-color: #bbb
+        }
+
+    .button-img.capture {
+        background-position: -440px -670px;
+        background-color: #fff;
+        width: 71px;
+        height: 81px
+    }
+
+        .button-img.capture span {
+            display: block;
+            position: absolute;
+            bottom: 7px;
+            visibility: visible;
+            text-indent: 0;
+            color: #737373;
+            font-size: 12px;
+            font-family: Arial;
+            line-height: 14px;
+            width: 100%;
+            height: 14px
+        }
+
+.ico-img i, .paging-area {
+    position: relative
+}
+
+.button-ctrl span, .button-form span, .icon {
+    text-indent: -99999px
+}
+
+.button-ctrl, .button-ctrl span, .button-form span {
+    font-size: 0;
+    line-height: 0
+}
+
+.button-img.capture:hover {
+    background-position: -520px -670px
+}
+
+    .button-img.capture:hover span {
+        color: #000
+    }
+
+.button-ctrl {
+    display: inline-block;
+    background-image: url(../img/button/bg_btn.png);
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    width: 19px;
+    height: 20px;
+    background-color: transparent
+}
+
+    .button-ctrl span {
+        overflow: hidden;
+        visibility: hidden;
+        width: 0;
+        height: 0
+    }
+
+    .button-ctrl.top {
+        background-position: 5px -872px
+    }
+
+    .button-ctrl.last {
+        background-position: -77px -870px
+    }
+
+    .button-ctrl.prev {
+        background-position: -365px 0
+    }
+
+        .button-ctrl.prev:hover {
+            background-position: -365px -25px
+        }
+
+    .button-ctrl.next {
+        background-position: -398px 0
+    }
+
+        .button-ctrl.next:hover {
+            background-position: -398px -25px
+        }
+
+    .button-ctrl.delete {
+        background-position: -45px 5px;
+        width: 20px
+    }
+
+        .button-ctrl.delete:hover {
+            background-position: -45px -20px
+        }
+
+    .button-ctrl.st02 {
+        border: 1px solid #ccc;
+        background-color: #fff;
+        border-radius: 2px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        width: 26px;
+        height: 26px
+    }
+
+        .button-ctrl.st02:hover {
+            border-color: #444
+        }
+
+        .button-ctrl.st02.disabled, .button-ctrl.st02:disabled {
+            border-color: #f5f5f5
+        }
+
+        .button-ctrl.st02.top {
+            background-position: -425px 0
+        }
+
+            .button-ctrl.st02.top:hover {
+                background-position: -425px -25px
+            }
+
+            .button-ctrl.st02.top.disabled, .button-ctrl.st02.top:disabled {
+                background-position: -425px -50px
+            }
+
+        .button-ctrl.st02.prev {
+            background-position: -450px 0
+        }
+
+            .button-ctrl.st02.prev:hover {
+                background-position: -450px -25px
+            }
+
+            .button-ctrl.st02.prev.disabled, .button-ctrl.st02.prev:disabled {
+                background-position: -450px -50px
+            }
+
+        .button-ctrl.st02.last {
+            background-position: -475px 0
+        }
+
+            .button-ctrl.st02.last:hover {
+                background-position: -475px -25px
+            }
+
+            .button-ctrl.st02.last.disabled, .button-ctrl.st02.last:disabled {
+                background-position: -475px -50px
+            }
+
+        .button-ctrl.st02.next {
+            background-position: -500px 0
+        }
+
+            .button-ctrl.st02.next:hover {
+                background-position: -500px -25px
+            }
+
+            .button-ctrl.st02.next.disabled, .button-ctrl.st02.next:disabled {
+                background-position: -500px -50px
+            }
+
+.button-form {
+    background: url(/static/common/image/common/bg_form.png) no-repeat #fff;
+    border: 1px solid #ccc;
+    border-radius: 2px
+}
+
+    .button-form span {
+        overflow: hidden;
+        visibility: hidden;
+        width: 0;
+        height: 0
+    }
+
+.ico-btn, .ico-tip {
+    display: inline-block;
+    line-height: 12px;
+    border-radius: 2px;
+    color: #fff
+}
+
+.button-form:hover {
+    border-color: #888
+}
+
+.button-form.add-user {
+    background-position: -110px -102px;
+    width: 44px;
+    height: 26px
+}
+
+    .button-form.add-user:hover {
+        background-position: -77px -102px
+    }
+
+    .button-form.add-user:disabled {
+        background-position: -110px -102px;
+        opacity: .5
+    }
+
+        .button-form.add-user:disabled:hover {
+            background-position: -110px -102px !important;
+            border-color: #ccc !important;
+            opacity: .5 !important
+        }
+
+.button-form.add-city {
+    background-position: 3px -222px;
+    width: 44px;
+    height: 26px
+}
+
+.button-form.plus {
+    background-position: -149px -233px;
+    width: 44px;
+    height: 26px
+}
+
+.button-form.trns {
+    background-position: -35px -221px;
+    width: 43px;
+    height: 26px
+}
+
+    .button-form.trns:hover {
+        background-position: -69px -221px;
+        width: 43px;
+        height: 26px
+    }
+
+.ico-tip {
+    padding: 1px 3px;
+    background: #9ca9b2;
+    font-size: 11px;
+    vertical-align: middle
+}
+
+.ico-btn {
+    padding: 0 5px;
+    background: #c0c3c7;
+    font-family: Arial;
+    height: 17px;
+    letter-spacing: 0;
+    vertical-align: middle;
+    box-sizing: content-box
+}
+
+.ico-img i, .icon {
+    background-image: url(../img/button/bg_btn.png)
+}
+
+.ico-img i, .icon, .icon-img {
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle
+}
+
+.ico-btn span {
+    font-size: 10px
+}
+
+.in-search {
+    display: inline-block;
+    vertical-align: middle
+}
+
+    .in-search .input01 {
+        margin-right: -32px;
+        padding-right: 26px;
+        border-color: #ccc;
+        line-height: 20px;
+        width: 145px
+    }
+
+.icon, .icon-img, .icon-img span {
+    line-height: 0;
+    font-size: 0
+}
+
+.in-search .input01:focus {
+    border-color: #229cec
+}
+
+.in-search .button-img.search {
+    vertical-align: middle;
+    position: relative;
+    background-color: #fff
+}
+
+.in-search .input01:focus + .button-img.search, .in-search .input01:hover + .button-img.search {
+    background-position: -300px -100px
+}
+
+.in-search .button {
+    margin-left: 4px;
+    padding-left: 7px;
+    padding-right: 7px
+}
+
+.in-search .button-img.calendar {
+    margin-left: 4px
+}
+
+.in-search .button:hover {
+    border-color: #444
+}
+
+    .in-search .button:focus *, .in-search .button:hover * {
+        color: #000
+    }
+
+.in-search .button:focus {
+    border-color: #333;
+    background-color: #e5e5e5
+}
+
+.in-search:hover .button-img.search {
+    background-position: -300px -75px
+}
+
+/*.in-search:hover .input01 {
+    border-color: #229cec
+}*/
+
+.icon {
+    background-color: transparent
+}
+
+    .icon.plus {
+        background-position: -120px -360px;
+        width: 10px;
+        height: 10px
+    }
+
+    .icon.manage {
+        background-position: -450px -360px;
+        width: 11px;
+        height: 11px
+    }
+
+    .icon.priority {
+        background-position: -420px -360px;
+        width: 9px;
+        height: 7px
+    }
+
+    .icon.todo {
+        background-position: 0 -180px;
+        width: 20px;
+        height: 20px
+    }
+
+        .icon.todo.cancel {
+            background-position: 0 -150px
+        }
+
+        .icon.todo.comp {
+            background-position: 0 -207px
+        }
+
+.item-add li:hover .icon.plus {
+    background-position: -120px -390px
+}
+
+.ico-img.plus i {
+    background-position: -90px -360px;
+    width: 8px;
+    height: 8px
+}
+
+.ico-img.plus:hover i {
+    background-position: -90px -390px
+}
+
+.ico-img i + span {
+    margin-left: 5px
+}
+
+.ico-img span + i {
+    margin-right: 5px
+}
+
+.icon-img {
+    background-image: url(/static/pims/image/bg_icon.png);
+    width: 16px;
+    height: 16px
+}
+
+    .icon-img span {
+        text-indent: -999
+    }
+
+    .icon-img.import.high {
+        background-position: 4px -253px
+    }
+
+    .icon-img.import.middle {
+        background-image: none !important
+    }
+
+    .icon-img.import.low {
+        background-position: -22px -253px
+    }
+
+    .icon-img.todo {
+        background-position: 0 -20px !important
+    }
+
+    .icon-img.type02 {
+        width: 12px !important;
+        height: 12px !important;
+        background-position: transparent
+    }
+
+        .icon-img.type02.todo {
+            background-position: -168px 0 !important
+        }
+
+            .icon-img.type02.todo.comp {
+                background-position: -188px 0 !important
+            }
+
+    .icon-img.schedule-mail {
+        background-position: 0 -120px
+    }
+
+    .icon-img.schedule-repeat {
+        background-position: 0 -140px
+    }
+
+    .icon-img.private {
+        background-position: 0 -160px
+    }
+
+    .icon-img.release {
+        background-position: 0 -180px
+    }
+
+    .icon-img.schedule-high {
+        background-position: 0 -200px
+    }
+
+    .icon-img.private-high {
+        background-position: 0 -220px
+    }
+
+    .icon-img.receive {
+        background-position: -60px -18px
+    }
+
+    .icon-img.send {
+        background-position: -80px -18px
+    }
+
+    .icon-img.anni {
+        background-position: -60px -120px
+    }
+
+    .icon-img.repeat-set {
+        background-position: -100px -18px
+    }
+
+    .icon-img.conference {
+        background-position: -130px -100px
+    }
+
+.paging * {
+    vertical-align: middle
+}
+
+.paging a {
+    display: inline-block;
+    padding: 0 3px;
+    min-width: 20px;
+    height: 24px;
+    line-height: 19px;
+    border: 1px solid #fff;
+    text-decoration: none;
+    box-sizing: border-box
+}
+
+    .paging a.num {
+        color: #737373
+    }
+
+        .paging a.num:first-child {
+            background: 0 0
+        }
+
+        .paging a.num:hover {
+            color: #188fe0;
+            border: 1px solid #ccc
+        }
+
+        .paging a.num.current {
+            color: #188fe0;
+            border: 1px solid transparent !important;
+            background: #fff;
+            text-decoration: underline !important
+        }
+
+.paging .paging-btn {
+    background-image: url(../img/button/bg_btn.png);
+    background-repeat: no-repeat;
+    width: 20px;
+    border: 1px solid transparent
+}
+
+    .paging .paging-btn:hover {
+        border: 1px solid #ccc
+    }
+
+.paging .paging-first {
+    background-position: -146px -293px
+}
+
+    .paging .paging-first:hover {
+        background-position: -146px -323px
+    }
+
+.paging .paging-pre {
+    background-position: -173px -293px
+}
+
+    .paging .paging-pre:hover {
+        background-position: -173px -323px
+    }
+
+.paging .paging-next {
+    background-position: -202px -293px
+}
+
+    .paging .paging-next:hover {
+        background-position: -202px -323px
+    }
+
+.paging .paging-last {
+    background-position: -234px -293px
+}
+
+    .paging .paging-last:hover {
+        background-position: -234px -323px
+    }
+
+.paging .paging-dis {
+    opacity: .3;
+    filter: alpha(opacity=30);
+    cursor: default
+}
+
+    .paging .paging-dis:hover {
+        border-color: transparent;
+        opacity: .2;
+        filter: alpha(opacity=20);
+        cursor: default
+    }
+
+.paging-area {
+    margin: 0 15px;
+    border-top: 1px solid #d6d6d6;
+    height: 36px;
+    background: #fff;
+    z-index: 0;
+    box-sizing: border-box
+}
+
+    .paging-area .paging {
+        padding-top: 5px
+    }
+
+    .paging-area.updown {
+        height: 72px
+    }
+
+.tot-num {
+    display: inline-block;
+    color: #777
+}
+
+    .tot-num strong {
+        color: #000
+    }
+
+.paging-area .tot-num {
+    position: absolute;
+    top: 8px
+}
+
+.tbl-list01 + .paging-area {
+    margin: -2px 0 0
+}
+
+    .tbl-list01 + .paging-area .tot-num {
+        top: 9px
+    }
+
+.bt-st01:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+
+.bt-st01 {
+    display: block;
+    zoom: 1
+}
+
+.arr i, .bt-st02, .bt-st03, .btm-ctrl-area.second, .btn-cont-area.second, .checkbox-area, .ico-st {
+    display: inline-block
+}
+
+.bt-st01 .button {
+    float: left;
+    margin-right: -1px;
+    border-radius: 0
+}
+
+    .bt-st01 .button:first-child {
+        border-radius: 2px 0 0 2px
+    }
+
+    .bt-st01 .button:last-child {
+        border-radius: 0 2px 2px 0
+    }
+
+.bt-st02 {
+    overflow: hidden;
+    vertical-align: middle
+}
+
+    .bt-st02 button {
+        float: left;
+        position: relative;
+        z-index: 1;
+        margin-right: -1px;
+        border-radius: 0 !important
+    }
+
+        .bt-st02 button:first-child {
+            border-radius: 2px 0 0 2px !important
+        }
+
+        .bt-st02 button.current, .bt-st02 button.on, .bt-st02 button:focus, .bt-st02 button:hover {
+            z-index: 2
+        }
+
+        .bt-st02 button:last-child {
+            margin-right: 0;
+            border-radius: 0 2px 2px 0 !important
+        }
+
+.bt-st03 {
+    overflow: hidden;
+    vertical-align: middle
+}
+
+    .bt-st03 button {
+        float: left;
+        position: relative;
+        margin-right: -1px;
+        border-radius: 0 !important;
+        z-index: 1
+    }
+
+        .bt-st03 button:first-child {
+            border-radius: 3px 0 0 3px !important
+        }
+
+        .bt-st03 button.current, .bt-st03 button.on, .bt-st03 button:focus, .bt-st03 button:hover {
+            z-index: 2
+        }
+
+        .bt-st03 button:last-child {
+            margin-right: 0;
+            border-radius: 0 3px 3px 0 !important
+        }
+
+.btn-cont-area, .btn-tbl-area {
+    text-align: right
+}
+
+.btn-cont-area {
+    margin: 20px 20px 0 0
+}
+
+    .btn-cont-area.second {
+        float: right;
+        margin: 5px 15px 0 0
+    }
+
+    .btn-cont-area .button.b {
+        min-width: 42px
+    }
+
+    .btn-cont-area .btm-ctrl-area {
+        position: absolute;
+        left: 0;
+        margin-top: 0
+    }
+
+.btm-ctrl-area {
+    margin: 5px 15px 0
+}
+
+    .btm-ctrl-area .bt-st02 {
+        margin-right: 1px
+    }
+
+    .btm-ctrl-area .btn-right {
+        position: absolute;
+        right: 0;
+        top: 0
+    }
+
+.btn-tbl-area .button05 {
+    margin-left: -4px
+}
+
+    .btn-tbl-area .button05:first-child {
+        position: relative
+    }
+
+        .btn-tbl-area .button05:first-child:after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 25%;
+            background: #e1e1e1;
+            width: 1px;
+            height: 9px
+        }
+
+.checkbox-area {
+    position: relative;
+    top: -2px;
+    padding: 0 0 0 9px;
+    margin: 0 6px 0 -10px;
+    border-radius: 2px;
+    border: 1px solid #ccc
+}
+
+    .checkbox-area .button03 {
+        padding: 0 8px 3px 5px;
+        border: 0
+    }
+
+    .checkbox-area .button-img.import {
+        margin: 1px 0 0 10px
+    }
+
+label.styled-checkbox, label.styled-radio {
+    display: inline-block;
+    overflow: hidden;
+    position: relative
+}
+
+    label.styled-checkbox input[type=checkbox], label.styled-radio input[type=radio] {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        -ms-appearance: none;
+        width: 1px;
+        height: 1px
+    }
+
+    label.styled-checkbox:after, label.styled-radio:after {
+        content: ' ';
+        position: absolute;
+        background: url(../img/button/bg_btn.png) no-repeat;
+        width: 100%;
+        height: 100%
+    }
+
+label.important {
+    width: 26px;
+    height: 26px
+}
+
+    label.important:after {
+        background-position: -175px -245px
+    }
+
+    label.important.on:after {
+        background-position: -175px -270px
+    }
+
+.list-icon.delete i {
+    background-position: -275px -155px
+}
+
+.arr {
+    background-color: transparent
+}
+
+    .arr i {
+        position: relative;
+        margin: 0 0 0 5px;
+        background-image: url(../img/button/bg_btn.png);
+        background-repeat: no-repeat;
+        vertical-align: middle
+    }
+
+.button-ctrl.first {
+    background: url(../img/button/bg_btn.png) -380px 0 no-repeat
+}
+
+    .button-ctrl.first:hover {
+        background: url(../img/button/bg_btn.png) -380px -25px no-repeat
+    }
+
+.button-ctrl.bottom {
+    background: url(../img/button/bg_btn.png) -412px 0 no-repeat
+}
+
+    .button-ctrl.bottom:hover {
+        background: url(../img/button/bg_btn.png) -412px -25px no-repeat
+    }
+
+.arr.type04 i {
+    float: left;
+    margin: 0;
+    background-position: -594px -155px;
+    width: 6px;
+    height: 3px;
+    font-size: 0;
+    line-height: 0
+}
+
+.ico-st {
+    margin-left: 3px;
+    background-image: url(/static/common/image/common/bg_icon.png);
+    background-repeat: no-repeat;
+    font-size: 0
+}
+
+    .ico-st.res {
+        width: 14px;
+        height: 13px
+    }
+
+.button-img.list-next.mail, .button-img.list-prev.mail {
+    width: 28px;
+    height: 26px;
+    background-image: url(../img/button/bg_btn.png);
+    opacity: 1
+}
+
+.button-img.list-prev.mail {
+    background-position: 0 -84px
+}
+
+    .button-img.list-prev.mail:hover {
+        background-position: -30px -84px
+    }
+
+    .button-img.list-prev.mail.disabled, .button-img.list-prev.mail:disabled {
+        background-position: -60px -84px;
+        border-color: rgba(204,204,204,.3)
+    }
+
+.button-img.list-next.mail {
+    background-position: 0 -112px
+}
+
+    .button-img.list-next.mail:hover {
+        background-position: -30px -112px
+    }
+
+    .button-img.list-next.mail.disabled, .button-img.list-next.mail:disabled {
+        background-position: -60px -112px;
+        border-color: rgba(204,204,204,.3)
+    }

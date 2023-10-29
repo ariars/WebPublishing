@@ -1,0 +1,2 @@
+var parseTag=function(htmlContent){var parsing=htmlContent;return parsing=parsing.replace(/<(\s+)?html([^>]+)?>/gi,""),parsing=parsing.replace(/<(\s+)?\/(\s+)?html(\s+)?>/gi,""),parsing=parsing.replace(/<(\s+)?body([^>]+)?>/gi,""),parsing=parsing.replace(/<(\s+)?\/(\s+)?body(\s+)?>/gi,""),parsing=parsing.replace(/<(\s+)?head([^>]+)?>(?:.|\n|\r)*?<\/(\s+)?head(\s+)?>/gi,""),parsing=parsing.replace(/<(\s+)?style([^>]+)?>(?:.|\n|\r)*?<\/(\s+)?style(\s+)?>/gi,""),parsing=parsing.replace(/<(\s+)?link([^>]+)?rel=([^>]+)?>/gi,"")};
+//# sourceMappingURL=../maps/util/parseTag.js.map

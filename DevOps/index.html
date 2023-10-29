@@ -1,61 +1,459 @@
-<!DOCTYPE html>
-<html lang="kr" class="">
-
+<html lang="en" class="">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>DX.DevOps | </title>
-    <meta name="description" content="Sec.DevOps docs" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Sec.DevOps docs">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" />
-    <!-- <link rel="stylesheet" type="text/css" href="/DevOps/Resources/fonts/AzDevMDL2.css" /> -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js" />
-    <!-- <link rel="stylesheet" type="text/css" href="/DevOps/Resources/libs/jquery/jquery.ui.layout/layout-default-latest.css" /> -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css" />
-    <!-- <link rel="stylesheet" type="text/css" href="/DevOps/Resources/css/font.css" /> -->
-    <!-- <link rel="stylesheet" type="text/css" href="/DevOps/Resources/libs/grid/jsgrid-1.5.3/jsgrid.min.css" /> -->
-    <!-- <link rel="stylesheet" type="text/css" href="/DevOps/Resources/libs/grid/jsgrid-1.5.3/jsgrid-theme.min.css" />  -->
-    <!-- <link rel="stylesheet" type="text/css" href="/DevOps/Resources/libs/bootstrap-multiselect/css/bootstrap-multiselect.css" /> -->
-    <!-- <link rel="stylesheet" type="text/css" href="/DevOps/Resources/css/app.css" />-->
-    <!-- <link rel="stylesheet" type="text/css" href="/DevOps/Resources/css/button.css?v=9be6757d-28e7-4c9b-a2ee-1bf507377163" /> -->
-    <!-- <link rel="stylesheet" type="text/css" href="/DevOps/Resources/css/site.common.css?v=7c648a86-cc1a-4aad-a203-2eca059c851f" /> -->
+    <link rel="stylesheet" type="text/css" href="resources/libs/assets/animate.css/animate.css">
+    <link rel="stylesheet" type="text/css" href="resources/libs/assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="resources/libs/assets/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" type="text/css" href="resources/fonts/AzDevMDL2.css">
+    <link rel="stylesheet" type="text/css" href="resources/libs/jquery/bootstrap/dist/v3.3.4/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="resources/libs/jquery/jquery.ui.layout/layout-default-latest.css">
+    <link rel="stylesheet" type="text/css" href="resources/libs/jquery/jquery.ui/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/font.css">
+    <link rel="stylesheet" type="text/css" href="resources/libs/grid/jsgrid-1.5.3/jsgrid.min.css">
+    <link rel="stylesheet" type="text/css" href="resources/libs/grid/jsgrid-1.5.3/jsgrid-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="resources/libs/bootstrap-multiselect/css/bootstrap-multiselect.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/app.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/button.css?v=6df20cbf-079c-4296-a595-0be4e5991545">
+    <link rel="stylesheet" type="text/css" href="resources/css/site.common.css?v=b97a5943-f326-4574-8a24-6f67b12a99cb">
 
-    <!-- <script src="/DevOps/Resources/js/1042/resource.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.loadtemplate/1.5.10/jquery.loadTemplate.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
-    <!-- <script src="/DevOps/Resources/libs/grid/jsgrid-1.5.3/jsgrid.js?v=fafa800d-52f2-4fc5-abb6-70d72d248163"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/split.js/1.6.5/split.min.js"></script>
-    <!-- <script src="/DevOps/Resources/js/app.common.js?v=f9156d17-97f6-4526-a51a-47250887ea2a"></script>-->
-    <!-- <script src="/DevOps/Resources/js/app.grid.js?v=61b76829-d63f-40f7-9139-3e631937f30f"></script> -->
-    <!-- <script src="/DevOps/Resources/js/app.libraries.js?v=557b5d40-c096-4dba-85c6-55a71f807716"></script> -->
-    <!-- <script src="/DevOps/Resources/js/app.messagebox.js?v=43e31ace-6965-466c-b494-6bbe0386fcbf"></script> -->
+    <style>
+        .snb_collapsed {
+            width: 20px;
+        }
+
+        .snb_collapsed .h2,
+        .snb_collapsed #snb ul {
+            display: none;
+        }
+
+        .snb_collapsed .left-Collapse i {
+            transform: rotate(180deg);
+        }
+    </style>
 
 </head>
 
 <body>
+    <div class="full-size">
+        <div class="full-size region-page">
+            <div class="full-size flex-column">
 
-    <header class="flex-header">
-        HEADER
-    </header>
-    <main class="flex-main">
-        <nav class="flex-nav">
-            SIDENAV
-        </nav>
-        <article class="flex-article">
-            MAIN CONTENT
-        </article>
-        <aside class="flex-aside">
-            SIDEBAR
-        </aside>
+                <!-- Header -->
+                <div class="header flex-row flex-noshrink">
+                    <div class="flex-row flex-grow region-header">
+                        <!-- header -->
+                        <header class="sec-bg-black">
+                            <div class="app-logo">
+                                <a href="/devops/">
+                                    <i class="glyphicon glyphicon-cloud"></i>
+                                    <span>DX.DevOps</span>
+                                </a>
+                            </div>
+
+                            <div>
+                                <ul class="app-header">
+                                    <li><a href="/devops/Dev/Home/Index"><i class="fa fa-codepen"></i><span class="ng-scope">Dev</span></a></li>
+                                    <li class="active"><a href="/devops/Ops/Solution/Index"><i class="fa fa-windows"></i><span class="ng-scope">Ops</span></a></li>
+                                    <li><a href="/devops/Ops/Voc/VocItem"><i class="fa fa-share-alt"></i><span class="ng-scope">VOC</span></a></li>
+                                    <li><a href="/devops/App/Files/Explorer"><i class="fa fa-stack-overflow"></i><span class="ng-scope">Apps</span></a></li>
+                                    <li><a href="/devops/BBS/Board/BoardManage"><i class="fa fa-archive"></i><span class="ng-scope">Board</span></a></li>
+                                    <li><a href="/devops/System/Setting/Member"><i class="fa fa-cog"></i><span class="ng-scope">System</span></a></li>
+                                </ul>
+
+                                <ul class="app-header float-right" style="padding: 0px;">
+                                    <li class="dropdown"></li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="thumb-sm avatar float-right" style="margin-top: -10px;">
+                                                <img src="resources/img/no_image.png" alt="...">
+                                                <i class="on md b-white bottom"></i>
+                                            </span>
+                                            <span style="margin-right: 10px;">admin</span> <b class=""></b>
+                                        </a>
+                                        <!-- dropdown -->
+                                        <ul class="dropdown-menu w-md" style="left: -57px"></ul>
+                                        <!-- / dropdown -->
+                                    </li>
+                                    <li><a href="/devops/Account/Signout" class="fa icon-logout logout"><em class="tooltip">Logout</em></a></li>
+                                    <li><a href="" style="background-color: #000;"><i class="fa fa-plus fa-fw"></i></a></li>
+                                </ul>
+                            </div>
+                        </header>
+                        <!-- / header -->
+                    </div>
+                </div>
+                <!-- // Header -->
+                <!-- Body -->
+                <div class="flex-row flex-grow scroll-hidden">
+
+                    <!-- navigation -->
+                    <div class="flex-column">
+                        <div
+                            class="project-navigation region-navigation flex-column flex-grow border-line-right expanded">
+                            <div class="collapsible-section flex-noshrink section-header">
+                                <div class="flex-row flex-grow scroll-hidden">
+                                    <div class="flex-column flex-grow scroll-hidden" style="width:100%">
+                                        <div class="font-weight-thin h2" style="padding: 13px 13px;">Ops</div>
+                                    </div>
+                                    <div class="flex-column flex-grow scroll-hidden left-Collapse"
+                                        style="width:20px;min-width:20px">
+                                        <i class="fa fa-chevron-left" style="padding: 18px 5px;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="navigation-section flex-column flex-grow scroll-hidden v-scroll-auto custom-scrollbar">
+                                <div>
+                                    <nav id="snb">
+                                        <!-- nav -->
+                                        <ul class="nav-sidebar">
+                                            <li class="nav-item on">
+                                                <a href="/devops#" class="nav-link dir">솔루션 관리</a>
+                                                <ul class="nav-group-sub" data-nav-type="accordion">
+                                                    <li class="nav-item "><a href="/devops/Ops/Solution/Index" class="nav-link">솔루션</a></li>
+                                                    <li class="nav-item on"><a href="/devops/Ops/Solution/Sitemap" class="nav-link">사이트맵</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item ">
+                                                <a href="/devops#" class="nav-link dir">서버 관리</a>
+                                                <ul class="nav-group-sub" data-nav-type="accordion" style="display:none;">
+                                                    <li class="nav-item "><a href="/devops/Ops/Server/Index" class="nav-link">서버</a></li>
+                                                    <li class="nav-item "><a href="/devops/Ops/Server/Provider" class="nav-link">서비스</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- // navigation -->
+
+                    <!-- content -->
+                    <div class="flex-column flex-grow scroll-hidden">
+                        <div class="flex flex-noshrink region-content-header">
+                            <div class="panel-header backgroud-gray" style="width: 100%;">
+                                <ul class="nav nav-tabs" style="padding-left: 10px; padding-top:8px;">
+                                    <li class="active"><a href="#" data-toggle="tab" data-target="#tab_1">사이트맵</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- main -->
+                        <div class="flex flex-grow flex-column relative scroll-hidden">
+                            <div class="flex-grow flex-column scroll-hidden">
+                                <div class="absolute-fill scroll-auto flex-column">
+                                    <div>
+                                        <div id="containerList">
+                                            <div class="panel panel-bottom">
+                                                <div class="cont-header clfix">
+                                                    <span class="total header-total-count">총 <em>0</em></span>
+                                                    <div class="tbl-search js-layer-search">
+                                                        <fieldset class="in-search">
+                                                            <label for="search"><i class="blind"></i></label><input type="text" class="input01 in-search tbEnterkeydown" id="tbSearchText" placeholder="검색어를 입력하세요">
+                                                            <button type="button" class="button-img search btnSearch"><i>검색</i></button>
+                                                            <button type="button" class="button default btnDeletes" data-url="devops/Ops/Solution/SolutionDeletes" data-target="jsGrid"><span>선택삭제</span></button>
+                                                            <button type="button" class="button default btnLineAdd"><span>신규추가</span></button>
+                                                        </fieldset>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div id="jsGrid" class="table-responsive jsgrid" style="position: relative; height: auto; width: 100%;">
+                                                <div class="jsgrid-grid-header jsgrid-header-scrollbar">
+                                                    <table class="jsgrid-table">
+                                                        <tbody>
+                                                            <tr class="jsgrid-header-row">
+                                                                <th class="jsgrid-header-cell non-event jsgrid-align-center" style="width: 40px;">
+                                                                    <div class="checkbox checkboxAll" id="chk_all" for="chk_all">
+                                                                        <label class="i-checks">
+                                                                        <input type="checkbox" value=""><i></i></label><span></span>
+                                                                    </div>
+                                                                    <label id="chk_all" for="chk_all"><span></span></label>
+                                                                </th>
+                                                                <th class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable" style="width: 100px;">코드</th>
+                                                                <th class="jsgrid-header-cell jsgrid-header-sortable" style="width: 150px;">솔루션명</th>
+                                                                <th class="jsgrid-header-cell jsgrid-header-sortable" style="width: 150px;">아이콘</th>
+                                                                <th class="jsgrid-header-cell jsgrid-header-sortable">설명</th>
+                                                                <th class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable" style="width: 80px;">정렬</th>
+                                                                <th class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable" style="width: 90px;">사용 여부</th>
+                                                                <th class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable" style="width: 120px;">등록일시</th>
+                                                                <th class="jsgrid-header-cell jsgrid-control-field jsgrid-align-center" style="width: 110px;"></th>
+                                                            </tr>
+                                                            <tr class="jsgrid-filter-row" style="display: none;">
+                                                                <td class="jsgrid-cell non-event jsgrid-align-center" style="width: 40px;"></td>
+                                                                <td class="jsgrid-cell jsgrid-align-center" style="width: 100px;"><input type="text" class="jstbCode form-control"></td>
+                                                                <td class="jsgrid-cell" style="width: 150px;"><input type="text" class="jstbName form-control"></td>
+                                                                <td class="jsgrid-cell" style="width: 150px;"><input type="text" class="jstbIcon form-control"></td>
+                                                                <td class="jsgrid-cell"><input type="text" class="jstbDescription form-control"></td>
+                                                                <td class="jsgrid-cell jsgrid-align-center" style="width: 80px;"><input type="number" class="jstbSort form-control"></td>
+                                                                <td class="jsgrid-cell jsgrid-align-center" style="width: 90px;">
+                                                                    <div class="checkbox"><label class="i-checks"><input type="checkbox" value="" checked=""><i></i></label></div>
+                                                                </td>
+                                                                <td class="jsgrid-cell jsgrid-align-center" style="width: 120px;"></td>
+                                                                <td class="jsgrid-cell jsgrid-control-field jsgrid-align-center" style="width: 110px;">
+                                                                    <button class="button03 pr small non-event jsgrid-search-button" type="button" title="Search" value="Search">Search</button>
+                                                                    <button class="button03 pr small non-event jsgrid-clear-filter-button" type="button" title="Clear filter" value="Clear filter">Clear filter</button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="jsgrid-insert-row" style="display: none;">
+                                                                <td class="jsgrid-cell non-event jsgrid-align-center" style="width: 40px;"></td>
+                                                                <td class="jsgrid-cell jsgrid-align-center" style="width: 100px;"><input type="text" class="jstbCode form-control"></td>
+                                                                <td class="jsgrid-cell" style="width: 150px;"><input type="text" class="jstbName form-control"></td>
+                                                                <td class="jsgrid-cell" style="width: 150px;"><input type="text" class="jstbIcon form-control"></td>
+                                                                <td class="jsgrid-cell"><input type="text" class="jstbDescription form-control"></td>
+                                                                <td class="jsgrid-cell jsgrid-align-center" style="width: 80px;"><input type="number" class="jstbSort form-control"></td>
+                                                                <td class="jsgrid-cell jsgrid-align-center" style="width: 90px;">
+                                                                    <div class="checkbox" checked="checked"><label class="i-checks"><input type="checkbox" value="" checked=""><i></i></label></div>
+                                                                </td>
+                                                                <td class="jsgrid-cell jsgrid-align-center" style="width: 120px;"></td>
+                                                                <td class="jsgrid-cell jsgrid-control-field jsgrid-align-center" style="width: 110px;">
+                                                                    <button class="button03 pr small non-event" type="button" title="등록" value="등록">등록</button>
+                                                                    <button class="button03 pr small non-event" type="button" title="취소" value="취소" style="margin-left:5px"><span class="ico_cancel"></span>취소</button>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="jsgrid-grid-body">
+                                                    <table class="jsgrid-table">
+                                                        <tbody>
+                                                            <tr class="jsgrid-row">
+                                                                <td class="jsgrid-cell non-event jsgrid-align-center" style="width: 40px;">
+                                                                    <div class="checkbox non-event"><label class="i-checks non-event"><input class="chk non-event"type="checkbox" value=""><i></i></label></div>
+                                                                </td>
+                                                                <td class="jsgrid-cell jsgrid-align-center" style="width: 100px;">AD</td>
+                                                                <td class="jsgrid-cell" style="width: 150px;">Portal</td>
+                                                                <td class="jsgrid-cell" style="width: 150px;">-</td>
+                                                                <td class="jsgrid-cell">관련 솔루션</td>
+                                                                <td class="jsgrid-cell jsgrid-align-center" style="width: 80px;">1</td>
+                                                                <td class="jsgrid-cell jsgrid-align-center" style="width: 90px;">사용</td>
+                                                                <td class="jsgrid-cell jsgrid-align-center" style="width: 120px;">2022-03-28 11:16:14</td>
+                                                                <td class="jsgrid-cell jsgrid-control-field jsgrid-align-center" style="width: 110px;">
+                                                                    <button class="button03 pr small non-event" type="button" title="수정" value="수정">수정</button>
+                                                                    <button class="button03 pr small non-event" type="button" title="삭제" value="삭제" style="margin-left:5px"><span class="ico_s_del"></span>삭제</button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="jsgrid-alt-row">
+                                                                <td class="jsgrid-cell non-event jsgrid-align-center" style="width: 40px;">
+                                                                    <div class="checkbox non-event"><label class="i-checks non-event"><input class="chk non-event" type="checkbox" value=""><i></i></label></div>
+                                                                </td>
+                                                                <td class="jsgrid-cell jsgrid-align-center" style="width: 100px;">44</td>
+                                                                <td class="jsgrid-cell" style="width: 150px;">44</td>
+                                                                <td class="jsgrid-cell" style="width: 150px;">-</td>
+                                                                <td class="jsgrid-cell">343</td>
+                                                                <td class="jsgrid-cell jsgrid-align-center" style="width: 80px;">10</td>
+                                                                <td class="jsgrid-cell jsgrid-align-center" style="width: 90px;">사용</td>
+                                                                <td class="jsgrid-cell jsgrid-align-center" style="width: 120px;">2022-11-24 15:19:24</td>
+                                                                <td class="jsgrid-cell jsgrid-control-field jsgrid-align-center" style="width: 110px;">
+                                                                    <button class="button03 pr small non-event" type="button" title="수정" value="수정">수정</button>
+                                                                    <button class="button03 pr small non-event" type="button" title="삭제" value="삭제" style="margin-left:5px"><span class="ico_s_del"></span>삭제</button>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="jsgrid-pager-container" style="display: none;">
+                                                    <div class="jsgrid-pager">
+                                                        <div class="pager-count">page :
+                                                            <select class="input-sm form-control w-xxs inline v-middle">
+                                                                <option value="15">15</option>
+                                                                <option value="30">30</option>
+                                                                <option value="50">50</option>
+                                                                <option value="100">100</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="paginate">
+                                                            <span class="jsgrid-pager-nav-button jsgrid-pager-nav-inactive-button">
+                                                                <a href="javascript:void(0);"><a class="pager first" href="#"><img src="resources/img/button/btn_pn_first.gif" alt="첫페이지" title="첫페이지"></a></a>
+                                                            </span>
+                                                            <span class="jsgrid-pager-nav-button jsgrid-pager-nav-inactive-button">
+                                                                <a href="javascript:void(0);"><a class="pager pre" href="#"><img src="resources/img/grid/btn_pn_pre.gif" alt="이전페이지" title="이전페이지"></a></a>
+                                                            </span>
+                                                            <strong>1</strong>
+                                                            <span class="jsgrid-pager-nav-button jsgrid-pager-nav-inactive-button">
+                                                                <a href="javascript:void(0);"><a class="pager next" href="#"><img src="resources/img/grid/btn_pn_next.gif" alt="다음페이지" title="다음페이지"></a></a>
+                                                            </span>
+                                                            <span class="jsgrid-pager-nav-button jsgrid-pager-nav-inactive-button"><a href="javascript:void(0);">
+                                                                <a class="pager last" href="#"><img src="resources/img/grid/btn_pn_last.gif" alt="마지막페이지" title="마지막페이지"></a></a>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="jsgrid-load-shader" style="display: none; position: absolute; inset: 0px; z-index: 1000;"></div>
+                                                <div class="jsgrid-load-panel" style="display: none; position: absolute; top: 50%; left: 50%; z-index: 1000;">
+                                                    Please, wait...
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- // main -->
+                        
+                    </div>
+                    <!-- // content -->
+            </div>
+            <!-- // Body -->
+            <!-- Footer -->
+            
+            <!-- // Footer -->
+        </div>
+    </div>
+</div>
+
+<input id="applicationPath" type="hidden" value="/devops/">
+    <div class="loadingcss displayNone">
+        <div class="lds">
+            <div class="lds-text" style="margin-left: -3px;">처리중입니다</div>
+            <div class="lds-ellipsis">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div class="loading"></div>
+    </div>
     
-    </main>
-    <footer class="flex-footer">
-        FOOTER
-    </footer>
+    <script src="resources/js/1042/resource.js"></script>
+    <script src="resources/libs/jquery/jquery/dist/jquery.js"></script>
+    <script src="resources/libs/jquery/moment/moment.js"></script>
+    <script src="resources/libs/jquery/jquery.mask/jquery.mask.js"></script>
+    <script src="resources/libs/jquery/jquery.tmpl/jquery.tmpl.min.js"></script>
+    <script src="resources/libs/jquery/jquery.ui/jquery-ui.min.js"></script>
+    <script src="resources/libs/grid/jsgrid-1.5.3/jsgrid.js?v=76757d00-8a67-4afd-9b28-b73ad02c69f6"></script>
+    <script src="resources/libs/splitjs/1.6.5/split.min.js"></script>
+    <script src="resources/js/app.common.js?v=8fb1c16d-e919-4b30-bd98-92bf5371bf9e"></script>
+    <script src="resources/js/app.grid.js?v=96433c20-e2af-4586-a2c7-08543ee03323"></script>
+    <script src="resources/js/app.libraries.js?v=4cfdb735-903f-40df-917c-1ed7161257a3"></script>
+    <script src="resources/js/app.messagebox.js?v=031090f2-c757-4e0f-a9b8-9826682cfaac"></script>
+
+    <script>
+        $(document).ready(function () {
+            // nav
+            $(document).on('click', '[ui-nav] a', function (e) {
+                var $this = $(e.target), $active;
+                $this.is('a') || ($this = $this.closest('a'));
+
+                $active = $this.parent().siblings(".active");
+                $active && $active.toggleClass('active').find('> ul:visible').slideUp(200);
+
+                ($this.parent().hasClass('active') && $this.next().slideUp(200)) || $this.next().slideDown(200);
+                $this.parent().toggleClass('active');
+
+                $this.next().is('ul') && e.preventDefault();
+            });
+
+            $("#dialog").dialog({
+                autoOpen: false,
+                height: "auto",
+                resizable: false,
+                modal: true,
+                close: function () {
+                    window.parent.$(".pop_wrap").empty();
+                }
+            });
+
+            $(".left-Collapse").click(function () {
+                $(".project-navigation").toggleClass("snb_collapsed");
+            });
+        });
+    </script>
+
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            // grid list setting
+            $appgrid.jsgridoption.controller = {
+                loadData: function (filter) {
+
+                    var d = $.Deferred();
+                    var data = {
+                        PageIndex: filter.pageIndex,
+                        PageSize: filter.pageSize,
+                        SortField: (filter.sortField == null ? "Sort" : filter.sortField),
+                        SortOrder: (filter.sortOrder == null ? "ASC" : filter.sortOrder),
+                        SearchText: $.trim($("#tbSearchText").val())
+                    };
+
+                    $appcommon.Ajax("POST", data, "devops/Ops/Solution/SolutionSelectPaging", function (result) {
+                        var da = {
+                            data: result.List,
+                            itemsCount: result.TotalCount
+                        };
+
+                        $(".header-total-count em").text(result.TotalCount);
+                        $appgrid.OnGridLoaded(result.TotalCount);
+                        d.resolve(da);
+                    });
+
+                    return d.promise();
+                },
+                insertItem: function (item) {
+                    return Upsert(item, "devops/Ops/Solution/SolutionUpsert", true);
+                },
+                updateItem: function (item) {
+                    return Upsert(item, "devops/Ops/Solution/SolutionUpsert", false);
+                },
+                deleteItem: function (item) {
+                    return $appgrid.deleteItem(item, "devops/Ops/Solution/SolutionDelete");
+                }
+            }
+
+            $appgrid.jsgridoption.fields = [
+                $appgrid.checkboxtemplate,
+                { title: "코드", name: "Code", type: "text", width: 100, align: "center", editing: false },
+                { title: "솔루션명", name: "Name", type: "text", width: 150 },
+                { title: "아이콘", name: "Icon", type: "text", width: 150 },
+                { title: "설명", name: "Description", type: "text", width: "*" },
+                { title: "정렬", name: "Sort", type: "number", width: 80, align: "center" },
+                $appgrid.columnIsUse,
+                $appgrid.columnCreateDateTime,
+                $appgrid.columnControl
+            ];
+
+            //$("#jsGrid").jsGrid($appgrid.jsgridoption);
+        });
+
+        // 추가 및 수정
+        function Upsert(item, url, isInsert) {
+            var d = $.Deferred();
+
+            if (item.Code == "") {
+                alert("코드를 입력하세요.");
+                $(".jstbCode").focus();
+                return d.promise();
+            }
+
+            if (item.Name == "") {
+                alert("솔루션명을 입력하세요.");
+                $(".jstbName").focus();
+                return d.promise();
+            }
+
+            if (item.Icon == "") {
+                alert("아이콘을 입력하세요.");
+                $(".jstbIcon").focus();
+                return d.promise();
+            }
+
+            $appcommon.Ajax("POST", item, url, function (result) {
+                $("#jsGrid").jsGrid("option", "inserting", false);
+                alert("저장 되었습니다.");
+                $appgrid.OnLoadData("#jsGrid");
+                d.resolve(result);
+            });
+
+            return d.promise();
+        }
+    </script>
 </body>
 </html>
