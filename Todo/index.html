@@ -1,0 +1,1175 @@
+﻿<!DOCTYPE html>
+<html lang="ko" dir="ltr" data-theme="default">
+
+<head>
+    <meta charset="utf-8">
+    <title>DX.DevOps | </title>
+    <meta name="description" content="Sec.DevOps docs">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/app.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/details.css">
+</head>
+
+<body>
+    <div id="root">
+        <div id="container" class="leftColumn-visible rightColumn-visible">
+            <div role="status" class="screenreader-only"></div>
+            <span role="status" class="screenreader-only"></span>
+            <div id="app" class="theme-skyblue">
+                <div class="leftColumn leftColumn-entered" aria-label="목록 메뉴">
+                    <div class="sidebar">
+                        <div class="sidebar-header">
+                            <div class="sidebarNavButton">
+                                <button class="menu" aria-label="사이드바 표시/숨기기" >
+                                    <svg class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0" fill="currentColor" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 4.5c0-.28.22-.5.5-.5h15a.5.5 0 010 1h-15a.5.5 0 01-.5-.5zm0 5c0-.28.22-.5.5-.5h15a.5.5 0 010 1h-15a.5.5 0 01-.5-.5zm.5 4.5a.5.5 0 000 1h15a.5.5 0 000-1h-15z" fill="currentColor"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="settingsButton">
+                                <button class="menu" aria-label="설정" ><i class="icon fontIcon ms-Icon ms-Icon--Settings iconSize-24" aria-hidden="true"></i></button>
+                            </div>
+                        </div>
+                        <div class="sidebar-content">
+                            <nav aria-label="목록" role="navigation" class="sidebar-scroll">
+                                <ul role="listbox" class="ms-FocusZone css-41 lists" data-focuszone-id="FocusZone42">
+                                    <div class="">
+                                        <li class="todayToolbar todayToolbar-item" tabindex="0" role="option" aria-selected="false" data-is-focusable="true" aria-label="오늘 할 일, 0개 작업">
+                                            <div class="todayToolbar-inner">
+                                                <div class="todayToolbar-icon">
+                                                    <svg class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0" fill="currentColor" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                                                        <path d="M10 2c.28 0 .5.22.5.5v1a.5.5 0 01-1 0v-1c0-.28.22-.5.5-.5zm0 12a4 4 0 100-8 4 4 0 000 8zm0-1a3 3 0 110-6 3 3 0 010 6zm7.5-2.5a.5.5 0 000-1h-1a.5.5 0 000 1h1zM10 16c.28 0 .5.22.5.5v1a.5.5 0 01-1 0v-1c0-.28.22-.5.5-.5zm-6.5-5.5a.5.5 0 000-1H2.46a.5.5 0 000 1H3.5zm.65-6.35c.2-.2.5-.2.7 0l1 1a.5.5 0 11-.7.7l-1-1a.5.5 0 010-.7zm.7 11.7a.5.5 0 01-.7-.7l1-1a.5.5 0 01.7.7l-1 1zm11-11.7a.5.5 0 00-.7 0l-1 1a.5.5 0 00.7.7l1-1a.5.5 0 000-.7zm-.7 11.7a.5.5 0 00.7-.7l-1-1a.5.5 0 00-.7.7l1 1z" fill="currentColor"></path>
+                                                    </svg>
+                                                </div>
+                                                <div class="todayToolbar-title"><span>오늘 할 일</span></div>
+                                                <div class="todayToolbar-count" aria-hidden="true"></div>
+                                            </div>
+                                        </li>
+                                    </div>
+                                    <div class="">
+                                        <li class="listItem-container" role="option" aria-selected="false" aria-label="중요, 0개 작업" tabindex="-1" data-is-focusable="true">
+                                            <div id="important" class="listItem">
+                                                <div class="listItem-inner">
+                                                    <span class="listItem-icon">
+                                                        <svg class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0" fill="currentColor" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                                                            <path d="M9.1 2.9a1 1 0 011.8 0l1.93 3.91 4.31.63a1 1 0 01.56 1.7l-3.12 3.05.73 4.3a1 1 0 01-1.45 1.05L10 15.51l-3.86 2.03a1 1 0 01-1.45-1.05l.74-4.3L2.3 9.14a1 1 0 01.56-1.7l4.31-.63L9.1 2.9zm.9.44L8.07 7.25a1 1 0 01-.75.55L3 8.43l3.12 3.04a1 1 0 01.3.89l-.75 4.3 3.87-2.03a1 1 0 01.93 0l3.86 2.03-.74-4.3a1 1 0 01.29-.89L17 8.43l-4.32-.63a1 1 0 01-.75-.55L10 3.35z" fill="currentColor"></path>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="listItem-title listItem-titleParsed"><span>중요</span></span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </div>
+                                    <div class="">
+                                        <li class="listItem-container" role="option" aria-selected="false" aria-label="계획된 일정, 0개 작업" tabindex="-1" data-is-focusable="true">
+                                            <div id="planned" class="listItem">
+                                                <div class="listItem-inner">
+                                                    <span class="listItem-icon">
+                                                        <svg class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0" fill="currentColor" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                                                            <path d="M7 11a1 1 0 100-2 1 1 0 000 2zm1 2a1 1 0 11-2 0 1 1 0 012 0zm2-2a1 1 0 100-2 1 1 0 000 2zm1 2a1 1 0 11-2 0 1 1 0 012 0zm2-2a1 1 0 100-2 1 1 0 000 2zm4-5.5A2.5 2.5 0 0014.5 3h-9A2.5 2.5 0 003 5.5v9A2.5 2.5 0 005.5 17h9a2.5 2.5 0 002.5-2.5v-9zM4 7h12v7.5c0 .83-.67 1.5-1.5 1.5h-9A1.5 1.5 0 014 14.5V7zm1.5-3h9c.83 0 1.5.67 1.5 1.5V6H4v-.5C4 4.67 4.67 4 5.5 4z" fill="currentColor"></path>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="listItem-title listItem-titleParsed"><span>계획된</span><span>일정</span></span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </div>
+                                    <li class="listItem-container" role="option" aria-selected="false" aria-label="나에게 할당됨, 3개 작업" tabindex="-1" data-is-focusable="true">
+                                        <div id="assigned_to_me" class="listItem">
+                                            <div class="listItem-inner">
+                                                <span class="listItem-icon">
+                                                    <svg class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0" fill="currentColor" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                                                        <path d="M10 2a4 4 0 100 8 4 4 0 000-8zM7 6a3 3 0 116 0 3 3 0 01-6 0zm-2 5a2 2 0 00-2 2c0 1.7.83 2.97 2.13 3.8A9.14 9.14 0 0010 18c1.85 0 3.58-.39 4.87-1.2A4.35 4.35 0 0017 13a2 2 0 00-2-2H5zm-1 2a1 1 0 011-1h10a1 1 0 011 1c0 1.3-.62 2.28-1.67 2.95A8.16 8.16 0 0110 17a8.16 8.16 0 01-4.33-1.05A3.36 3.36 0 014 13z" fill="currentColor"></path>
+                                                    </svg>
+                                                </span>
+                                                <span class="listItem-title listItem-titleParsed"><span>나에게</span><span>할당됨</span></span><span class="listItem-count" aria-hidden="true">3</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <div class="">
+                                        <li class="listItem-container" role="option" aria-selected="false" aria-label="플래그가 지정된 전자 메일, 0개 작업" tabindex="-1" data-is-focusable="true">
+                                            <div id="flagged" class="flaggedemail-list listItem">
+                                                <div class="listItem-inner"><span class="listItem-icon">
+                                                        <svg class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0" fill="currentColor" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                                                            <path d="M4.5 13h11a.5.5 0 00.42-.78L13.1 8l2.82-4.22A.5.5 0 0015.5 3H4a.5.5 0 00-.5.5v14a.5.5 0 001 0V13zm0-1V4h10.07l-2.49 3.72a.5.5 0 000 .56L14.57 12H4.5z" fill="currentColor"></path>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="listItem-title listItem-titleParsed"><span>플래그가</span><span>지정된 전자 메일</span></span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </div>
+                                    <div class="">
+                                        <li class="listItem-container active" role="option" aria-selected="true" aria-label="작업, 5개 작업" tabindex="-1" data-is-focusable="true">
+                                            <div id="inbox" class="listItem">
+                                                <div class="listItem-inner">
+                                                    <span class="listItem-icon">
+                                                        <svg class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0" fill="currentColor" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                                                            <path d="M9 2.39a1.5 1.5 0 012 0l5.5 4.94c.32.28.5.69.5 1.12v7.05c0 .83-.67 1.5-1.5 1.5H13a1.5 1.5 0 01-1.5-1.5V12a.5.5 0 00-.5-.5H9a.5.5 0 00-.5.5v3.5c0 .83-.67 1.5-1.5 1.5H4.5A1.5 1.5 0 013 15.5V8.45c0-.43.18-.84.5-1.12L9 2.39zm1.33.74a.5.5 0 00-.66 0l-5.5 4.94a.5.5 0 00-.17.38v7.05c0 .28.22.5.5.5H7a.5.5 0 00.5-.5V12c0-.83.67-1.5 1.5-1.5h2c.83 0 1.5.67 1.5 1.5v3.5c0 .28.22.5.5.5h2.5a.5.5 0 00.5-.5V8.45a.5.5 0 00-.17-.38l-5.5-4.94z" fill="currentColor"></path>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="listItem-title listItem-titleParsed"><span>작업</span></span><span class="listItem-count" aria-hidden="true">5</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </div>
+                                    <div class="sidebar-lastStaticList" role="none"></div>
+                                    <div class="sortable-lists">
+                                        <div class="">
+                                            <div class="">
+                                                <div class="">
+                                                    <div role="none">
+                                                        <li class="listItem-container" role="option"
+                                                            aria-selected="false" aria-label="그룹 1, 0개 작업" tabindex="0"
+                                                            data-is-focusable="true">
+                                                            <div id="AAMkADQ1NTU5ODM3LTEzMTctNGQxOS1hYTQzLTU5ZTdiODU3NGE2MQAuAAAAAAA8z5F7pjFaRKwyWKqcENIzAQAIBGL2MPBXSYQlnKNmVaK_AAMGlRUMAAA=" class="listItem">
+                                                                <div class="listItem-inner">
+                                                                    <span class="listItem-icon">
+                                                                        <svg class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M3 6.5a1 1 0 100-2 1 1 0 000 2zm3-1c0-.28.22-.5.5-.5h11a.5.5 0 010 1h-11a.5.5 0 01-.5-.5zm0 5c0-.28.22-.5.5-.5h11a.5.5 0 010 1h-11a.5.5 0 01-.5-.5zm.5 4.5a.5.5 0 000 1h11a.5.5 0 000-1h-11zm-2.5.5a1 1 0 11-2 0 1 1 0 012 0zm-1-4a1 1 0 100-2 1 1 0 000 2z" fill="currentColor"></path>
+                                                                        </svg>
+                                                                    </span>
+                                                                    <span class="listItem-title listItem-titleParsed"><span>그룹</span><span>1</span></span>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <div role="presentation"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </nav>
+                            <div></div>
+
+                            <div class="sidebar-addList">
+                                <div class="baseAdd addList">
+                                    <button class="baseAdd-icon addList" type="button" aria-label="새 목록" tabindex="-1">
+                                        <svg class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0" fill="currentColor" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 2.5a.5.5 0 00-1 0V9H2.5a.5.5 0 000 1H9v6.5a.5.5 0 001 0V10h6.5a.5.5 0 000-1H10V2.5z" fill="currentColor"></path>
+                                        </svg>
+                                    </button>
+                                    <span id="baseAddInput-addList-description" class="screenreader-only">이 목록의 이름을 지정한 다음 Enter 키를 선택하여 만듭니다.</span>
+                                    <input id="baseAddInput-addList" class="baseAdd-input chromeless" aria-label="목록 이름" aria-describedby="baseAddInput-addList-description" type="text" maxlength="255" placeholder="새 목록" tabindex="0" autocomplete="off" value="">
+                                </div>
+                                <div class="addGroupButtonWrapper">
+                                    <div>
+                                        <div class="ms-TooltipHost root-42">
+                                            <button class="addGroup-icon" tabindex="0" type="button" aria-label="그룹 만들기">
+                                                <i class="icon svgIcon ms-Icon group-add-20">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M14.5 3C15.8807 3 17 4.11929 17 5.5V9.59971C16.6832 9.43777 16.3486 9.30564 16 9.20703V5.5C16 4.67157 15.3284 4 14.5 4H5.5C4.67157 4 4 4.67157 4 5.5V14.5C4 15.3284 4.67157 16 5.5 16H9.20703C9.30564 16.3486 9.43777 16.6832 9.59971 17H5.5C4.11929 17 3 15.8807 3 14.5V5.5C3 4.11929 4.11929 3 5.5 3H14.5Z" fill="#212121"></path>
+                                                        <path d="M6.5 6C6.74546 6 6.94961 6.17688 6.99194 6.41012L7 6.5V13.5C7 13.7761 6.77614 14 6.5 14C6.25454 14 6.05039 13.8231 6.00806 13.5899L6 13.5V6.5C6 6.22386 6.22386 6 6.5 6Z" fill="#212121"></path>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19 14.5C19 16.9853 16.9853 19 14.5 19C12.0147 19 10 16.9853 10 14.5C10 12.0147 12.0147 10 14.5 10C16.9853 10 19 12.0147 19 14.5ZM15 12.5C15 12.2239 14.7761 12 14.5 12C14.2239 12 14 12.2239 14 12.5V14H12.5C12.2239 14 12 14.2239 12 14.5C12 14.7761 12.2239 15 12.5 15H14V16.5C14 16.7761 14.2239 17 14.5 17C14.7761 17 15 16.7761 15 16.5V15H16.5C16.7761 15 17 14.7761 17 14.5C17 14.2239 16.7761 14 16.5 14H15V12.5Z" fill="#212121"></path>
+                                                    </svg>
+                                                </i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <span id="centerColumn">
+                    <div id="main" role="main">
+                        <div class="tasksToolbar centerColumn-item">
+                            <div class="tasksToolbar-top">
+                                <div class="tasksToolbar-headline">
+                                    <div class="tasksToolbar-titleContainer">
+                                        <div class="tasksToolbar-titleItem">
+                                            <h2 class="listTitle" tabindex="-1">
+                                                <svg class="fluentIcon listTitle-icon ___12fm75w f1w7gpdv fez10in fg4l7m0" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M10.55 2.53c.84-.7 2.06-.7 2.9 0l6.75 5.7c.5.42.8 1.05.8 1.71v9.8c0 .97-.78 1.76-1.75 1.76h-3.5c-.97 0-1.75-.79-1.75-1.75v-5.5a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25v5.5c0 .96-.78 1.75-1.75 1.75h-3.5C3.78 21.5 3 20.7 3 19.75v-9.8c0-.67.3-1.3.8-1.73l6.75-5.69zm1.93 1.15a.75.75 0 00-.96 0l-6.75 5.7a.75.75 0 00-.27.56v9.8c0 .14.11.26.25.26h3.5c.14 0 .25-.12.25-.25v-5.5c0-.97.78-1.75 1.75-1.75h3.5c.97 0 1.75.78 1.75 1.75v5.5c0 .13.11.25.25.25h3.5c.14 0 .25-.12.25-.25v-9.8c0-.23-.1-.44-.27-.58l-6.75-5.7z" fill="currentColor"></path>
+                                                </svg>
+                                                <span>작업</span>
+                                            </h2>
+                                        </div>
+                                        <div class="tasksToolbar-titleItem">
+                                            <div class="listOptions">
+                                                <div>
+                                                    <div class="ms-TooltipHost root-42">
+                                                        <button class="button loadingButton button toolbarButton more" title="" aria-label="목록 옵션 메뉴" aria-describedby="moreHint" tabindex="0" >
+                                                            <div class="toolbarButton-inner">
+                                                                <div class="toolbarButton-icon">
+                                                                    <i class="icon fontIcon ms-Icon ms-Icon--More iconSize-24" aria-hidden="true"></i>
+                                                                </div>
+                                                                <p id="moreHint" class="hidden">목록 옵션이 있는 메뉴를 엽니다.</p>
+                                                            </div>
+                                                        </button>
+                                                        <div id="tooltip2" style="position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0px; border: 0px; overflow: hidden;">목록 옵션 메뉴</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tasksToolbar-subline"></div>
+                                </div>
+                                <div class="taskToolbar-right">
+                                    <div class="tasksToolbar-meta">
+                                        <div class="tasksToolbar-actions">
+                                            <div class="tasksToolbar-actionsItem">
+                                                <div class="sortingOptions">
+                                                    <div>
+                                                        <div class="ms-TooltipHost root-42">
+                                                            <button class="button loadingButton button toolbarButton" title="" aria-label="정렬" aria-describedby="sortHint" tabindex="0" >
+                                                                <div class="toolbarButton-inner">
+                                                                    <div class="toolbarButton-icon">
+                                                                        <svg class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M2.35 7.35L5 4.71V16.5a.5.5 0 001 0V4.7l2.65 2.65a.5.5 0 00.7-.7l-3.49-3.5A.5.5 0 005.5 3a.5.5 0 00-.39.18L1.65 6.65a.5.5 0 10.7.7zm15.3 5.3L15 15.29V3.5a.5.5 0 00-1 0v11.8l-2.65-2.65a.5.5 0 00-.7.7l3.49 3.5a.5.5 0 00.36.15.5.5 0 00.39-.18l3.46-3.47a.5.5 0 10-.7-.7z" fill="currentColor"></path>
+                                                                        </svg>
+                                                                    </div>
+                                                                    <span>정렬</span>
+                                                                    <p id="sortHint" class="hidden">정렬 옵션이 있는 메뉴를 엽니다.</p>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="screenreader-only"><span>정렬 꺼짐</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="tasksToolbar-actionsItem">
+                                                <div class="groupingOptions">
+                                                    <div>
+                                                        <div class="ms-TooltipHost root-42">
+                                                            <button class="button loadingButton button toolbarButton" title="" aria-label="그룹" aria-describedby="groupHint" tabindex="0" >
+                                                                <div class="toolbarButton-inner">
+                                                                    <div class="toolbarButton-icon">
+                                                                        <svg class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M14.5 3A2.5 2.5 0 0117 5.5v9a2.5 2.5 0 01-2.5 2.5h-9A2.5 2.5 0 013 14.5v-9A2.5 2.5 0 015.5 3h9zm0 1h-9C4.67 4 4 4.67 4 5.5v9c0 .83.67 1.5 1.5 1.5h9c.83 0 1.5-.67 1.5-1.5v-9c0-.83-.67-1.5-1.5-1.5zm-8 2a.5.5 0 01.5.41v7.09a.5.5 0 01-1 .09V6.5c0-.28.22-.5.5-.5z" fill="currentColor"></path>
+                                                                        </svg>
+                                                                    </div>
+                                                                    <span>그룹</span>
+                                                                    <p id="groupHint" class="hidden">NOT TRANSLATED: screenreader_group_list_hint</p>
+                                                                </div>
+                                                            </button>
+                                                            <div id="tooltip4" style="position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0px; border: 0px; overflow: hidden;">그룹</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="screenreader-only">
+                                                        <span>NOT TRANSLATED: grouping_indicator_no_grouping</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tasksToolbar-children"> </div>
+                        </div>
+
+                        <div class="flex-container">
+                            <div class="flexBoxFix">
+                                <div class="indicatorComponent-container"></div>
+                                <div class="nudgeComponent-wrapper" id="nudgeComponent-wrapper"></div>
+                                <div class="main-background">
+                                    <span class="addToTop centerColumn-item">
+                                        <div class="baseAddParent addTask taskCreation focused">
+                                            <div class="baseAdd addTask focused taskCreation">
+                                                <button class="baseAdd-icon addTask" type="button" aria-label="작업 추가" tabindex="0">
+                                                    <svg class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0" fill="currentColor" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M10 3a7 7 0 100 14 7 7 0 000-14zm-8 7a8 8 0 1116 0 8 8 0 01-16 0z" fill="currentColor"></path>
+                                                    </svg>
+                                                </button>
+                                                <span id="baseAddInput-addTask-description" class="screenreader-only"></span>
+                                                <input id="baseAddInput-addTask-inbox" class="baseAdd-input taskCreation expanded" aria-label="목록 작업, 목록 옵션에 액세스하려면 Shift+Tab을 누르세요." aria-describedby="baseAddInput-addTask-description" type="text" maxlength="255" placeholder="작업 추가" tabindex="0" autocomplete="off" value="">
+                                            </div>
+                                            <div class="baseAdd addTask taskCreation focused rich-entry entered">
+                                                <div class="taskCreation-entrybar">
+                                                    <div class="dateButton-container">
+                                                        <button class="dateButton">
+                                                            <div>
+                                                                <div class="ms-TooltipHost root-42">
+                                                                    <div class="taskCreation-labelcontainer">
+                                                                        <div class="taskCreation-icon">
+                                                                            <svg class="fluentIcon dateButton-icon ___12fm75w f1w7gpdv fez10in fg4l7m0" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                                <path d="M7 11a1 1 0 100-2 1 1 0 000 2zm1 2a1 1 0 11-2 0 1 1 0 012 0zm2-2a1 1 0 100-2 1 1 0 000 2zm1 2a1 1 0 11-2 0 1 1 0 012 0zm2-2a1 1 0 100-2 1 1 0 000 2zm4-5.5A2.5 2.5 0 0014.5 3h-9A2.5 2.5 0 003 5.5v9A2.5 2.5 0 005.5 17h9a2.5 2.5 0 002.5-2.5v-9zM4 7h12v7.5c0 .83-.67 1.5-1.5 1.5h-9A1.5 1.5 0 014 14.5V7zm1.5-3h9c.83 0 1.5.67 1.5 1.5V6H4v-.5C4 4.67 4.67 4 5.5 4z" fill="currentColor"></path>
+                                                                            </svg>
+                                                                        </div>
+                                                                        <div class="dueDate-text isPlaceHolderText">
+                                                                            <span class="screenreader-only">기한 설정</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                    <div class="reminderButton-container">
+                                                        <button class="reminderButton">
+                                                            <div>
+                                                                <div class="ms-TooltipHost root-42">
+                                                                    <div class="taskCreation-labelcontainer">
+                                                                        <div class="taskCreation-icon">
+                                                                            <svg class="fluentIcon reminderButton-icon ___12fm75w f1w7gpdv fez10in fg4l7m0" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                                <path d="M10 2a5.92 5.92 0 015.98 5.36l.02.22V11.4l.92 2.22a1 1 0 01.06.17l.01.08.01.13a1 1 0 01-.75.97l-.11.02L16 15h-3.5v.17a2.5 2.5 0 01-5 0V15H4a1 1 0 01-.26-.03l-.13-.04a1 1 0 01-.6-1.05l.02-.13.05-.13L4 11.4V7.57A5.9 5.9 0 0110 2zm1.5 13h-3v.15a1.5 1.5 0 001.36 1.34l.14.01c.78 0 1.42-.6 1.5-1.36V15zM10 3a4.9 4.9 0 00-4.98 4.38L5 7.6V11.5l-.04.2L4 14h12l-.96-2.3-.04-.2V7.61A4.9 4.9 0 0010 3z" fill="currentColor"></path>
+                                                                            </svg>
+                                                                        </div>
+                                                                        <div class="reminderDate-text isPlaceHolderText">
+                                                                            <span class="screenreader-only">미리 알림</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                    <div class="recurringButton-container">
+                                                        <button class="recurringButton" >
+                                                            <div>
+                                                                <div class="ms-TooltipHost root-42">
+                                                                    <div class="taskCreation-labelcontainer">
+                                                                        <div class="taskCreation-icon">
+                                                                            <svg class="fluentIcon recurringButton-icon ___12fm75w f1w7gpdv fez10in fg4l7m0" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                                <path d="M16.5 6.67a.5.5 0 01.3.1l.08.07.01.02A5 5 0 0113.22 15L13 15H6.7l1.65 1.65c.18.17.2.44.06.63l-.06.07a.5.5 0 01-.63.06l-.07-.06-2.5-2.5a.5.5 0 01-.06-.63l.06-.07 2.5-2.5a.5.5 0 01.76.63l-.06.07L6.72 14h.14L7 14h6a4 4 0 003.11-6.52.5.5 0 01.39-.81zm-4.85-4.02a.5.5 0 01.63-.06l.07.06 2.5 2.5.06.07a.5.5 0 010 .56l-.06.07-2.5 2.5-.07.06a.5.5 0 01-.56 0l-.07-.06-.06-.07a.5.5 0 010-.56l.06-.07L13.28 6h-.14L13 6H7a4 4 0 00-3.1 6.52c.06.09.1.2.1.31a.5.5 0 01-.9.3A4.99 4.99 0 016.77 5h6.52l-1.65-1.65-.06-.07a.5.5 0 01.06-.63z" fill="currentColor"></path>
+                                                                            </svg>
+                                                                        </div>
+                                                                        <div class="recurrence-text isPlaceHolderText">
+                                                                            <span class="screenreader-only">반복</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div id="tooltip7" style="position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0px; border: 0px; overflow: hidden;">반복</div>
+                                                                </div>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <button aria-label="추가" class="baseAdd-button baseAdd-disabledButton taskcreation" tabindex="-1" disabled="">추가</button>
+                                            </div>
+                                        </div>
+                                    </span>
+
+                                    <div class="tasks">
+                                        <div class="ms-FocusZone css-41 tasks focus-wrapper" role="tree" data-focuszone-id="FocusZone8">
+                                            <div class="chunkedComponentList sticky">
+                                                <div class="chunkedScrollContainer">
+                                                    <div class="slice componentList centerColumn-item">
+
+                                                        <div class="">
+                                                            <div role="none">
+                                                                <div>
+                                                                    <div role="treeitem" data-is-focusable="true" class="ms-FocusZone css-41 taskItem" aria-label=" 작업 [Cloud] Azure M365 추가 옵션을 보려면 &amp;lt;Tab&amp;gt; 키를 누르세요." data-focuszone-id="FocusZone12" tabindex="-1">
+                                                                        <div class="taskItem-body" aria-live="off" role="listitem">
+                                                                            <span data-is-focusable="true" class="checkBox" aria-label="완료됨으로 표시 [Cloud] Azure M365" role="checkbox" aria-checked="false" tabindex="-1">
+                                                                                <svg class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0" fill="currentColor" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                                                                                    <path d="M10 3a7 7 0 100 14 7 7 0 000-14zm-8 7a8 8 0 1116 0 8 8 0 01-16 0z" fill="currentColor"></path>
+                                                                                </svg>
+                                                                                <svg class="fluentIcon checkBox-hover ___12fm75w f1w7gpdv fez10in fg4l7m0" fill="currentColor" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                                                                                    <path d="M10 2a8 8 0 110 16 8 8 0 010-16zm0 1a7 7 0 100 14 7 7 0 000-14zm3.36 4.65c.17.17.2.44.06.63l-.06.07-4 4a.5.5 0 01-.64.07l-.07-.06-2-2a.5.5 0 01.63-.77l.07.06L9 11.3l3.65-3.65c.2-.2.51-.2.7 0z" fill="currentColor"></path>
+                                                                                </svg>
+                                                                            </span>
+                                                                            <button tabindex="-1" class="taskItem-titleWrapper">
+                                                                                <span aria-label=" 작업 [Cloud] Azure M365" class="taskItem-title"><span><span>[Cloud]</span><span>Azure M365</span></span></span>
+                                                                                <div class="metaDataInfo"></div>
+                                                                            </button>
+                                                                            <div>
+                                                                                <div class="ms-TooltipHost root-42">
+                                                                                    <span class="importanceButton" data-is-focusable="true" role="checkbox" aria-checked="false" aria-label="작업을 중요로 표시합니다. [Cloud] Azure M365" tabindex="-1">
+                                                                                        <svg class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                                                                                            <path d="M9.1 2.9a1 1 0 011.8 0l1.93 3.91 4.31.63a1 1 0 01.56 1.7l-3.12 3.05.73 4.3a1 1 0 01-1.45 1.05L10 15.51l-3.86 2.03a1 1 0 01-1.45-1.05l.74-4.3L2.3 9.14a1 1 0 01.56-1.7l4.31-.63L9.1 2.9zm.9.44L8.07 7.25a1 1 0 01-.75.55L3 8.43l3.12 3.04a1 1 0 01.3.89l-.75 4.3 3.87-2.03a1 1 0 01.93 0l3.86 2.03-.74-4.3a1 1 0 01.29-.89L17 8.43l-4.32-.63a1 1 0 01-.75-.55L10 3.35z" fill="currentColor">
+                                                                                            </path>
+                                                                                        </svg>
+                                                                                    </span>
+                                                                                    <div id="tooltip13" style="position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0px; border: 0px; overflow: hidden;">작업을 중요로 표시합니다.</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div role="presentation"></div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="">
+                                                            <div role="none">
+                                                                <div>
+                                                                    <div role="treeitem" tabindex="-1" data-is-focusable="true" class="ms-FocusZone css-41 taskItem" aria-label=" 작업 [Design] Asana 추가 옵션을 보려면 &amp;lt;Tab&amp;gt; 키를 누르세요." data-focuszone-id="FocusZone14">
+                                                                        <div class="taskItem-body" aria-live="off" role="listitem">
+                                                                            <span data-is-focusable="true" class="checkBox" aria-label="완료됨으로 표시 [Design] Asana" role="checkbox" aria-checked="false" tabindex="-1">
+                                                                                <svg class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0" fill="currentColor" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                                                                                    <path d="M10 3a7 7 0 100 14 7 7 0 000-14zm-8 7a8 8 0 1116 0 8 8 0 01-16 0z" fill="currentColor"></path>
+                                                                                </svg>
+                                                                                <svg class="fluentIcon checkBox-hover ___12fm75w f1w7gpdv fez10in fg4l7m0" fill="currentColor" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                                                                                    <path d="M10 2a8 8 0 110 16 8 8 0 010-16zm0 1a7 7 0 100 14 7 7 0 000-14zm3.36 4.65c.17.17.2.44.06.63l-.06.07-4 4a.5.5 0 01-.64.07l-.07-.06-2-2a.5.5 0 01.63-.77l.07.06L9 11.3l3.65-3.65c.2-.2.51-.2.7 0z" fill="currentColor"></path>
+                                                                                </svg>
+                                                                            </span>
+                                                                            <button tabindex="-1" class="taskItem-titleWrapper">
+                                                                                <span aria-label=" 작업 [Design] Asana" class="taskItem-title"><span><span>[Design]</span><span> Asana</span></span></span>
+                                                                                <div class="metaDataInfo"></div>
+                                                                            </button>
+                                                                            <div>
+                                                                                <div class="ms-TooltipHost root-42">
+                                                                                    <span class="importanceButton" data-is-focusable="true" role="checkbox" aria-checked="false" aria-label="작업을 중요로 표시합니다. [Design] Asana" tabindex="-1">
+                                                                                        <svg class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                                                                                            <path d="M9.1 2.9a1 1 0 011.8 0l1.93 3.91 4.31.63a1 1 0 01.56 1.7l-3.12 3.05.73 4.3a1 1 0 01-1.45 1.05L10 15.51l-3.86 2.03a1 1 0 01-1.45-1.05l.74-4.3L2.3 9.14a1 1 0 01.56-1.7l4.31-.63L9.1 2.9zm.9.44L8.07 7.25a1 1 0 01-.75.55L3 8.43l3.12 3.04a1 1 0 01.3.89l-.75 4.3 3.87-2.03a1 1 0 01.93 0l3.86 2.03-.74-4.3a1 1 0 01.29-.89L17 8.43l-4.32-.63a1 1 0 01-.75-.55L10 3.35z" fill="currentColor"></path>
+                                                                                        </svg>
+                                                                                    </span>
+                                                                                    <div id="tooltip15" style="position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0px; border: 0px; overflow: hidden;">작업을 중요로 표시합니다.</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div role="presentation"></div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="">
+                                                            <div role="none">
+                                                                <div>
+                                                                    <div role="treeitem" tabindex="-1" data-is-focusable="true" class="ms-FocusZone css-41 taskItem" aria-label=" 작업 [Design] instagram 추가 옵션을 보려면 &amp;lt;Tab&amp;gt; 키를 누르세요." data-focuszone-id="FocusZone16">
+                                                                        <div class="taskItem-body" aria-live="off" role="listitem">
+                                                                            <span data-is-focusable="true" class="checkBox" aria-label="완료됨으로 표시 [Design] instagram" role="checkbox" aria-checked="false" tabindex="-1">
+                                                                                <svg class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0" fill="currentColor" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                                                                                    <path d="M10 3a7 7 0 100 14 7 7 0 000-14zm-8 7a8 8 0 1116 0 8 8 0 01-16 0z" fill="currentColor"></path>
+                                                                                </svg>
+                                                                                <svg class="fluentIcon checkBox-hover ___12fm75w f1w7gpdv fez10in fg4l7m0" fill="currentColor" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                                                                                    <path d="M10 2a8 8 0 110 16 8 8 0 010-16zm0 1a7 7 0 100 14 7 7 0 000-14zm3.36 4.65c.17.17.2.44.06.63l-.06.07-4 4a.5.5 0 01-.64.07l-.07-.06-2-2a.5.5 0 01.63-.77l.07.06L9 11.3l3.65-3.65c.2-.2.51-.2.7 0z" fill="currentColor"></path>
+                                                                                </svg>
+                                                                            </span>
+                                                                            <button tabindex="-1" class="taskItem-titleWrapper">
+                                                                                <span aria-label=" 작업 [Design] instagram" class="taskItem-title"><span><span>[Design]</span><span> instagram</span></span></span>
+                                                                                <div class="metaDataInfo"></div>
+                                                                            </button>
+                                                                            <div>
+                                                                                <div class="ms-TooltipHost root-42">
+                                                                                    <span class="importanceButton" data-is-focusable="true" role="checkbox" aria-checked="false" aria-label="작업을 중요로 표시합니다. [Design] instagram" tabindex="-1">
+                                                                                        <svg class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                                                                                            <path d="M9.1 2.9a1 1 0 011.8 0l1.93 3.91 4.31.63a1 1 0 01.56 1.7l-3.12 3.05.73 4.3a1 1 0 01-1.45 1.05L10 15.51l-3.86 2.03a1 1 0 01-1.45-1.05l.74-4.3L2.3 9.14a1 1 0 01.56-1.7l4.31-.63L9.1 2.9zm.9.44L8.07 7.25a1 1 0 01-.75.55L3 8.43l3.12 3.04a1 1 0 01.3.89l-.75 4.3 3.87-2.03a1 1 0 01.93 0l3.86 2.03-.74-4.3a1 1 0 01.29-.89L17 8.43l-4.32-.63a1 1 0 01-.75-.55L10 3.35z" fill="currentColor"></path>
+                                                                                        </svg></span>
+                                                                                    <div id="tooltip17" style="position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0px; border: 0px; overflow: hidden;">작업을 중요로 표시합니다.</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div role="presentation"></div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="">
+                                                            <div role="none">
+                                                                <div>
+                                                                    <div role="treeitem" data-is-focusable="true" class="ms-FocusZone css-41 taskItem" aria-label=" 작업 [Design] Threads 추가 옵션을 보려면 &amp;lt;Tab&amp;gt; 키를 누르세요." data-focuszone-id="FocusZone32" tabindex="-1">
+                                                                        <div class="taskItem-body" aria-live="off" role="listitem">
+                                                                            <span data-is-focusable="true" class="checkBox" aria-label="완료됨으로 표시 [Design] Threads" role="checkbox" aria-checked="false" tabindex="-1">
+                                                                                <svg class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0" fill="currentColor" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                                                                                    <path d="M10 3a7 7 0 100 14 7 7 0 000-14zm-8 7a8 8 0 1116 0 8 8 0 01-16 0z" fill="currentColor"></path>
+                                                                                </svg>
+                                                                                <svg class="fluentIcon checkBox-hover ___12fm75w f1w7gpdv fez10in fg4l7m0" fill="currentColor" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                                                                                    <path d="M10 2a8 8 0 110 16 8 8 0 010-16zm0 1a7 7 0 100 14 7 7 0 000-14zm3.36 4.65c.17.17.2.44.06.63l-.06.07-4 4a.5.5 0 01-.64.07l-.07-.06-2-2a.5.5 0 01.63-.77l.07.06L9 11.3l3.65-3.65c.2-.2.51-.2.7 0z" fill="currentColor"></path>
+                                                                                </svg>
+                                                                            </span>
+                                                                            <button tabindex="-1" class="taskItem-titleWrapper">
+                                                                                <span aria-label=" 작업 [Design] Threads" class="taskItem-title"><span><span>[Design]</span><span>Threads</span></span></span>
+                                                                                <div class="metaDataInfo">
+                                                                                    <span class="metaDataInfo-group">
+                                                                                        <div class="taskItemInfo-steps">
+                                                                                            <span class="taskItemInfo-label"><span>1/3</span></span>
+                                                                                        </div>
+                                                                                    </span>
+                                                                                    <span class="metaDataInfo-group">
+                                                                                        <span class="taskItemInfo-date">
+                                                                                            <svg class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0" fill="currentColor" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                                                                                                <path d="M5.25 9a.75.75 0 100-1.5.75.75 0 000 1.5zM6 10.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM8 9a.75.75 0 100-1.5A.75.75 0 008 9zm.75 1.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm2-1.75a.75.75 0 100-1.5.75.75 0 000 1.5zM14 4.5A2.5 2.5 0 0011.5 2h-7A2.5 2.5 0 002 4.5v7A2.5 2.5 0 004.5 14h7a2.5 2.5 0 002.5-2.5v-7zM3 6h10v5.5c0 .83-.67 1.5-1.5 1.5h-7A1.5 1.5 0 013 11.5V6zm1.5-3h7c.83 0 1.5.67 1.5 1.5V5H3v-.5C3 3.67 3.67 3 4.5 3z" fill="currentColor"></path>
+                                                                                            </svg>
+                                                                                            <span class="taskItemInfo-label">
+                                                                                                <span class="date">내일</span></span>
+                                                                                                <svg class="fluentIcon taskItemInfoRecurrence-icon ___12fm75w f1w7gpdv fez10in fg4l7m0" fill="currentColor" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                                                                                                <path d="M12.9 5.24a3.99 3.99 0 01-2.7 6.75L10 12H6.7l1.16 1.15c.17.17.19.44.05.64l-.05.07a.5.5 0 01-.64.05l-.07-.05-2-2a.5.5 0 01-.06-.64l.06-.07 2-2a.5.5 0 01.76.63l-.05.07L6.7 11H10a3 3 0 003-2.82V8a3 3 0 00-.87-2.1.5.5 0 01.69-.72l.07.06zM8.77 2.09l.07.05 2 2 .06.08a.5.5 0 010 .56l-.05.07-2 2-.08.06a.5.5 0 01-.56 0l-.07-.05-.06-.07a.5.5 0 010-.57l.06-.07L9.29 5H6a3 3 0 00-3 2.82V8c0 .82.33 1.56.86 2.1a.5.5 0 01-.71.7A4 4 0 015.8 4h3.5L8.14 2.85l-.06-.07a.5.5 0 01.7-.7z" fill="currentColor"></path>
+                                                                                            </svg>
+                                                                                        </span>
+                                                                                    </span>
+                                                                                    <span class="metaDataInfo-group">
+                                                                                        <span class="taskItemInfo-note">
+                                                                                            <svg class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0" fill="currentColor" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                                                                                                <path d="M4.5 2A2.5 2.5 0 002 4.5v7A2.5 2.5 0 004.5 14h3.67c.66 0 1.3-.26 1.77-.73l3.33-3.33c.47-.47.73-1.1.73-1.77V4.5A2.5 2.5 0 0011.5 2h-7zM3 4.5C3 3.67 3.67 3 4.5 3h7c.83 0 1.5.67 1.5 1.5V8h-2.5A2.5 2.5 0 008 10.5V13H4.5A1.5 1.5 0 013 11.5v-7zm6 8.25V10.5c0-.83.67-1.5 1.5-1.5h2.25a1.5 1.5 0 01-.19.23l-3.33 3.33a1.5 1.5 0 01-.23.2z" fill="currentColor"></path>
+                                                                                            </svg>
+                                                                                        </span>
+                                                                                    </span>
+                                                                                    <span class="metaDataInfo-group">
+                                                                                        <span class="taskItemInfo-attachments">
+                                                                                            <svg class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0" fill="currentColor" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                                                                                                <path d="M3.26 8.7l4.6-4.59a2.5 2.5 0 013.53 3.54l-5.3 5.3a1 1 0 01-1.42-1.41l5.3-5.3a.5.5 0 00-.7-.71l-5.3 5.3a2 2 0 102.82 2.83l5.3-5.3A3.5 3.5 0 007.16 3.4L2.55 8a.5.5 0 10.7.7z" fill="currentColor"></path>
+                                                                                            </svg>
+                                                                                            <span class="taskItemInfo-label">첨부된 파일</span></span>
+                                                                                    </span>
+                                                                                    <span class="taskItemInfo-category" title="Blue category">
+                                                                                        <span class="taskItemInfo-icon" style="background-color: rgb(224, 247, 253); border-color: rgb(0, 120, 153);"></span>
+                                                                                        <span class="taskItemInfo-text" style="color: rgb(0, 120, 153);">Blue category</span>
+                                                                                    </span>
+                                                                                </div>
+                                                                            </button>
+                                                                            <div>
+                                                                                <div class="ms-TooltipHost root-42">
+                                                                                    <span class="importanceButton" data-is-focusable="true" role="checkbox" aria-checked="false" aria-label="작업을 중요로 표시합니다. [Design] Threads" tabindex="-1">
+                                                                                        <svg class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                                                                                            <path d="M9.1 2.9a1 1 0 011.8 0l1.93 3.91 4.31.63a1 1 0 01.56 1.7l-3.12 3.05.73 4.3a1 1 0 01-1.45 1.05L10 15.51l-3.86 2.03a1 1 0 01-1.45-1.05l.74-4.3L2.3 9.14a1 1 0 01.56-1.7l4.31-.63L9.1 2.9zm.9.44L8.07 7.25a1 1 0 01-.75.55L3 8.43l3.12 3.04a1 1 0 01.3.89l-.75 4.3 3.87-2.03a1 1 0 01.93 0l3.86 2.03-.74-4.3a1 1 0 01.29-.89L17 8.43l-4.32-.63a1 1 0 01-.75-.55L10 3.35z" fill="currentColor"></path>
+                                                                                        </svg>
+                                                                                    </span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div role="presentation"></div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="taskCard">
+                                                            <div class="taskCard-header">
+                                                                <div class="taskCard-headerActions">
+                                                                    <button class="openCloseArrow" tabindex="-1" aria-labelledby="completed_tasks-label completed_tasks-hint" aria-expanded="true" aria-label="작업 집합 축소" title="작업 집합 축소"><i class="icon fontIcon ms-Icon ms-Icon--ChevronDown iconSize-16" aria-hidden="true"></i></button>
+                                                                </div>
+                                                                <div class="taskCard-labels">
+                                                                    <h3 class="taskCard-label" id="completed_tasks-label"><span>완료됨</span></h3>
+                                                                    <h3 class="taskCard-subLabel">2</h3>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div role="none">
+                                                            <div>
+                                                                <div role="treeitem" tabindex="-1" data-is-focusable="true" class="ms-FocusZone css-41 taskItem completed" aria-label="완료됨 작업 [FTT] Sample 추가 옵션을 보려면 &amp;lt;Tab&amp;gt; 키를 누르세요." data-focuszone-id="FocusZone75">
+                                                                    <div class="taskItem-body" aria-live="off" role="listitem">
+                                                                        <span data-is-focusable="true" class="checkBox completed" aria-label="완료됨으로 표시 [FTT] Sample"role="checkbox" aria-checked="true"tabindex="-1">
+                                                                            <svg class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                                                                                <path d="M10 2a8 8 0 110 16 8 8 0 010-16zm3.36 5.65a.5.5 0 00-.64-.06l-.07.06L9 11.3 7.35 9.65l-.07-.06a.5.5 0 00-.7.7l.07.07 2 2 .07.06c.17.11.4.11.56 0l.07-.06 4-4 .07-.08a.5.5 0 00-.06-.63z" fill="currentColor"></path>
+                                                                            </svg>
+                                                                        </span>
+                                                                        <button tabindex="-1" class="taskItem-titleWrapper">
+                                                                            <span aria-label="완료됨 작업 [FTT] Sample" class="taskItem-title"><span><span>[FTT]</span><span>Sample</span></span></span>
+                                                                            <div class="metaDataInfo"></div>
+                                                                        </button>
+                                                                        <div>
+                                                                            <div class="ms-TooltipHost root-42">
+                                                                                <span class="importanceButton" data-is-focusable="true" role="checkbox" aria-checked="false" aria-label="작업을 중요로 표시합니다. [FTT] Sample" tabindex="-1">
+                                                                                    <svg class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0" fill="currentColor" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                                                                                        <path d="M9.1 2.9a1 1 0 011.8 0l1.93 3.91 4.31.63a1 1 0 01.56 1.7l-3.12 3.05.73 4.3a1 1 0 01-1.45 1.05L10 15.51l-3.86 2.03a1 1 0 01-1.45-1.05l.74-4.3L2.3 9.14a1 1 0 01.56-1.7l4.31-.63L9.1 2.9zm.9.44L8.07 7.25a1 1 0 01-.75.55L3 8.43l3.12 3.04a1 1 0 01.3.89l-.75 4.3 3.87-2.03a1 1 0 01.93 0l3.86 2.03-.74-4.3a1 1 0 01.29-.89L17 8.43l-4.32-.63a1 1 0 01-.75-.55L10 3.35z" fill="currentColor"></path>
+                                                                                    </svg>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div role="presentation"></div>
+                                                        </div>
+
+                                                        <div role="none">
+                                                            <div>
+                                                                <div role="treeitem" data-is-focusable="true" class="ms-FocusZone css-41 taskItem completed selected active" aria-label="완료됨 작업 반복 업무 테스트 추가 옵션을 보려면 &amp;lt;Tab&amp;gt; 키를 누르세요." data-focuszone-id="FocusZone357">
+                                                                    <div class="taskItem-body" aria-live="off" role="listitem">
+                                                                        <span data-is-focusable="true" class="checkBox completed" aria-label="완료됨으로 표시 반복 업무 테스트" role="checkbox" aria-checked="true" tabindex="-1">
+                                                                            <svg class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                                                                                <path d="M10 2a8 8 0 110 16 8 8 0 010-16zm3.36 5.65a.5.5 0 00-.64-.06l-.07.06L9 11.3 7.35 9.65l-.07-.06a.5.5 0 00-.7.7l.07.07 2 2 .07.06c.17.11.4.11.56 0l.07-.06 4-4 .07-.08a.5.5 0 00-.06-.63z" fill="currentColor"></path>
+                                                                            </svg>
+                                                                        </span>
+                                                                        <button tabindex="-1" class="taskItem-titleWrapper">
+                                                                            <span aria-label="완료됨 작업 반복 업무 테스트" class="taskItem-title"><span><span>반복</span><span>업무 테스트</span></span></span>
+                                                                            <div class="metaDataInfo">
+                                                                                <span class="metaDataInfo-group">
+                                                                                    <div class="taskItemInfo-steps">
+                                                                                        <svg class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0" fill="currentColor" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                                                                                            <path d="M8 2a6 6 0 110 12A6 6 0 018 2zm0 1a5 5 0 100 10A5 5 0 008 3zm-.75 6.04l2.87-2.88a.5.5 0 01.77.64l-.06.07L7.6 10.1a.5.5 0 01-.63.06l-.07-.06-1.75-1.75a.5.5 0 01.63-.76l.07.06 1.4 1.4 2.87-2.89-2.87 2.88z" fill="currentColor"></path>
+                                                                                        </svg>
+                                                                                        <span class="taskItemInfo-label"><span>5/5</span></span>
+                                                                                    </div>
+                                                                                </span>
+                                                                                <span class="metaDataInfo-group">
+                                                                                    <span class="taskItemInfo-date inactive">
+                                                                                        <svg class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0" fill="currentColor" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                                                                                            <path d="M5.25 9a.75.75 0 100-1.5.75.75 0 000 1.5zM6 10.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM8 9a.75.75 0 100-1.5A.75.75 0 008 9zm.75 1.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm2-1.75a.75.75 0 100-1.5.75.75 0 000 1.5zM14 4.5A2.5 2.5 0 0011.5 2h-7A2.5 2.5 0 002 4.5v7A2.5 2.5 0 004.5 14h7a2.5 2.5 0 002.5-2.5v-7zM3 6h10v5.5c0 .83-.67 1.5-1.5 1.5h-7A1.5 1.5 0 013 11.5V6zm1.5-3h7c.83 0 1.5.67 1.5 1.5V5H3v-.5C3 3.67 3.67 3 4.5 3z" fill="currentColor"></path>
+                                                                                        </svg>
+                                                                                        <span class="taskItemInfo-label">
+                                                                                            <span class="date">지연, 2022년 1월 27일, 목</span>
+                                                                                        </span>
+                                                                                        <svg class="fluentIcon taskItemInfoRecurrence-icon ___12fm75w f1w7gpdv fez10in fg4l7m0" fill="currentColor" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                                                                                            <path d="M12.9 5.24a3.99 3.99 0 01-2.7 6.75L10 12H6.7l1.16 1.15c.17.17.19.44.05.64l-.05.07a.5.5 0 01-.64.05l-.07-.05-2-2a.5.5 0 01-.06-.64l.06-.07 2-2a.5.5 0 01.76.63l-.05.07L6.7 11H10a3 3 0 003-2.82V8a3 3 0 00-.87-2.1.5.5 0 01.69-.72l.07.06zM8.77 2.09l.07.05 2 2 .06.08a.5.5 0 010 .56l-.05.07-2 2-.08.06a.5.5 0 01-.56 0l-.07-.05-.06-.07a.5.5 0 010-.57l.06-.07L9.29 5H6a3 3 0 00-3 2.82V8c0 .82.33 1.56.86 2.1a.5.5 0 01-.71.7A4 4 0 015.8 4h3.5L8.14 2.85l-.06-.07a.5.5 0 01.7-.7z" fill="currentColor"></path>
+                                                                                        </svg>
+                                                                                    </span>
+                                                                                </span>
+                                                                                <span class="taskItemInfo-category" title="Red category">
+                                                                                    <span class="taskItemInfo-icon" style="background-color: rgb(204, 204, 204); border-color: rgb(118, 118, 120);"></span>
+                                                                                    <span class="taskItemInfo-text" style="color: rgb(118, 118, 120);">Red category</span>
+                                                                                </span>
+                                                                                <span class="taskItemInfo-category" title="Green category">
+                                                                                    <span class="taskItemInfo-icon" style="background-color: rgb(204, 204, 204); border-color: rgb(118, 118, 120);"></span>
+                                                                                    <span class="taskItemInfo-text" style="color: rgb(118, 118, 120);">Green category</span>
+                                                                                </span>
+                                                                            </div>
+                                                                        </button>
+                                                                        <div>
+                                                                            <div class="ms-TooltipHost root-42">
+                                                                                <span class="importanceButton color-theme" data-is-focusable="true" role="checkbox" aria-checked="true" aria-label="중요도를 제거합니다. 반복 업무 테스트" tabindex="-1">
+                                                                                    <svg class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0" fill="currentColor" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                                                                                        <path d="M9.1 2.9a1 1 0 011.8 0l1.93 3.91 4.31.63a1 1 0 01.56 1.7l-3.12 3.05.73 4.3a1 1 0 01-1.45 1.05L10 15.51l-3.86 2.03a1 1 0 01-1.45-1.05l.74-4.3L2.3 9.14a1 1 0 01.56-1.7l4.31-.63L9.1 2.9z" fill="currentColor"></path>
+                                                                                    </svg>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div role="presentation"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </span>
+                
+                <div class="rightColumn rightColumn-entered" style="width: 360px;">
+                    <div class="resizer" style="right: 360px;"></div>
+                    <div class="details" role="complementary" aria-label="작업 세부 정보: [Design] Threads">
+                        <div data-is-scrollable="true" class="details-body">
+                            <div class="detailHeader">
+                                <div class="detailHeader-titleWrapper"><span data-is-focusable="true"
+                                        class="detailHeader-checkbox checkBox big"
+                                        aria-label="완료됨으로 표시 [Design] Threads" role="checkbox" aria-checked="false"
+                                        tabindex="0"><svg class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0"
+                                            fill="currentColor" width="24" height="24"
+                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12 3.5a8.5 8.5 0 100 17 8.5 8.5 0 000-17zM2 12a10 10 0 1120 0 10 10 0 01-20 0z"
+                                                fill="currentColor"></path>
+                                        </svg><svg class="fluentIcon checkBox-hover ___12fm75w f1w7gpdv fez10in fg4l7m0"
+                                            fill="currentColor" width="24" height="24"
+                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12 2a10 10 0 110 20 10 10 0 010-20zm0 1.5a8.5 8.5 0 100 17 8.5 8.5 0 000-17zm-1.25 9.94l4.47-4.47a.75.75 0 011.13.98l-.07.08-5 5a.75.75 0 01-.98.07l-.08-.07-2.5-2.5a.75.75 0 01.98-1.13l.08.07 1.97 1.97 4.47-4.47-4.47 4.47z"
+                                                fill="currentColor"></path>
+                                        </svg></span>
+                                    <div class="detailHeader-title">
+                                        <div class="editableContent" draggable="false">
+                                            <div>
+                                                <div class="ms-TooltipHost root-42"><button name="taskTitleEditButton"
+                                                        aria-label="작업 이름 바꾸기" class="editableContent-editButton"><i
+                                                            class="icon fontIcon ms-Icon ms-Icon--Edit iconSize-24"
+                                                            aria-hidden="true"></i></button></div>
+                                            </div>
+                                            <div class="editableContent-display" title="[Design] Threads">
+                                                <span><span>[Design]</span><span> Threads</span></span></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="ms-TooltipHost root-42"><span class="importanceButton"
+                                                data-is-focusable="true" role="checkbox" aria-checked="false"
+                                                aria-label="작업을 중요로 표시합니다. [Design] Threads" tabindex="0"><svg
+                                                    class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0"
+                                                    fill="currentColor" width="24" height="24"
+                                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10.79 3.1c.5-1 1.92-1 2.42 0l2.36 4.78 5.27.77c1.1.16 1.55 1.52.75 2.3l-3.82 3.72.9 5.25a1.35 1.35 0 01-1.96 1.42L12 18.86l-4.72 2.48a1.35 1.35 0 01-1.96-1.42l.9-5.25-3.81-3.72c-.8-.78-.36-2.14.75-2.3l5.27-.77 2.36-4.78zm1.2.94L9.75 8.6c-.2.4-.58.68-1.02.74l-5.05.74 3.66 3.56c.32.3.46.76.39 1.2l-.87 5.02 4.52-2.37c.4-.2.86-.2 1.26 0l4.51 2.37-.86-5.03c-.07-.43.07-.88.39-1.2l3.65-3.55-5.05-.74a1.35 1.35 0 01-1.01-.74L12 4.04z"
+                                                        fill="currentColor"></path>
+                                                </svg></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="steps">
+                                <div aria-label="단계" role="grid" class="ms-FocusZone css-41"
+                                    data-focuszone-id="FocusZone24">
+                                    <div class="">
+                                        <div role="none">
+                                            <div>
+                                                <div data-is-focusable="true"
+                                                    class="ms-FocusZone css-41 ms-DetailsRow step completed root-60"
+                                                    role="row" aria-label="단계 1sadfasdfasdf, 사용할 수 있는 추가 옵션"
+                                                    data-selection-index="0" data-selection-touch-invoke="true"
+                                                    data-item-index="0" aria-rowindex="1" data-automationid="DetailsRow"
+                                                    data-focuszone-id="FocusZone28" style="min-width: 0px;"
+                                                    tabindex="-1">
+                                                    <div class="ms-DetailsRow-fields fields-67"
+                                                        data-automationid="DetailsRowFields" role="presentation">
+                                                        <div role="gridcell" aria-readonly="true" aria-colindex="1"
+                                                            class="step-cell ms-DetailsRow-cell cell-63 cellUnpadded-61"
+                                                            data-automationid="DetailsRowCell"
+                                                            data-automation-key="checkbox" style="width: auto;"><span
+                                                                data-is-focusable="true" class="checkBox completed"
+                                                                aria-label="완료됨으로 표시 1sadfasdfasdf" role="checkbox"
+                                                                aria-checked="true" tabindex="-1"><svg
+                                                                    class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0"
+                                                                    fill="currentColor" width="20"
+                                                                    height="20" viewBox="0 0 20 20"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    focusable="false">
+                                                                    <path
+                                                                        d="M10 2a8 8 0 110 16 8 8 0 010-16zm3.36 5.65a.5.5 0 00-.64-.06l-.07.06L9 11.3 7.35 9.65l-.07-.06a.5.5 0 00-.7.7l.07.07 2 2 .07.06c.17.11.4.11.56 0l.07-.06 4-4 .07-.08a.5.5 0 00-.06-.63z"
+                                                                        fill="currentColor"></path>
+                                                                </svg></span></div>
+                                                        <div role="gridcell" aria-readonly="true" aria-colindex="2"
+                                                            class="step-cell step-body ms-DetailsRow-cell cell-63 cellUnpadded-61"
+                                                            data-automationid="DetailsRowCell"
+                                                            data-automation-key="textfield" style="width: auto;">
+                                                            <div class="step-title">
+                                                                <div class="textArea" draggable="false">
+                                                                    <div
+                                                                        class="ms-TextField ms-TextField--multiline ms-TextField--borderless textField-small root-71">
+                                                                        <div class="ms-TextField-wrapper">
+                                                                            <div
+                                                                                class="ms-TextField-fieldGroup fieldGroup-72">
+                                                                                <textarea id="TextField29"
+                                                                                    draggable="false"
+                                                                                    class="ms-TextField-field textField-input field-73"
+                                                                                    aria-invalid="false" aria-label="단계"
+                                                                                    tabindex="-1"
+                                                                                    style="height: 20px;">1sadfasdfasdf</textarea>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div role="gridcell" aria-readonly="true" aria-colindex="3"
+                                                            class="step-cell step-delete ms-DetailsRow-cell cell-63 cellUnpadded-61"
+                                                            data-automationid="DetailsRowCell"
+                                                            data-automation-key="delete-button" style="width: auto;">
+                                                            <div>
+                                                                <div class="ms-TooltipHost root-42"><button
+                                                                        class="stepDelete-icon" title="단계 삭제"
+                                                                        tabindex="-1"><svg
+                                                                            class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0"
+                                                                            fill="currentColor" aria-hidden="true"
+                                                                            width="16" height="16" viewBox="0 0 16 16"
+                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                            focusable="false">
+                                                                            <path
+                                                                                d="M2.59 2.72l.06-.07a.5.5 0 01.63-.06l.07.06L8 7.29l4.65-4.64a.5.5 0 01.7.7L8.71 8l4.64 4.65c.18.17.2.44.06.63l-.06.07a.5.5 0 01-.63.06l-.07-.06L8 8.71l-4.65 4.64a.5.5 0 01-.7-.7L7.29 8 2.65 3.35a.5.5 0 01-.06-.63l.06-.07-.06.07z"
+                                                                                fill="currentColor"></path>
+                                                                        </svg></button></div>
+                                                            </div>
+                                                        </div>
+                                                    </div><span role="checkbox" class="checkCover-66"
+                                                        aria-checked="false" data-selection-toggle="true"></span>
+                                                </div>
+                                            </div>
+                                            <div role="presentation"></div>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div role="none">
+                                            <div>
+                                                <div data-is-focusable="true"
+                                                    class="ms-FocusZone css-41 ms-DetailsRow step root-60" role="row"
+                                                    aria-label="단계 2sadfasdfasdfas, 사용할 수 있는 추가 옵션"
+                                                    data-selection-index="1" data-selection-touch-invoke="true"
+                                                    data-item-index="1" aria-rowindex="2" data-automationid="DetailsRow"
+                                                    data-focuszone-id="FocusZone33" style="min-width: 0px;"
+                                                    tabindex="-1">
+                                                    <div class="ms-DetailsRow-fields fields-67"
+                                                        data-automationid="DetailsRowFields" role="presentation">
+                                                        <div role="gridcell" aria-readonly="true" aria-colindex="1"
+                                                            class="step-cell ms-DetailsRow-cell cell-63 cellUnpadded-61"
+                                                            data-automationid="DetailsRowCell"
+                                                            data-automation-key="checkbox" style="width: auto;"><span
+                                                                data-is-focusable="true" class="checkBox"
+                                                                aria-label="완료됨으로 표시 2sadfasdfasdfas" role="checkbox"
+                                                                aria-checked="false" tabindex="-1"><svg
+                                                                    class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0"
+                                                                    fill="currentColor" width="20"
+                                                                    height="20" viewBox="0 0 20 20"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    focusable="false">
+                                                                    <path
+                                                                        d="M10 3a7 7 0 100 14 7 7 0 000-14zm-8 7a8 8 0 1116 0 8 8 0 01-16 0z"
+                                                                        fill="currentColor"></path>
+                                                                </svg><svg
+                                                                    class="fluentIcon checkBox-hover ___12fm75w f1w7gpdv fez10in fg4l7m0"
+                                                                    fill="currentColor" width="20"
+                                                                    height="20" viewBox="0 0 20 20"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    focusable="false">
+                                                                    <path
+                                                                        d="M10 2a8 8 0 110 16 8 8 0 010-16zm0 1a7 7 0 100 14 7 7 0 000-14zm3.36 4.65c.17.17.2.44.06.63l-.06.07-4 4a.5.5 0 01-.64.07l-.07-.06-2-2a.5.5 0 01.63-.77l.07.06L9 11.3l3.65-3.65c.2-.2.51-.2.7 0z"
+                                                                        fill="currentColor"></path>
+                                                                </svg></span></div>
+                                                        <div role="gridcell" aria-readonly="true" aria-colindex="2"
+                                                            class="step-cell step-body ms-DetailsRow-cell cell-63 cellUnpadded-61"
+                                                            data-automationid="DetailsRowCell"
+                                                            data-automation-key="textfield" style="width: auto;">
+                                                            <div class="step-title">
+                                                                <div class="textArea" draggable="false">
+                                                                    <div
+                                                                        class="ms-TextField ms-TextField--multiline ms-TextField--borderless textField-small root-71">
+                                                                        <div class="ms-TextField-wrapper">
+                                                                            <div
+                                                                                class="ms-TextField-fieldGroup fieldGroup-72">
+                                                                                <textarea id="TextField34"
+                                                                                    draggable="false"
+                                                                                    class="ms-TextField-field textField-input field-73"
+                                                                                    aria-invalid="false" aria-label="단계"
+                                                                                    tabindex="-1"
+                                                                                    style="height: 20px;">2sadfasdfasdfas</textarea>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div role="gridcell" aria-readonly="true" aria-colindex="3"
+                                                            class="step-cell step-delete ms-DetailsRow-cell cell-63 cellUnpadded-61"
+                                                            data-automationid="DetailsRowCell"
+                                                            data-automation-key="delete-button" style="width: auto;">
+                                                            <div>
+                                                                <div class="ms-TooltipHost root-42"><button
+                                                                        class="stepDelete-icon" title="단계 삭제"
+                                                                        tabindex="-1"><svg
+                                                                            class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0"
+                                                                            fill="currentColor" aria-hidden="true"
+                                                                            width="16" height="16" viewBox="0 0 16 16"
+                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                            focusable="false">
+                                                                            <path
+                                                                                d="M2.59 2.72l.06-.07a.5.5 0 01.63-.06l.07.06L8 7.29l4.65-4.64a.5.5 0 01.7.7L8.71 8l4.64 4.65c.18.17.2.44.06.63l-.06.07a.5.5 0 01-.63.06l-.07-.06L8 8.71l-4.65 4.64a.5.5 0 01-.7-.7L7.29 8 2.65 3.35a.5.5 0 01-.06-.63l.06-.07-.06.07z"
+                                                                                fill="currentColor"></path>
+                                                                        </svg></button></div>
+                                                            </div>
+                                                        </div>
+                                                    </div><span role="checkbox" class="checkCover-66"
+                                                        aria-checked="false" data-selection-toggle="true"></span>
+                                                </div>
+                                            </div>
+                                            <div role="presentation"></div>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div role="none">
+                                            <div>
+                                                <div data-is-focusable="true"
+                                                    class="ms-FocusZone css-41 ms-DetailsRow step selected root-60"
+                                                    role="row" aria-label="단계 3asdfasdfasd, 사용할 수 있는 추가 옵션"
+                                                    data-selection-index="2" data-selection-touch-invoke="true"
+                                                    data-item-index="2" aria-rowindex="3" data-automationid="DetailsRow"
+                                                    data-focuszone-id="FocusZone38" style="min-width: 0px;"
+                                                    tabindex="0">
+                                                    <div class="ms-DetailsRow-fields fields-67"
+                                                        data-automationid="DetailsRowFields" role="presentation">
+                                                        <div role="gridcell" aria-readonly="true" aria-colindex="1"
+                                                            class="step-cell ms-DetailsRow-cell cell-63 cellUnpadded-61"
+                                                            data-automationid="DetailsRowCell"
+                                                            data-automation-key="checkbox" style="width: auto;"><span
+                                                                data-is-focusable="true" class="checkBox"
+                                                                aria-label="완료됨으로 표시 3asdfasdfasd" role="checkbox"
+                                                                aria-checked="false" tabindex="-1"><svg
+                                                                    class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0"
+                                                                    fill="currentColor" width="20"
+                                                                    height="20" viewBox="0 0 20 20"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    focusable="false">
+                                                                    <path
+                                                                        d="M10 3a7 7 0 100 14 7 7 0 000-14zm-8 7a8 8 0 1116 0 8 8 0 01-16 0z"
+                                                                        fill="currentColor"></path>
+                                                                </svg><svg
+                                                                    class="fluentIcon checkBox-hover ___12fm75w f1w7gpdv fez10in fg4l7m0"
+                                                                    fill="currentColor" width="20"
+                                                                    height="20" viewBox="0 0 20 20"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    focusable="false">
+                                                                    <path
+                                                                        d="M10 2a8 8 0 110 16 8 8 0 010-16zm0 1a7 7 0 100 14 7 7 0 000-14zm3.36 4.65c.17.17.2.44.06.63l-.06.07-4 4a.5.5 0 01-.64.07l-.07-.06-2-2a.5.5 0 01.63-.77l.07.06L9 11.3l3.65-3.65c.2-.2.51-.2.7 0z"
+                                                                        fill="currentColor"></path>
+                                                                </svg></span></div>
+                                                        <div role="gridcell" aria-readonly="true" aria-colindex="2"
+                                                            class="step-cell step-body ms-DetailsRow-cell cell-63 cellUnpadded-61"
+                                                            data-automationid="DetailsRowCell"
+                                                            data-automation-key="textfield" style="width: auto;">
+                                                            <div class="step-title">
+                                                                <div class="textArea" draggable="false">
+                                                                    <div
+                                                                        class="ms-TextField ms-TextField--multiline ms-TextField--borderless textField-small root-71">
+                                                                        <div class="ms-TextField-wrapper">
+                                                                            <div
+                                                                                class="ms-TextField-fieldGroup fieldGroup-72">
+                                                                                <textarea id="TextField39"
+                                                                                    draggable="false"
+                                                                                    class="ms-TextField-field textField-input field-73"
+                                                                                    aria-invalid="false" aria-label="단계"
+                                                                                    tabindex="0"
+                                                                                    style="height: 20px;">3asdfasdfasd</textarea>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div role="gridcell" aria-readonly="true" aria-colindex="3"
+                                                            class="step-cell step-delete ms-DetailsRow-cell cell-63 cellUnpadded-61"
+                                                            data-automationid="DetailsRowCell"
+                                                            data-automation-key="delete-button" style="width: auto;">
+                                                            <div>
+                                                                <div class="ms-TooltipHost root-42"><button
+                                                                        class="stepDelete-icon" title="단계 삭제"
+                                                                        tabindex="-1"><svg
+                                                                            class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0"
+                                                                            fill="currentColor" aria-hidden="true"
+                                                                            width="16" height="16" viewBox="0 0 16 16"
+                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                            focusable="false">
+                                                                            <path
+                                                                                d="M2.59 2.72l.06-.07a.5.5 0 01.63-.06l.07.06L8 7.29l4.65-4.64a.5.5 0 01.7.7L8.71 8l4.64 4.65c.18.17.2.44.06.63l-.06.07a.5.5 0 01-.63.06l-.07-.06L8 8.71l-4.65 4.64a.5.5 0 01-.7-.7L7.29 8 2.65 3.35a.5.5 0 01-.06-.63l.06-.07-.06.07z"
+                                                                                fill="currentColor"></path>
+                                                                        </svg></button></div>
+                                                            </div>
+                                                        </div>
+                                                    </div><span role="checkbox" class="checkCover-66"
+                                                        aria-checked="false" data-selection-toggle="true"></span>
+                                                </div>
+                                            </div>
+                                            <div role="presentation"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="baseAdd addStep"><button class="baseAdd-icon addStep" type="button"
+                                        aria-label="다음 단계" tabindex="-1"><svg
+                                            class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0" fill="currentColor"
+                                            width="20" height="20" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10 2.5a.5.5 0 00-1 0V9H2.5a.5.5 0 000 1H9v6.5a.5.5 0 001 0V10h6.5a.5.5 0 000-1H10V2.5z"
+                                                fill="currentColor"></path>
+                                        </svg></button><span id="baseAddInput-addStep-description"
+                                        class="screenreader-only"></span><input id="baseAddInput-addStep"
+                                        class="baseAdd-input chromeless" aria-label="다음 단계"
+                                        aria-describedby="baseAddInput-addStep-description" type="text" maxlength="255"
+                                        placeholder="다음 단계" tabindex="0" autocomplete="off" value=""></div>
+                            </div>
+                            <div class="">
+                                <div class="section">
+                                    <div class="section-item"><button class="section-innerClick" aria-label="나의 하루에 추가">
+                                            <div class="section-inner" aria-hidden="true">
+                                                <div class="section-icon"><svg
+                                                        class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0"
+                                                        fill="currentColor" width="20" height="20"
+                                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M10 2c.28 0 .5.22.5.5v1a.5.5 0 01-1 0v-1c0-.28.22-.5.5-.5zm0 12a4 4 0 100-8 4 4 0 000 8zm0-1a3 3 0 110-6 3 3 0 010 6zm7.5-2.5a.5.5 0 000-1h-1a.5.5 0 000 1h1zM10 16c.28 0 .5.22.5.5v1a.5.5 0 01-1 0v-1c0-.28.22-.5.5-.5zm-6.5-5.5a.5.5 0 000-1H2.46a.5.5 0 000 1H3.5zm.65-6.35c.2-.2.5-.2.7 0l1 1a.5.5 0 11-.7.7l-1-1a.5.5 0 010-.7zm.7 11.7a.5.5 0 01-.7-.7l1-1a.5.5 0 01.7.7l-1 1zm11-11.7a.5.5 0 00-.7 0l-1 1a.5.5 0 00.7.7l1-1a.5.5 0 000-.7zm-.7 11.7a.5.5 0 00.7-.7l-1-1a.5.5 0 00-.7.7l1 1z"
+                                                            fill="currentColor"></path>
+                                                    </svg></div>
+                                                <div class="section-content" aria-hidden="true">
+                                                    <div class="section-title">나의 하루에 추가</div>
+                                                </div>
+                                            </div>
+                                        </button></div>
+                                </div>
+                                <div class="section">
+                                    <div class="section-item"><button class="section-innerClick" >
+                                            <div class="section-inner">
+                                                <div class="section-icon"><svg
+                                                        class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0"
+                                                        fill="currentColor" width="20" height="20"
+                                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M10 2a5.92 5.92 0 015.98 5.36l.02.22V11.4l.92 2.22a1 1 0 01.06.17l.01.08.01.13a1 1 0 01-.75.97l-.11.02L16 15h-3.5v.17a2.5 2.5 0 01-5 0V15H4a1 1 0 01-.26-.03l-.13-.04a1 1 0 01-.6-1.05l.02-.13.05-.13L4 11.4V7.57A5.9 5.9 0 0110 2zm1.5 13h-3v.15a1.5 1.5 0 001.36 1.34l.14.01c.78 0 1.42-.6 1.5-1.36V15zM10 3a4.9 4.9 0 00-4.98 4.38L5 7.6V11.5l-.04.2L4 14h12l-.96-2.3-.04-.2V7.61A4.9 4.9 0 0010 3z"
+                                                            fill="currentColor"></path>
+                                                    </svg></div>
+                                                <div class="section-content">
+                                                    <div class="section-title"><span>미리 알림</span></div>
+                                                </div>
+                                            </div>
+                                        </button></div>
+                                    <div class="section-item isSet"><button class="section-innerClick"
+                                            >
+                                            <div class="section-inner">
+                                                <div class="section-icon"><svg
+                                                        class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0"
+                                                        fill="currentColor" width="20" height="20"
+                                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M7 11a1 1 0 100-2 1 1 0 000 2zm1 2a1 1 0 11-2 0 1 1 0 012 0zm2-2a1 1 0 100-2 1 1 0 000 2zm1 2a1 1 0 11-2 0 1 1 0 012 0zm2-2a1 1 0 100-2 1 1 0 000 2zm4-5.5A2.5 2.5 0 0014.5 3h-9A2.5 2.5 0 003 5.5v9A2.5 2.5 0 005.5 17h9a2.5 2.5 0 002.5-2.5v-9zM4 7h12v7.5c0 .83-.67 1.5-1.5 1.5h-9A1.5 1.5 0 014 14.5V7zm1.5-3h9c.83 0 1.5.67 1.5 1.5V6H4v-.5C4 4.67 4.67 4 5.5 4z"
+                                                            fill="currentColor"></path>
+                                                    </svg></div>
+                                                <div class="section-content">
+                                                    <div class="section-title"><span class="date">내일</span></div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                        <div>
+                                            <div class="ms-TooltipHost root-42"><button class="section-delete"
+                                                    aria-label="기한 제거"><svg
+                                                        class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0"
+                                                        fill="currentColor" width="16" height="16"
+                                                        viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M2.59 2.72l.06-.07a.5.5 0 01.63-.06l.07.06L8 7.29l4.65-4.64a.5.5 0 01.7.7L8.71 8l4.64 4.65c.18.17.2.44.06.63l-.06.07a.5.5 0 01-.63.06l-.07-.06L8 8.71l-4.65 4.64a.5.5 0 01-.7-.7L7.29 8 2.65 3.35a.5.5 0 01-.06-.63l.06-.07-.06.07z"
+                                                            fill="currentColor"></path>
+                                                    </svg></button></div>
+                                        </div>
+                                    </div>
+                                    <div class="section-item isSet"><span class="screenreader-only"
+                                            id="repeat-label">반복</span>
+                                        <div id="repeat-description" class="screenreader-only"><span>반복되는
+                                                작업입니다.</span><span>매년</span></div><button class="section-innerClick"
+                                            aria-labelledby="repeat-label" aria-describedby="repeat-description"
+                                            >
+                                            <div class="section-inner">
+                                                <div class="section-icon"><svg
+                                                        class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0"
+                                                        fill="currentColor" width="20" height="20"
+                                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M16.5 6.67a.5.5 0 01.3.1l.08.07.01.02A5 5 0 0113.22 15L13 15H6.7l1.65 1.65c.18.17.2.44.06.63l-.06.07a.5.5 0 01-.63.06l-.07-.06-2.5-2.5a.5.5 0 01-.06-.63l.06-.07 2.5-2.5a.5.5 0 01.76.63l-.06.07L6.72 14h.14L7 14h6a4 4 0 003.11-6.52.5.5 0 01.39-.81zm-4.85-4.02a.5.5 0 01.63-.06l.07.06 2.5 2.5.06.07a.5.5 0 010 .56l-.06.07-2.5 2.5-.07.06a.5.5 0 01-.56 0l-.07-.06-.06-.07a.5.5 0 010-.56l.06-.07L13.28 6h-.14L13 6H7a4 4 0 00-3.1 6.52c.06.09.1.2.1.31a.5.5 0 01-.9.3A4.99 4.99 0 016.77 5h6.52l-1.65-1.65-.06-.07a.5.5 0 01.06-.63z"
+                                                            fill="currentColor"></path>
+                                                    </svg></div>
+                                                <div class="section-content">
+                                                    <div class="section-title"><span>매년</span></div>
+                                                    <div class="section-description"></div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                        <div>
+                                            <div class="ms-TooltipHost root-42"><button class="section-delete"
+                                                    aria-label="반복 취소"><svg
+                                                        class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0"
+                                                        fill="currentColor" width="16" height="16"
+                                                        viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M2.59 2.72l.06-.07a.5.5 0 01.63-.06l.07.06L8 7.29l4.65-4.64a.5.5 0 01.7.7L8.71 8l4.64 4.65c.18.17.2.44.06.63l-.06.07a.5.5 0 01-.63.06l-.07-.06L8 8.71l-4.65 4.64a.5.5 0 01-.7-.7L7.29 8 2.65 3.35a.5.5 0 01-.06-.63l.06-.07-.06.07z"
+                                                            fill="currentColor"></path>
+                                                    </svg></button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="detailCategories-section" >
+                                <div class="categories-icon"><svg class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0"
+                                        fill="currentColor" width="20" height="20"
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14 7a1 1 0 100-2 1 1 0 000 2zm-2.87-5a2 2 0 00-1.43.58L3.02 9.25a2 2 0 000 2.83l4.95 4.95a2 2 0 002.83 0l6.63-6.63A2 2 0 0018 8.98V4.03a2 2 0 00-1.99-2L11.12 2zm-.72 1.3a1 1 0 01.71-.3l4.9.03a1 1 0 01.99 1v4.95a1 1 0 01-.29.7l-6.63 6.64a1 1 0 01-1.41 0l-4.95-4.95a1 1 0 010-1.41l6.68-6.67z"
+                                            fill="currentColor"></path>
+                                    </svg></div>
+                                <div class=" css-1g3cqd9-container">
+                                    <div class="categories-control css-vl9dmr-control">
+                                        <div class=" css-1hwfws3">
+                                            <div class="css-ur9wyv-multiValue">
+                                                <div class="css-sqxwqc">
+                                                    <div class="value-label" title="Blue category">Blue category</div>
+                                                </div>
+                                                <div class="css-11woyzd">
+                                                    <div class="multivalue-remove"><svg height="8" width="8"
+                                                            style="fill: currentcolor;">
+                                                            <path
+                                                                d="M4.46607 4L8 7.53905L7.53905 8L4 4.46607L0.460948 8L0 7.53905L3.53393 4L0 0.460948L0.460948 0L4 3.53393L7.53905 0L8 0.460948L4.46607 4Z">
+                                                            </path>
+                                                        </svg></div>
+                                                </div>
+                                            </div>
+                                            <div class="css-1g6gooi">
+                                                <div class="categories-input" style="display: inline-block;"><input
+                                                        autocapitalize="none" autocomplete="off" autocorrect="off"
+                                                        id="react-select-3-input" spellcheck="false" tabindex="0"
+                                                        type="text" aria-autocomplete="list" aria-label="범주 선택"
+                                                        placeholder="범주 선택" value=""
+                                                        style="box-sizing: content-box; width: 120px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;">
+                                                    <div
+                                                        style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: 14px; font-family: Segoe, 'Segoe UI', Arial, 'sans-serif'; font-weight: 500; font-style: normal; letter-spacing: normal; text-transform: none;">
+                                                    </div>
+                                                    <div
+                                                        style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: 14px; font-family: Segoe, 'Segoe UI', Arial, 'sans-serif'; font-weight: 500; font-style: normal; letter-spacing: normal; text-transform: none;">
+                                                        범주 선택</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section">
+                                <div>
+                                    <div><a class="link section-item file-item" rel="noreferrer"
+                                            href="https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&amp;originalUrl=https%3A%2F%2Foutlook.office365.com.mcas.ms%2Fowa%2F%3Fviewmodel%3DIAttachmentViewModelPopoutFactory%26ItemId%3DAAMkADQ1NTU5ODM3LTEzMTctNGQxOS1hYTQzLTU5ZTdiODU3NGE2MQBGAAAAAAA8z5F7pjFaRKwyWKqcENIzBwAIBGL2MPBXSYQlnKNmVaK%252BAAAAAAESAAAIBGL2MPBXSYQlnKNmVaK%252BAASwKG0YAAA%253D%26AttachmentId%3DAAMkADQ1NTU5ODM3LTEzMTctNGQxOS1hYTQzLTU5ZTdiODU3NGE2MQBGAAAAAAA8z5F7pjFaRKwyWKqcENIzBwAIBGL2MPBXSYQlnKNmVaK%252BAAAAAAESAAAIBGL2MPBXSYQlnKNmVaK%252BAASwKG0YAAABEgAQABkye8RImlNDvIMpvoyAtUw%253D%26McasTsid%3D20893&amp;McasCSRF=93c281a28204139fde128044b2c0f38c1a85e7bc98bf3b701cf962dd92cc1293"
+                                            id="l-1nkt6tnym96" target="_blank" download="산업안전보건교육(요약).pdf"
+                                            aria-label="PDF. 산업안전보건교육(요약).pdf, 384.8KB. 열려면 &amp;lt;Enter&amp;gt; 키를 선택하세요.">
+                                            <div class="thumbnail-wrapper">
+                                                <div class="thumbnail">PDF</div>
+                                            </div>
+                                            <div class="file-content">
+                                                <div class="file-title">산업안전보건교육(요약).pdf</div>
+                                                <div class="file-metadata"><span> 384.8KB </span><span> PDF </span>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="ms-TooltipHost root-37"><button class="section-delete"
+                                                        aria-label="파일 삭제"><i
+                                                            class="icon fontIcon ms-Icon ms-Icon--Cancel iconSize-16"
+                                                            aria-hidden="true"></i></button></div>
+                                            </div>
+                                        </a>
+                                        <div class="screenreader-only"></div>
+                                    </div>
+                                </div>
+                                <div class="section-item"><button class="section-innerClick" >
+                                        <div class="section-inner file-button">
+                                            <div class="section-icon"><svg
+                                                    class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0"
+                                                    fill="currentColor" width="20" height="20"
+                                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M4.83 10.48l5.65-5.65a3 3 0 014.25 4.24L8 15.8a1.5 1.5 0 01-2.12-2.12l6-6.01a.5.5 0 10-.7-.71l-6 6.01a2.5 2.5 0 003.53 3.54l6.71-6.72a4 4 0 10-5.65-5.66L4.12 9.78a.5.5 0 00.7.7z"
+                                                        fill="currentColor"></path>
+                                                </svg></div>
+                                            <div class="section-content"><input id="fileAttach" class="inputFile"
+                                                    type="file" tabindex="-1"><label for="fileAttach"
+                                                    class="section-title">파일 추가</label></div>
+                                        </div>
+                                    </button></div>
+                            </div>
+                            <div class="section no-border">
+                                <div class="section-item detailNote" aria-label="노트">
+                                    <div class="richTextEditor multiLine">
+                                        <div class="quill ">
+                                            <div class="ql-container">
+                                                <div class="ql-editor" data-gramm="false" contenteditable="true"
+                                                    data-placeholder="메모 추가" aria-label="메모를 작성합니다. 자동으로 저장됩니다."
+                                                    tabindex="0">
+                                                    <div>ㅁㄴㅇ</div>
+                                                </div>
+                                                <div class="ql-clipboard" contenteditable="true" tabindex="-1"></div>
+                                            </div>
+                                        </div>
+                                        <div class="richTextEditor-footer">
+                                            <div class="richTextEditor-lastEdited"><span class="date">업데이트: 9시간 전</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detailFooter">
+                            <div>
+                                <div class="ms-TooltipHost root-37"><button class="detailFooter-close"
+                                        aria-label="세부 정보 화면 숨기기"><svg
+                                            class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0" fill="currentColor"
+                                            width="20" height="20" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.18 10.5l-1 .87a.5.5 0 10.66.76l2-1.75a.5.5 0 000-.76l-2-1.75a.5.5 0 10-.66.76l1 .87H5.5a.5.5 0 000 1h3.68zM16 16a2 2 0 002-2V6a2 2 0 00-2-2H4a2 2 0 00-2 2v8c0 1.1.9 2 2 2h12zm1-2a1 1 0 01-1 1h-3V5h3a1 1 0 011 1v8zm-5-9v10H4a1 1 0 01-1-1V6a1 1 0 011-1h8z"
+                                                fill="currentColor"></path>
+                                        </svg></button></div>
+                            </div>
+                            <div class="detailFooter-info"><span class="date">10월 28일, 토에 생성됨</span></div>
+                            <div>
+                                <div class="ms-TooltipHost root-37"><button class="detailFooter-trash"
+                                        aria-label="작업 삭제"><svg class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0"
+                                            fill="currentColor" width="20" height="20"
+                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8.5 4h3a1.5 1.5 0 00-3 0zm-1 0a2.5 2.5 0 015 0h5a.5.5 0 010 1h-1.05l-1.2 10.34A3 3 0 0112.27 18H7.73a3 3 0 01-2.98-2.66L3.55 5H2.5a.5.5 0 010-1h5zM5.74 15.23A2 2 0 007.73 17h4.54a2 2 0 001.99-1.77L15.44 5H4.56l1.18 10.23zM8.5 7.5c.28 0 .5.22.5.5v6a.5.5 0 01-1 0V8c0-.28.22-.5.5-.5zM12 8a.5.5 0 00-1 0v6a.5.5 0 001 0V8z"
+                                                fill="currentColor"></path>
+                                        </svg></button></div>
+                            </div>
+                        </div>
+                        <div class="toast-container"></div>
+                    </div>
+                </div>
+                <div id="notifications"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
