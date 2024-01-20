@@ -1,0 +1,718 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<head>
+    <meta name="msapplication-config" content="none">
+    <meta http-equiv="X-UA-Compatible" content="IE=11">
+    <!-- <link id="page-icon" rel="shortcut icon" href="/_static/content/icons/favicon.ico"> -->
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <!-- <script data-description="contentInit">
+        window.$DEBUG = false; window.__scriptType = "ES2017";
+        window.__moduleNamespaces = ["create-react-class", "prop-types", "react", "react-dom", "react-dom-factories", "react-transition-group", "tslib", "VSS/Core", "mousetrap", "VSS/Platform", "VSSUI", "VSS/Features/PlatformUI", "Tfs/Platform", "TFS/Services", "VSS/Ext", "TFS/GlobalBanner", "TFS/Views/SuiteMePage", "VSS/Features/Services", "Tfs/Frame", "VSS/Features/Search"];
+        window.__asyncModules = [];
+        window.__extensionsStaticRoot = "/_static/_ext/";
+        window.__extensionsLocalStaticRoot = "/_static/_ext/";
+        window.resourceLoadStrategy = 'stylesFirst';
+        var preTraceServiceStartErrors = []; 
+        var onPreTraceServiceError = function (event) { preTraceServiceStartErrors.push(event) }; 
+        window.addEventListener('error', onPreTraceServiceError); 
+        var previousResourceLoadCompletion = window.performance.now(); 
+        var resourceLoadTimes = {}; 
+        window.logResourceLoad = function (id) 
+        { 
+            var now = window.performance.now(); 
+            resourceLoadTimes[id] = { current: now, previous: previousResourceLoadCompletion }; 
+            previousResourceLoadCompletion = now; 
+        }; 
+    </script> -->
+    <link href="http://devops.feelanet.com/_static/tfs/Dev18.M181.9/_ext/ms.vss-web/core-content/ms.vss-web.core-content.min.css" rel="stylesheet">
+    <link href="http://devops.feelanet.com/_static/tfs/Dev18.M181.9/_ext/ms.vss-web/platform-content/ms.vss-web.platform-content.min.css" rel="stylesheet">
+    <link href="http://devops.feelanet.com/_static/tfs/Dev18.M181.9/_ext/ms.vss-features/ui-core-content/ms.vss-features.ui-core-content.min.css" rel="stylesheet">
+    <link href="http://devops.feelanet.com/_static/tfs/Dev18.M181.9/_ext/ms.vss-features/ui-spinner-content/ms.vss-features.ui-spinner-content.min.css" rel="stylesheet">
+    <link href="http://devops.feelanet.com/_static/tfs/Dev18.M181.9/_ext/ms.vss-features/ui-widgets-content/ms.vss-features.ui-widgets-content.min.css" rel="stylesheet">
+    <link href="http://devops.feelanet.com/_static/tfs/Dev18.M181.9/_ext/ms.vss-features/ui-input-content/ms.vss-features.ui-input-content.min.css" rel="stylesheet">
+    <link href="http://devops.feelanet.com/_static/tfs/Dev18.M181.9/_ext/ms.vss-features/ui-page-content/ms.vss-features.ui-page-content.min.css" rel="stylesheet">
+    <link href="http://devops.feelanet.com/_static/tfs/Dev18.M181.9/_ext/ms.vss-features/platform-ui-content/ms.vss-features.platform-ui-content.min.css" rel="stylesheet">
+    <link href="http://devops.feelanet.com/_static/tfs/Dev18.M181.9/_ext/ms.vss-tfs-web/platform-content/ms.vss-tfs-web.platform-content.min.css" rel="stylesheet">
+    <link href="http://devops.feelanet.com/_static/tfs/Dev18.M181.9/_ext/ms.vss-features/ui-card-content/ms.vss-features.ui-card-content.min.css" rel="stylesheet">
+    <link href="http://devops.feelanet.com/_static/tfs/Dev18.M181.9/_ext/ms.vss-web/ext-content/ms.vss-web.ext-content.min.css" rel="stylesheet">
+    <link href="http://devops.feelanet.com/_static/tfs/Dev18.M181.9/_ext/ms.vss-tfs-web/global-banner-content/ms.vss-tfs-web.global-banner-content.min.css" rel="stylesheet">
+    <link href="http://devops.feelanet.com/_static/tfs/Dev18.M181.9/_ext/ms.vss-tfs-web/suite-me-page-content/ms.vss-tfs-web.suite-me-page-content.min.css" rel="stylesheet">
+    <link href="http://devops.feelanet.com/_static/tfs/Dev18.M181.9/_ext/ms.vss-features/ui-progress-bar-content/ms.vss-features.ui-progress-bar-content.min.css" rel="stylesheet">
+    <link href="http://devops.feelanet.com/_static/tfs/Dev18.M181.9/_ext/ms.vss-tfs-web/frame-content/ms.vss-tfs-web.frame-content.min.css" rel="stylesheet">
+    <link href="http://devops.feelanet.com/_static/tfs/Dev18.M181.9/_ext/ms.vss-features/search-content/ms.vss-features.search-content.min.css" rel="stylesheet">
+    
+    <title>프로젝트 - 홈</title>
+    <style type="text/css">
+        :root {
+            --palette-primary-darken-6: rgba(0, 103, 181, 1);
+            --palette-primary-darken-10: rgba(0, 91, 161, 1);
+            --palette-primary-darkened-6: 0, 103, 181;
+            --palette-primary-darkened-10: 0, 91, 161;
+            --palette-primary-shade-30: 0, 69, 120;
+            --palette-primary-shade-20: 0, 90, 158;
+            --palette-primary-shade-10: 16, 110, 190;
+            --palette-primary: 0, 120, 212;
+            --palette-primary-tint-10: 43, 136, 216;
+            --palette-primary-tint-20: 199, 224, 244;
+            --palette-primary-tint-30: 222, 236, 249;
+            --palette-primary-tint-40: 239, 246, 252;
+            --palette-neutral-100: 0, 0, 0;
+            --palette-neutral-80: 51, 51, 51;
+            --palette-neutral-70: 76, 76, 76;
+            --palette-neutral-60: 102, 102, 102;
+            --palette-neutral-30: 166, 166, 166;
+            --palette-neutral-20: 200, 200, 200;
+            --palette-neutral-10: 218, 218, 218;
+            --palette-neutral-8: 234, 234, 234;
+            --palette-neutral-6: 239, 239, 239;
+            --palette-neutral-4: 244, 244, 244;
+            --palette-neutral-2: 248, 248, 248;
+            --palette-neutral-0: 255, 255, 255;
+            --palette-error: rgba(232, 17, 35, 1);
+            --palette-error-6: rgba(203, 15, 31, 1);
+            --palette-error-10: rgba(184, 14, 28, 1);
+            --palette-black-alpha-0: rgba(var(--palette-neutral-100), 0);
+            --palette-black-alpha-2: rgba(var(--palette-neutral-100), 0.02);
+            --palette-black-alpha-4: rgba(var(--palette-neutral-100), 0.04);
+            --palette-black-alpha-6: rgba(var(--palette-neutral-100), 0.06);
+            --palette-black-alpha-8: rgba(var(--palette-neutral-100), 0.08);
+            --palette-black-alpha-10: rgba(var(--palette-neutral-100), 0.10);
+            --palette-black-alpha-20: rgba(var(--palette-neutral-100), 0.20);
+            --palette-black-alpha-30: rgba(var(--palette-neutral-100), 0.30);
+            --palette-black-alpha-60: rgba(var(--palette-neutral-100), 0.60);
+            --palette-black-alpha-70: rgba(var(--palette-neutral-100), 0.70);
+            --palette-black-alpha-80: rgba(var(--palette-neutral-100), 0.80);
+            --palette-black-alpha-100: rgba(var(--palette-neutral-100), 1);
+            --palette-accent1-light: 249, 235, 235;
+            --palette-accent1: 218, 10, 0;
+            --palette-accent1-dark: 168, 0, 0;
+            --palette-accent2-light: 223, 246, 221;
+            --palette-accent2: 186, 216, 10;
+            --palette-accent2-dark: 16, 124, 16;
+            --palette-accent3-light: 251, 242, 236;
+            --palette-accent3: 214, 127, 60;
+            --palette-accent3-dark: 171, 102, 48;
+            --background-color: rgba(var(--palette-neutral-0), 1);
+            --communication-foreground: rgba(var(--palette-primary-shade-20), 1);
+            --communication-background: rgba(var(--palette-primary), 1);
+            --status-info-foreground: rgba(0, 120, 212, 1);
+            --status-info-background: rgba(0, 120, 212, 1);
+            --status-error-foreground: rgba(205, 74, 69, 1);
+            --status-error-background: rgba(var(--palette-accent1-light), 1);
+            --status-error-text: rgba(var(--palette-accent1), 1);
+            --status-error-strong: rgba(var(--palette-accent1-dark), 1);
+            --status-success-foreground: rgba(var(--palette-accent2-dark), 1);
+            --status-success-background: rgba(var(--palette-accent2-light), 1);
+            --status-success-text: rgba(127, 184, 0, 1);
+            --status-warning-icon-foreground: rgba(177, 133, 37, 1);
+            --status-warning-foreground: rgba(214, 127, 60, 1);
+            --status-warning-background: rgba(var(--palette-accent3-light), 1);
+            --status-warning-text: rgba(184, 94, 6, 1);
+            --text-primary-color: rgba(var(--palette-neutral-100), .9);
+            --text-secondary-color: rgba(var(--palette-neutral-100), .55);
+            --text-disabled-color: rgba(var(--palette-neutral-100), .38);
+            --text-on-communication-background: var(--background-color);
+            --border-subtle-color: rgba(var(--palette-neutral-100), .08);
+            --callout-background-color: var(--background-color);
+            --callout-filtered-background-color: rgba(var(--palette-neutral-0), 0.86);
+            --callout-shadow-color: rgba(0, 0, 0, .132);
+            --callout-shadow-secondary-color: rgba(0, 0, 0, .108);
+            --panel-shadow-color: rgba(0, 0, 0, .22);
+            --panel-shadow-secondary-color: rgba(0, 0, 0, .18);
+            --focus-pulse-max-color: rgba(var(--palette-primary), 0.23);
+            --focus-pulse-min-color: rgba(var(--palette-primary), 0.15);
+            --focus-border-color: rgba(var(--palette-primary), 1);
+            --third-party-icon-filter: none;
+            --build-output-error-color: rgb(233, 45, 61);
+            --diff-color-original: rgba(172, 0, 0, 0.1);
+            --diff-color-modified: rgba(51, 153, 51, 0.1);
+            --component-label-default-color: rgba(var(--palette-neutral-6), 1);
+            --component-label-default-color-hover: rgba(var(--palette-neutral-10), 1);
+            --component-grid-row-hover-color: rgba(var(--palette-neutral-2), 1);
+            --component-grid-selected-row-color: rgba(var(--palette-primary-tint-30), 1);
+            --component-grid-focus-border-color: rgba(var(--palette-primary), 1);
+            --component-grid-link-selected-row-color: rgba(var(--palette-primary-shade-20), 1);
+            --component-grid-link-hover-color: rgba(var(--palette-primary-shade-20), 1);
+            --component-grid-action-hover-color: rgba(var(--palette-neutral-8), 1);
+            --component-grid-action-selected-cell-hover-color: rgba(var(--palette-primary-tint-30), 1);
+            --component-grid-cell-bottom-border-color: rgba(var(--palette-neutral-8), 1);
+            --component-grid-drag-source-color: rgba(var(--palette-neutral-0), 0.40);
+            --search-match-background: rgba(255, 255, 0, 0.6);
+            --search-selected-match-background: rgba(245, 139, 31, 0.8);
+            --icon-folder-color: #dcb67a;
+            --component-errorBoundary-border-color: rgba(var(--palette-accent1), 1);
+            --component-errorBoundary-background-color: rgba(var(--palette-accent1-light), 1);
+            --nav-header-background: var(--background-color);
+            --nav-header-item-hover-background: rgba(var(--palette-neutral-100), 0.02);
+            --nav-header-active-item-background: rgba(var(--palette-neutral-100), 0.08);
+            --nav-header-text-primary-color: var(--text-primary-color);
+            --nav-header-text-secondary-color: var(--text-secondary-color);
+            --nav-header-text-disabled-color: var(--text-disabled-color);
+            --nav-header-product-color: rgba(var(--palette-primary), 1);
+            --nav-vertical-background-color: rgba(var(--palette-neutral-8), 1);
+            --nav-vertical-item-hover-background: rgba(var(--palette-neutral-100), 0.04);
+            --nav-vertical-active-group-background: rgba(var(--palette-neutral-100), 0.06);
+            --nav-vertical-active-item-background: rgba(var(--palette-neutral-100), 0.12);
+            --nav-vertical-text-primary-color: var(--text-primary-color);
+            --nav-vertical-text-secondary-color: var(--text-secondary-color);
+            --component-menu-selected-item-background: rgba(var(--palette-neutral-4), 1);
+            --component-htmlEditor-background-color: var(--background-color);
+            --component-htmlEditor-foreground-color: var(--text-primary-color)
+        }
+    </style>
+</head>
+
+<body class="lwp bolt-focus-visible">
+    <noscript>
+        <div class="absolute-fill flex-column flex-center">
+            <h2>JavaScript is Disabled</h2>
+            <p>Please enable javascript and refresh the page</p>
+        </div>
+    </noscript>
+    <input type="hidden" name="__RequestVerificationToken" value="HuUiDJSXRUGjv-WKVmDvEgYg-0glPsMdcesBQMQVb9JGhlMlHSRj1OIicm4zmj29C3JNSqiv2uWtaqjfd4JBamVDI0pTLv5qxbjaf7BWngtJQXet0">
+    <input type="hidden" name="__RequestVerificationToken2" value="__RequestVerificationToken2f0e1435e-82d0-462d-a7f3-bf6067964ea6">
+
+    <div class="full-size">
+        <div class="full-size region-page">
+
+            <div class="flex-column full-size vertical-layout">
+                <div class="top-level-header flex-row flex-noshrink">
+                    <div class="flex-row flex-grow region-header">
+                        <a class="commandbar-item suite-logo flex-row flex-noshrink flex-center bolt-link" href="/Samsung">
+                            <span class="suite-image commandbar-icon justify-center flex-noshrink fabric-icon ms-Icon--VSTSLogo"></span>
+                            <span class="brand body-m font-weight-heavy">Azure DevOps</span>
+                        </a>
+                        <div class="flex-grow"></div>
+                        <div class="search-placeholder"></div>
+                        <div class="commandbar-item commandbar-icon cursor-pointer flex-row flex-noshrink justify-center bolt-expandable-container flex-row flex-center">
+                            <span class="flex-noshrink fabric-icon ms-Icon--CheckList medium"></span>
+                        </div>
+                        <div class="commandbar-item commandbar-icon cursor-pointer flex-row flex-noshrink justify-center bolt-expandable-container flex-row flex-center">
+                            <span class="flex-noshrink fabric-icon ms-Icon--Shop medium"></span>
+                        </div>
+                        <div class="navigation-profile-menu commandbar-item commandbar-icon cursor-pointer flex-row flex-noshrink justify-center bolt-expandable-container flex-row flex-center">
+                            <div class="vss-Persona flex-noshrink small" aria-label="전선중(Seonjung Jeon)">
+                                <img class="vss-Persona-content using-image" src="http://devops.feelanet.com/Samsung/_apis/GraphProfile/MemberAvatars/win.Uy0xLTUtMjEtMTcxNTU2NzgyMS0xODQ0ODIzODQ3LTE4MDE2NzQ1MzEtNDAxNjE?size=1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex-row flex-grow v-scroll-auto">
+                    <div class="top-level-navigation region-navigation flex-column flex-noshrink scroll-hidden expanded">
+                        <div class="top-level-section scroll-hidden flex-column flex-grow">
+                            <div class="flex-column v-scroll-auto h-scroll-hidden custom-scrollbar">
+
+                                <a class="host-link navigation-link top-navigation-item focus-treatment flex-row flex-center flex-noshrink relative displayed bolt-link" href="/Samsung">
+                                    <div class="vss-Persona flex-noshrink project-persona flex-noshrink small">
+                                        <div class="vss-Persona-content small" style="background: rgb(218, 83, 44);">
+                                            <span>S</span>
+                                        </div>
+                                    </div>
+                                    <span class="text-ellipsis">Samsung</span>
+                                </a>
+
+                                <a class="host-link navigation-link top-navigation-item focus-treatment flex-row flex-center flex-noshrink relative bolt-link" href="/RD_PlatformCollection">
+                                    <div class="vss-Persona flex-noshrink project-persona flex-noshrink small">
+                                        <div class="vss-Persona-content small" style="background: rgb(30, 113, 69);">
+                                            <span>R</span>
+                                        </div>
+                                    </div>
+                                    <span class="text-ellipsis">RD_PlatformCollection</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="announcements-section flex-column flex-noshrink"></div>
+                        <div class="related-pages-section flex-column flex-noshrink">
+                            <span class="section-header">관련 페이지</span>
+                            <span class="related-link"><a class="link-text bolt-link" href="https://docs.microsoft.com/en-us/azure/devops/?view=azdevops">설명서</a></span>
+                            <span class="related-link"><a class="link-text bolt-link" href="https://azure.microsoft.com/en-us/support/devops/" tabindex="0">도움말 보기</a></span>
+                            <span class="related-link"><a class="link-text bolt-link" href="/_admin/_licenses">액세스 수준</a></span>
+                        </div>
+
+                        <div class="navigation-footer">
+                            <a class="action-link navigation-link focus-treatment top-navigation-item flex-row bolt-link" href="/Samsung/_settings/">
+                                <span class="icon-margin flex-noshrink fabric-icon ms-Icon--Settings medium"></span>
+                                <span class="text-ellipsis">컬렉션 설정</span>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="flex-column flex-grow scroll-hidden">
+                        <div class="flex-row flex-noshrink region-content-header"></div>
+                        <div class="suite-me-page-content flex-row flex-grow relative v-scroll-auto region-content">
+                            <div class="suite-me-page-view flex flex-grow flex-stretch v-scroll-auto absolute-fill">
+                                <div class="suite-me-page-view-container flex flex-column flex-grow v-scroll-auto">
+                                    <div class="flex-grow custom-scrollbar scroll-auto-hide bolt-page v-scroll-auto flex-column bolt-page-grey">
+                                        
+                                        <div class="hostname-header flex-noshrink bolt-header-with-commandbar bolt-header flex-row flex-noshrink flex-start bolt-header-no-spacing-defined">
+                                            <div class="bolt-header-content-area flex-row flex-grow flex-self-stretch">
+                                                <div class="bolt-header-title-area flex-column flex-grow scroll-hidden">
+                                                    <div class="bolt-header-title-row flex-row flex-baseline">
+                                                        <div aria-level="1" class="bolt-header-title title-m l">Samsung</div>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-self-start bolt-header-commandbar flex-noshrink bolt-header-commandbar-no-right-padding bolt-button-group flex-row rhythm-horizontal-8">
+                                                    <button class="create-project-button bolt-header-command-item-button bolt-button bolt-icon-button enabled primary bolt-focus-treatment">
+                                                        <span class="left-icon flex-noshrink fabric-icon ms-Icon--Add medium"></span>
+                                                        <span class="bolt-button-text body-m">새 프로젝트</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="suite-me-page-tabbar flex-wrap bolt-tabbar flex-row flex-center flex-noshrink sticky bolt-tabbar-grey">
+                                            <div class="bolt-tabbar-tabs flex-grow flex-noshrink bolt-tabs flex-row tall">
+                                                <a class="bolt-tab focus-treatment flex-noshrink selected" href="/Samsung">
+                                                    <span class="bolt-tab-inner-container"><span class="bolt-tab-text">프로젝트</span></span>
+                                                </a>
+                                                <a class="bolt-tab focus-treatment flex-noshrink" href="/Samsung/_work">
+                                                    <span class="bolt-tab-inner-container"><span class="bolt-tab-text">내 작업 항목</span></span>
+                                                </a>
+                                                <a class="bolt-tab focus-treatment flex-noshrink" href="/Samsung/_pulls">
+                                                    <span class="bolt-tab-inner-container"><span class="bolt-tab-text">내 끌어오기 요청</span></span>
+                                                </a>
+                                            </div>
+                                            <div class="flex-noshrink flex-row bolt-inline-keyword-filter-bar">
+                                                <div class="flex-column flex-grow bolt-textfield-inline-tabbar-width">
+                                                    <div class="bolt-text-filterbaritem flex-grow bolt-textfield flex-row flex-center bolt-textfield-inline">
+                                                        <span class="keyword-filter-icon prefix bolt-textfield-icon bolt-textfield-no-text flex-noshrink fabric-icon ms-Icon--Filter medium"></span>
+                                                        <input type="text" autocomplete="off" class="bolt-text-filterbaritem-input bolt-textfield-input flex-grow bolt-textfield-input-with-prefix" maxlength="50" placeholder="프로젝트 필터링">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="page-content flex-column flex-grow flex-noshrink">
+                                            <div class="mru-projects">
+                                                <ul class="suite-project-list justify-start flex-row">
+                                                    <li class="project-card flex-row flex-grow">
+                                                        <div class="flex-grow no-padding bolt-card flex-column depth-8 bolt-card-white">
+                                                            <div class="bolt-card-content flex-row flex-grow">
+                                                                <a class="project-link flex-column flex-grow" href="/Samsung/Sec.DX.RnD">
+                                                                    <div class="top-row flex-row flex-noshrink flex-grow">
+                                                                        <div class="vss-Persona flex-noshrink project-persona large">
+                                                                            <img class="vss-Persona-content using-image" src="http://devops.feelanet.com/Samsung/_apis/GraphProfile/MemberAvatars/51c7f873-422b-4cc4-8ab0-258b427ffc47?overrideDisplayName=Sec.DX.RnD&amp;size=2">
+                                                                        </div>
+                                                                        <div class="flex-column project-details">
+                                                                            <div class="project-name font-size-l font-weight-semibold">Sec.DX.RnD</div>
+                                                                            <div class="project-description">삼성전자 DX RND</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+
+                                                                <div class="installed-products-row flex-row flex-grow flex-noshrink justify-end">
+                                                                    <div class="flex-row installed-product flex-end">
+                                                                        <a class="product" href="/Samsung/Sec.DX.RnD/_workitems">
+                                                                            <div class="placeholder"></div>
+                                                                            <div class="product-image-container animation-delay-30">
+                                                                                <div class="flex-row link-icon">
+                                                                                    <img class="product-image bolt-image flex-noshrink" src="http://devops.feelanet.com/_static/_ext/ms.vss-work-web/common-content/Content/Nav-Plan.XB8qU6v7kvBk_Tcy.png">
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                        
+                                                                        <a class="product" href="/Samsung/Sec.DX.RnD/_code/">
+                                                                            <div class="placeholder"></div>
+                                                                            <div class="product-image-container animation-delay-60">
+                                                                                <div class="flex-row link-icon">
+                                                                                    <img class="product-image bolt-image flex-noshrink" src="http://devops.feelanet.com/_static/_ext/ms.vss-code-web/common-content/Nav-Code.0tJczmQtl3hyKtlh.png">
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                        
+                                                                        <a class="product" href="/Samsung/Sec.DX.RnD/_build">
+                                                                            <div class="placeholder"></div>
+                                                                            <div class="product-image-container animation-delay-90">
+                                                                                <div class="flex-row link-icon">
+                                                                                    <img class="product-image bolt-image flex-noshrink" src="http://devops.feelanet.com/_static/_ext/ms.vss-build-web/common-library/Nav-Launch.3tiJhd8JGiL0mrog.png">
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                        
+                                                                        <a class="product" href="/Samsung/Sec.DX.RnD/_testManagement">
+                                                                            <div class="placeholder"></div>
+                                                                            <div class="product-image-container animation-delay-120">
+                                                                                <div class="flex-row link-icon">
+                                                                                    <img class="product-image bolt-image flex-noshrink" src="http://devops.feelanet.com/_static/_ext/ms.vss-test-web/common-content/Nav-Test.CLbC8LbdE5__mhtfT.png">
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                        
+                                                                        <a class="product" href="/Samsung/Sec.DX.RnD/_packaging">
+                                                                            <div class="placeholder"></div>
+                                                                            <div class="product-image-container animation-delay-150">
+                                                                                <div class="flex-row link-icon">
+                                                                                    <img class="product-image bolt-image flex-noshrink" src="http://devops.feelanet.com/_static/_ext/ms.feed/common/content/Nav-Feed.6k56IK9RqnU_b2v6.png">
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="project-card flex-row flex-grow">
+                                                        <div class="flex-grow no-padding bolt-card flex-column depth-8 bolt-card-white">
+                                                            <div class="bolt-card-content flex-row flex-grow">
+                                                                <a class="project-link flex-column flex-grow" href="/Samsung/Sec.DX.FortyTwo">
+                                                                    <div class="top-row flex-row flex-noshrink flex-grow">
+                                                                        <div class="vss-Persona flex-noshrink project-persona large">
+                                                                            <img class="vss-Persona-content using-image" src="http://devops.feelanet.com/Samsung/_apis/GraphProfile/MemberAvatars/65031e56-7317-415b-8de5-7606435edee5?overrideDisplayName=Sec.DX.FortyTwo&amp;size=2">
+                                                                        </div>
+                                                                        <div class="flex-column project-details">
+                                                                            <div class="project-name font-size-l font-weight-semibold">Sec.DX.FortyTwo</div>
+                                                                            <div class="project-description">
+                                                                                삶, 우주, 그리고
+                                                                                모든 것에 대한 궁극적인 질문에 대한 해답.
+                                                                                전 우주에서 둘째가는 컴퓨터 '깊은 생각(Deep Thought)'이
+                                                                                750만 년 동안 돌아간 결과 나온 답변.
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+
+                                                                <div class="installed-products-row flex-row flex-grow flex-noshrink justify-end">
+                                                                    <div class="flex-row installed-product flex-end">
+                                                                        <a class="product" href="/Samsung/Sec.DX.RnD/_workitems">
+                                                                            <div class="placeholder"></div>
+                                                                            <div class="product-image-container animation-delay-30">
+                                                                                <div class="flex-row link-icon">
+                                                                                    <img class="product-image bolt-image flex-noshrink" src="http://devops.feelanet.com/_static/_ext/ms.vss-work-web/common-content/Content/Nav-Plan.XB8qU6v7kvBk_Tcy.png">
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                        
+                                                                        <a class="product" href="/Samsung/Sec.DX.RnD/_code/">
+                                                                            <div class="placeholder"></div>
+                                                                            <div class="product-image-container animation-delay-60">
+                                                                                <div class="flex-row link-icon">
+                                                                                    <img class="product-image bolt-image flex-noshrink" src="http://devops.feelanet.com/_static/_ext/ms.vss-code-web/common-content/Nav-Code.0tJczmQtl3hyKtlh.png">
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                        
+                                                                        <a class="product" href="/Samsung/Sec.DX.RnD/_build">
+                                                                            <div class="placeholder"></div>
+                                                                            <div class="product-image-container animation-delay-90">
+                                                                                <div class="flex-row link-icon">
+                                                                                    <img class="product-image bolt-image flex-noshrink" src="http://devops.feelanet.com/_static/_ext/ms.vss-build-web/common-library/Nav-Launch.3tiJhd8JGiL0mrog.png">
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                        
+                                                                        <a class="product" href="/Samsung/Sec.DX.RnD/_testManagement">
+                                                                            <div class="placeholder"></div>
+                                                                            <div class="product-image-container animation-delay-120">
+                                                                                <div class="flex-row link-icon">
+                                                                                    <img class="product-image bolt-image flex-noshrink" src="http://devops.feelanet.com/_static/_ext/ms.vss-test-web/common-content/Nav-Test.CLbC8LbdE5__mhtfT.png">
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                        
+                                                                        <a class="product" href="/Samsung/Sec.DX.RnD/_packaging">
+                                                                            <div class="placeholder"></div>
+                                                                            <div class="product-image-container animation-delay-150">
+                                                                                <div class="flex-row link-icon">
+                                                                                    <img class="product-image bolt-image flex-noshrink" src="http://devops.feelanet.com/_static/_ext/ms.feed/common/content/Nav-Feed.6k56IK9RqnU_b2v6.png">
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+
+                                                    <li class="project-card flex-row flex-grow">
+                                                        <div class="flex-grow no-padding bolt-card flex-column depth-8 bolt-card-white">
+                                                            <div class="bolt-card-content flex-row flex-grow">
+                                                                <a class="project-link flex-column flex-grow" href="/Samsung/Sec.ADFS">
+                                                                    <div class="top-row flex-row flex-noshrink flex-grow">
+                                                                        <div class="vss-Persona flex-noshrink project-persona large">
+                                                                            <img class="vss-Persona-content using-image" src="http://devops.feelanet.com/Samsung/_apis/GraphProfile/MemberAvatars/36d3ed62-2fc5-43e7-a367-c52a8bbf370f?overrideDisplayName=Sec.ADFS&amp;size=2">
+                                                                        </div>
+                                                                        <div class="flex-column project-details">
+                                                                            <div class="project-name font-size-l font-weight-semibold">Sec.ADFS</div>
+                                                                            <div class="project-description">삼성전자 ADFS (통합인증)</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+
+                                                                <div class="installed-products-row flex-row flex-grow flex-noshrink justify-end">
+                                                                    <div class="flex-row installed-product flex-end">
+                                                                        <a class="product" href="/Samsung/Sec.DX.RnD/_workitems">
+                                                                            <div class="placeholder"></div>
+                                                                            <div class="product-image-container animation-delay-30">
+                                                                                <div class="flex-row link-icon">
+                                                                                    <img class="product-image bolt-image flex-noshrink" src="http://devops.feelanet.com/_static/_ext/ms.vss-work-web/common-content/Content/Nav-Plan.XB8qU6v7kvBk_Tcy.png">
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                        
+                                                                        <a class="product" href="/Samsung/Sec.DX.RnD/_code/">
+                                                                            <div class="placeholder"></div>
+                                                                            <div class="product-image-container animation-delay-60">
+                                                                                <div class="flex-row link-icon">
+                                                                                    <img class="product-image bolt-image flex-noshrink" src="http://devops.feelanet.com/_static/_ext/ms.vss-code-web/common-content/Nav-Code.0tJczmQtl3hyKtlh.png">
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                        
+                                                                        <a class="product" href="/Samsung/Sec.DX.RnD/_build">
+                                                                            <div class="placeholder"></div>
+                                                                            <div class="product-image-container animation-delay-90">
+                                                                                <div class="flex-row link-icon">
+                                                                                    <img class="product-image bolt-image flex-noshrink" src="http://devops.feelanet.com/_static/_ext/ms.vss-build-web/common-library/Nav-Launch.3tiJhd8JGiL0mrog.png">
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                        
+                                                                        <a class="product" href="/Samsung/Sec.DX.RnD/_testManagement">
+                                                                            <div class="placeholder"></div>
+                                                                            <div class="product-image-container animation-delay-120">
+                                                                                <div class="flex-row link-icon">
+                                                                                    <img class="product-image bolt-image flex-noshrink" src="http://devops.feelanet.com/_static/_ext/ms.vss-test-web/common-content/Nav-Test.CLbC8LbdE5__mhtfT.png">
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                        
+                                                                        <a class="product" href="/Samsung/Sec.DX.RnD/_packaging">
+                                                                            <div class="placeholder"></div>
+                                                                            <div class="product-image-container animation-delay-150">
+                                                                                <div class="flex-row link-icon">
+                                                                                    <img class="product-image bolt-image flex-noshrink" src="http://devops.feelanet.com/_static/_ext/ms.feed/common/content/Nav-Feed.6k56IK9RqnU_b2v6.png">
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="project-card flex-row flex-grow">
+                                                        <div class="flex-grow no-padding bolt-card flex-column depth-8 bolt-card-white">
+                                                            <div class="bolt-card-content flex-row flex-grow">
+                                                                <a class="project-link flex-column flex-grow" href="/Samsung/Sec.Mosaic">
+                                                                    <div class="top-row flex-row flex-noshrink flex-grow">
+                                                                        <div class="vss-Persona flex-noshrink project-persona large">
+                                                                            <img class="vss-Persona-content using-image" src="http://devops.feelanet.com/Samsung/_apis/GraphProfile/MemberAvatars/c5a7acdb-df4c-473e-9cd3-d232bf14c2d7?overrideDisplayName=Sec.Mosaic&amp;size=2">
+                                                                        </div>
+                                                                        <div class="flex-column project-details">
+                                                                            <div class="project-name font-size-l font-weight-semibold">Sec.Mosaic</div>
+                                                                            <div class="project-description">삼성전자 Mosaic</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+
+                                                                <div class="installed-products-row flex-row flex-grow flex-noshrink justify-end">
+                                                                    <div class="flex-row installed-product flex-end">
+                                                                        <a class="product" href="/Samsung/Sec.DX.RnD/_workitems">
+                                                                            <div class="placeholder"></div>
+                                                                            <div class="product-image-container animation-delay-30">
+                                                                                <div class="flex-row link-icon">
+                                                                                    <img class="product-image bolt-image flex-noshrink" src="http://devops.feelanet.com/_static/_ext/ms.vss-work-web/common-content/Content/Nav-Plan.XB8qU6v7kvBk_Tcy.png">
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                        
+                                                                        <a class="product" href="/Samsung/Sec.DX.RnD/_code/">
+                                                                            <div class="placeholder"></div>
+                                                                            <div class="product-image-container animation-delay-60">
+                                                                                <div class="flex-row link-icon">
+                                                                                    <img class="product-image bolt-image flex-noshrink" src="http://devops.feelanet.com/_static/_ext/ms.vss-code-web/common-content/Nav-Code.0tJczmQtl3hyKtlh.png">
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                        
+                                                                        <a class="product" href="/Samsung/Sec.DX.RnD/_build">
+                                                                            <div class="placeholder"></div>
+                                                                            <div class="product-image-container animation-delay-90">
+                                                                                <div class="flex-row link-icon">
+                                                                                    <img class="product-image bolt-image flex-noshrink" src="http://devops.feelanet.com/_static/_ext/ms.vss-build-web/common-library/Nav-Launch.3tiJhd8JGiL0mrog.png">
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                        
+                                                                        <a class="product" href="/Samsung/Sec.DX.RnD/_testManagement">
+                                                                            <div class="placeholder"></div>
+                                                                            <div class="product-image-container animation-delay-120">
+                                                                                <div class="flex-row link-icon">
+                                                                                    <img class="product-image bolt-image flex-noshrink" src="http://devops.feelanet.com/_static/_ext/ms.vss-test-web/common-content/Nav-Test.CLbC8LbdE5__mhtfT.png">
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                        
+                                                                        <a class="product" href="/Samsung/Sec.DX.RnD/_packaging">
+                                                                            <div class="placeholder"></div>
+                                                                            <div class="product-image-container animation-delay-150">
+                                                                                <div class="flex-row link-icon">
+                                                                                    <img class="product-image bolt-image flex-noshrink" src="http://devops.feelanet.com/_static/_ext/ms.feed/common/content/Nav-Feed.6k56IK9RqnU_b2v6.png">
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="no-padding bolt-card flex-column depth-8 bolt-card-white">
+                                                <div class="bolt-card-content flex-row flex-grow">
+                                                    <table class="project-list bolt-list body-m relative scroll-hidden" style="width: 100%;">
+                                                        <tbody class="relative">
+                                                            <tr class="bolt-list-row-spacer invisible">
+                                                                <td class="bolt-list-cell-spacer invisible" colspan="1" style="height: 0px;"></td>
+                                                            </tr>
+                                                            <tr class="bolt-list-row-spacer invisible">
+                                                                <td class="bolt-list-cell-spacer invisible" colspan="1" style="height: 0px;"></td>
+                                                            </tr>
+                                                            <tr class="project-row project-info bolt-list-row first-row">
+                                                                <td class="bolt-list-cell">
+                                                                    <div class="bolt-list-cell-content flex-row">
+                                                                        <a class="project-link flex flex-column flex-grow" href="/Samsung/Sec.AD">
+                                                                            <div class="top-row flex flex-noshrink">
+                                                                                <div class="vss-Persona flex-noshrink project-persona flex-noshrink large">
+                                                                                    <img class="vss-Persona-content using-image" src="http://devops.feelanet.com/Samsung/_apis/GraphProfile/MemberAvatars/c9c56a9f-ba4b-48e0-a773-0a46c7df5e2e?overrideDisplayName=Sec.AD&amp;size=2">
+                                                                                </div>
+                                                                                <div class="project-details flex flex-column flex-grow">
+                                                                                    <div class="project-name font-size-l font-weight-semibold text-ellipsis">Sec.AD</div>
+                                                                                    <div class="project-description font-size-m">삼성전자 AD (AD Portal)</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+
+                                                                        <div class="flex-row installed-product flex-end">
+                                                                            <a class="product" href="/Samsung/Sec.AD/_workitems">
+                                                                                <div class="placeholder"></div>
+                                                                                <div class="product-image-container animation-delay-30">
+                                                                                    <div class="flex-row link-icon">
+                                                                                        <img class="product-image bolt-image flex-noshrink" src="http://devops.feelanet.com/_static/_ext/ms.vss-work-web/common-content/Content/Nav-Plan.XB8qU6v7kvBk_Tcy.png">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </a>
+                                                                            <a class="product" href="/Samsung/Sec.AD/_code/">
+                                                                                <div class="placeholder"></div>
+                                                                                <div class="product-image-container animation-delay-60">
+                                                                                    <div class="flex-row link-icon">
+                                                                                        <img class="product-image bolt-image flex-noshrink" src="http://devops.feelanet.com/_static/_ext/ms.vss-code-web/common-content/Nav-Code.0tJczmQtl3hyKtlh.png">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </a>
+                                                                            <a class="product" href="/Samsung/Sec.AD/_build">
+                                                                                <div class="placeholder"></div>
+                                                                                <div class="product-image-container animation-delay-90">
+                                                                                    <div class="flex-row link-icon">
+                                                                                        <img class="product-image bolt-image flex-noshrink" src="http://devops.feelanet.com/_static/_ext/ms.vss-build-web/common-library/Nav-Launch.3tiJhd8JGiL0mrog.png">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </a>
+                                                                            <a class="product" href="/Samsung/Sec.AD/_testManagement">
+                                                                                <div class="placeholder"></div>
+                                                                                <div class="product-image-container animation-delay-120">
+                                                                                    <div class="flex-row link-icon">
+                                                                                        <img class="product-image bolt-image flex-noshrink" src="http://devops.feelanet.com/_static/_ext/ms.vss-test-web/common-content/Nav-Test.CLbC8LbdE5__mhtfT.png">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </a>
+                                                                            <a class="product" href="/Samsung/Sec.AD/_packaging">
+                                                                                <div class="placeholder"></div>
+                                                                                <div class="product-image-container animation-delay-150">
+                                                                                    <div class="flex-row link-icon">
+                                                                                        <img class="product-image bolt-image flex-noshrink" src="http://devops.feelanet.com/_static/_ext/ms.feed/common/content/Nav-Feed.6k56IK9RqnU_b2v6.png">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </a>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="project-row project-info bolt-list-row">
+                                                                <td class="bolt-list-cell">
+                                                                    <div class="bolt-list-cell-content flex-row">
+                                                                        <a class="project-link flex flex-column flex-grow" href="/Samsung/Sec.AD.Dashboard">
+                                                                            <div class="top-row flex flex-noshrink">
+                                                                                <div class="vss-Persona flex-noshrink project-persona flex-noshrink large">
+                                                                                    <img class="vss-Persona-content using-image" src="http://devops.feelanet.com/Samsung/_apis/GraphProfile/MemberAvatars/1d21dade-8d00-497b-9bfe-443bd5e08dbf?overrideDisplayName=Sec.AD.Dashboard&amp;size=2">
+                                                                                </div>
+                                                                                <div class="project-details flex flex-column flex-grow">
+                                                                                    <div class="project-name font-size-l font-weight-semibold text-ellipsis">Sec.AD.Dashboard</div>
+                                                                                    <div class="project-description font-size-m">삼성전자 AD Dashboard</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+
+                                                                        <div class="flex-row installed-product flex-end">
+                                                                            <a class="product" href="/Samsung/Sec.AD/_workitems">
+                                                                                <div class="placeholder"></div>
+                                                                                <div class="product-image-container animation-delay-30">
+                                                                                    <div class="flex-row link-icon">
+                                                                                        <img class="product-image bolt-image flex-noshrink" src="http://devops.feelanet.com/_static/_ext/ms.vss-work-web/common-content/Content/Nav-Plan.XB8qU6v7kvBk_Tcy.png">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </a>
+                                                                            <a class="product" href="/Samsung/Sec.AD/_code/">
+                                                                                <div class="placeholder"></div>
+                                                                                <div class="product-image-container animation-delay-60">
+                                                                                    <div class="flex-row link-icon">
+                                                                                        <img class="product-image bolt-image flex-noshrink" src="http://devops.feelanet.com/_static/_ext/ms.vss-code-web/common-content/Nav-Code.0tJczmQtl3hyKtlh.png">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </a>
+                                                                            <a class="product" href="/Samsung/Sec.AD/_build">
+                                                                                <div class="placeholder"></div>
+                                                                                <div class="product-image-container animation-delay-90">
+                                                                                    <div class="flex-row link-icon">
+                                                                                        <img class="product-image bolt-image flex-noshrink" src="http://devops.feelanet.com/_static/_ext/ms.vss-build-web/common-library/Nav-Launch.3tiJhd8JGiL0mrog.png">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </a>
+                                                                            <a class="product" href="/Samsung/Sec.AD/_testManagement">
+                                                                                <div class="placeholder"></div>
+                                                                                <div class="product-image-container animation-delay-120">
+                                                                                    <div class="flex-row link-icon">
+                                                                                        <img class="product-image bolt-image flex-noshrink" src="http://devops.feelanet.com/_static/_ext/ms.vss-test-web/common-content/Nav-Test.CLbC8LbdE5__mhtfT.png">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </a>
+                                                                            <a class="product" href="/Samsung/Sec.AD/_packaging">
+                                                                                <div class="placeholder"></div>
+                                                                                <div class="product-image-container animation-delay-150">
+                                                                                    <div class="flex-row link-icon">
+                                                                                        <img class="product-image bolt-image flex-noshrink" src="http://devops.feelanet.com/_static/_ext/ms.feed/common/content/Nav-Feed.6k56IK9RqnU_b2v6.png">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-row flex-noshrink region-content-footer"></div>
+                    </div>
+                </div>
+                <div class="footer flex-row flex-noshrink region-footer"></div>
+            </div>
+        </div>
+    </div>
+    <div class="bolt-portal-host absolute-fill no-events scroll-hidden"></div>
+</body>
+</html>
